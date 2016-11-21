@@ -1,0 +1,8 @@
+NetworkElementName|SwitchName
+Whitestone1|WHST
+Garden_City2|
+Whitestone2|WHST2
+Yonkers|YONKERS
+Westnyack2|WNYK2
+JAC1AN_Tandem|
+WCH1AN_Tandem|
