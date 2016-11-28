@@ -50,7 +50,7 @@ function getServiceProviderID($serviceProvider) {
 function stripPhoneNumber ($number) {
 	$number = str_ireplace( array('(', ')', ' ', '-', '.','*'), array('', '', '', '', '',''), $number);
 	if (strpos($number, '1') === 0) {
-		substr($number, 1);
+		$number = substr($number, 1);
 	}
 	if ($number == '') {$number = 0;}
 	return $number;
