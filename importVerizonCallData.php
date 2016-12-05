@@ -34,7 +34,7 @@ set_error_handler('errHandle');
 
 $inDirectory = "verizonPhoneRecords/";
 $caseID = 1;
-$ServiceProviderId = getServiceProviderID("Verizon"); 
+$serviceProviderId = getServiceProviderID("Verizon"); 
 
 function getServiceProviderID($serviceProvider) {
 	global $link;
@@ -107,11 +107,7 @@ function addRecords($filename) {
 	// big concern we could have duplicates in here.  
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
-
-		echo "$filename <BR>";
-		preg_match ('|[0-9]+|',$filename, $matches);
-		$source = $matches[0];
-		echo "source name = $source";
+		$source = '';
 //		fgets($handle);
 		//put each line of the file in the database
 	    while (($line = fgetcsv($handle)) !== FALSE) {
@@ -119,6 +115,9 @@ function addRecords($filename) {
 */			if ($i==1) {
 				$i++;
 				continue;
+			}
+			if ($source == '') {
+				$source = $line[1];
 			}
 			$networkElementName = $line[0];
 			$mobileDirectoryNumber = $line[1];
@@ -203,6 +202,7 @@ function addRecords($filename) {
     			Pertinent,
     			Notes,
     			Source,
+    			ServiceProviderID,
     			Created,
     			Modified
     		) VALUES (".
@@ -224,6 +224,7 @@ function addRecords($filename) {
     			1,
     			'',
     			'$source',
+    			".$GLOBALS['caseID'].",
     			NOW(),
     			NOW()
     			)";
