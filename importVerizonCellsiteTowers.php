@@ -33,7 +33,7 @@ function addRecords($filename) {
 	$source = substr($source, 0, strrpos($source, "."));
 
 
-	$link = mysqli_connect("localhost", "root", "", "matrix");
+	$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
 	if (!$link) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
 	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;

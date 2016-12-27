@@ -14,7 +14,7 @@ foreach(glob('Includes/*.php') as $file) {
 }     
 
 // this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "", "matrix");
+$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
 
 // ...
 

@@ -29,7 +29,7 @@ $inDirectory = "sprintRecords/";
 //******* FUNCTIONS ****//
 function addRecords($filename) {
 
-	$link = mysqli_connect("localhost", "root", "", "matrix");
+	$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
 	if (!$link) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
 	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
