@@ -66,7 +66,7 @@ function getPhoneID($phoneNumber) {
 		if ($phone->num_rows === 0) {
 			echo "phone wasn't in database $phoneNumber <BR>";
 			// add the phone to the phones database;
-			$insertPhoneQuery = "INSERT INTO PHONES (CaseID, PhoneNumber, ServiceProviderID, Created, Modified, ShortName, LongName, Icon) VALUES (" . $GLOBALS['caseID'] . ", $phoneNumber, null, NOW(), NOW(), '', '', '')";  
+			$insertPhoneQuery = "INSERT INTO PHONES (CaseID, PhoneNumber, ServiceProviderID, Created, Modified, ShortName, LongName, Icon) VALUES (" . $GLOBALS['caseID'] . ", $phoneNumber, ". $GLOBALS['ServiceProviderID']. ", NOW(), NOW(), '', '', '')";  
 //			echo "insert phone query: $insertPhoneQuery <BR>";
 			mysqli_query($link,$insertPhoneQuery);
 			$phoneId = $link->insert_id;
@@ -139,10 +139,14 @@ VOICE: Item,ConnDateTime(UTC),SeizureTime,ET,OriginatingNumber,TerminatingNumber
 			$item = $line[0];
 			$connDateTimeUTC = getSqlDate(new datetime($line[1]));
 //			echo "<BR> $connDateTimeUTC <BR>";
-			$datetimeEST = getSqlDate(date_modify(new datetime($line[1]), '-5 hours'));
+			$datetimeEST = date_modify(new datetime($line[1]), '-5 hours');
+			$startDate = getSqlDate($datetimeEST);
 			if ($type == "Voice") {			
 				$seizureDateTime = $line[2];
-				$seizureDuration = $line[3];
+				$duration = $line[3];
+				$durationParts = explode(':',$duration);
+				$durationInterval = new DateInterval("PT$durationParts[0]M$durationParts[1]S");
+				$endDate = getSqlDate($datetimeEST->add($durationInterval));
 				$callFromNum = getPhoneID(stripPhoneNumber($line[4]));
 				$callToNum = getPhoneID(stripPhoneNumber($line[5]));
 				$IMEI = $line[6];
@@ -181,6 +185,7 @@ VOICE: Item,ConnDateTime(UTC),SeizureTime,ET,OriginatingNumber,TerminatingNumber
 	    			CallFromPhoneID,
 	    			DialedDigits,
 	    			StartDate,
+	    			EndDate,
 	    			Duration,
 	    			FirstLatitude,
 	    			FirstLongitude,
@@ -191,6 +196,7 @@ VOICE: Item,ConnDateTime(UTC),SeizureTime,ET,OriginatingNumber,TerminatingNumber
 	    			Pertinent,
 	    			Notes,
 	    			Source,
+	    			CallType,
 	    			Created,
 	    			Modified
 	    		) VALUES (".
@@ -198,8 +204,9 @@ VOICE: Item,ConnDateTime(UTC),SeizureTime,ET,OriginatingNumber,TerminatingNumber
 	    			$callToNum, 
 	    			$callFromNum, 
 	    			'$dialedDigitNumber',
-	    			$datetimeEST,
-	    			'$seizureDuration', 
+	    			$startDate,
+	    			$endDate,
+	    			'$duration', 
 	    			$startLatitude, 
 	    			$startLongitude,
 	    			'$startAzimuth',
@@ -209,6 +216,7 @@ VOICE: Item,ConnDateTime(UTC),SeizureTime,ET,OriginatingNumber,TerminatingNumber
 	    			1,
 	    			'',
 	    			'$source',
+	    			'$type',
 	    			NOW(),
 	    			NOW()
 	    			)";
@@ -255,6 +263,7 @@ Item,ConnDateTime(UTC),OriginatingNumber,TerminatingNumber,IMEI,IMSI,Desc,MAKE,M
 	    			Pertinent,
 	    			Notes,
 	    			Source,
+	    			Type,
 	    			Created,
 	    			Modified
 	    		) VALUES (".
@@ -271,14 +280,14 @@ Item,ConnDateTime(UTC),OriginatingNumber,TerminatingNumber,IMEI,IMSI,Desc,MAKE,M
 	    			1,
 	    			'',
 	    			'$source',
+	    			'$type',
 	    			NOW(),
 	    			NOW()
 	    			)";
 
  			} 
-	 //  		echo "$insertCallQuery <BR>";
     		//	echo "Insert: $insertCallQuery <BR>";
-    		// die();
+    	
     		if (mysqli_query($link,$insertCallQuery)) {
     		} else {
     			echo "Couldn't insert: $insertCallQuery <BR>";
