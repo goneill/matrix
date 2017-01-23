@@ -66,9 +66,9 @@ function getCellSiteData($origData){
 		$cell['Azimuth'] = 0;
 	} else {
 		$cellArray = explode(":", str_replace(array('[',']'), "", $origData)); 	
-		$cell['Latitude'] = $cellArray[1];
-		$cell['Longitude'] = $cellArray[2];
-		$cell['Azimuth'] = $cellArray[3];
+		$cell['Latitude'] = $cellArray[1]+0;
+		$cell['Longitude'] = $cellArray[2]+0;
+		$cell['Azimuth'] = $cellArray[3]+0;
 	}
 	return $cell;
 }
@@ -94,7 +94,8 @@ function setVoiceCall($line, $source, $serviceProviderID, $callType) {
 		$startCellSiteData = setEmptyCellsite();
 	}
 	if (isset($line[17])) {
-		$lastCell = trim($line[17]);
+		// if 17 is set whe know there is a last, but 'end' gives us the actual last
+		$lastCell = trim(end($line));
 		$endCellSiteData = getCellSiteData($lastCell);
 	} else {
 		$lastCell = '';
@@ -185,8 +186,9 @@ function addRecords($filename) {
 		$source = '';
 		$type = '';
 	    while (($line = fgetcsv($handle)) !== FALSE) {
-	//		if ($i>100) {break;}
-
+    		$i++;
+			//if ($i<8000) {break;}
+ 
 	    	if (checkUsage($line[0])) {
 	    		print_r($line);
 	    		$source =getSource($line[0]);
@@ -216,10 +218,13 @@ SMS: Item,ConnDateTime(UTC),OriginatingNumber,TerminatingNumber,IMEI,IMSI,Desc,M
 	    	}
 			$calls[] = "(".implode(',',$call).")";
 
-    		$i++;
+
     	}
 		echo "finished creating the array: $i<BR>";
-    	insertCalls($calls);
+	//	print_r($calls);
+	    if (!empty($calls)) {
+	    	insertCalls($calls);
+	    }	
     } // close if
     echo "inserted $i rows, hopefully <BR>";
 }

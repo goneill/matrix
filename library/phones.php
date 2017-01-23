@@ -79,6 +79,7 @@ function insertCalls($calls) {
   //	echo $sqlInsert . "<BR>";
 	if (!$link->query($sqlInsert)) {
   		printf("Error message: %s\n", $link->error);
+  		print_r($sqlInsert);
   		die();
 	}    
  
