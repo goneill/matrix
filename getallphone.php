@@ -35,9 +35,9 @@ if ($result = $link->query($query)) {
 	while($row=$result->fetch_array()) {
 		$rows[] = $row;
 	}
-	    $outputLine = "Start Date| End Date|Duration|To Number|To Short Name|From Phone Number|FromShortName|Latitude| Longitude|Source \n";
-	    echo $outputLine ."<BR>";
-		fwrite($outputFile,$outputLine);
+    $outputLine = "Start Date| End Date|Duration|To Number|To Short Name|From Phone Number|FromShortName|Latitude| Longitude|Source \n";
+    echo $outputLine ."<BR>";
+	fwrite($outputFile,$outputLine);
 
 	foreach($rows as $row) {
 

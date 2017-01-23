@@ -2,91 +2,16 @@
 
 // import sprint call data for phones with cellsite info
 // need ot pu tthis as a source - like we need to say where these calls come from!  
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
-error_reporting(E_ALL);
-date_default_timezone_set('America/New_York');
-set_time_limit(0);
-ini_set("memory_limit","2400M");
-ini_set("auto_detect_line_endings", true);
-foreach(glob('Includes/*.php') as $file) {
+
+foreach(glob('library/*.php') as $file) {
      include_once $file;
 }     
-
-// this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
-
-// ...
-
-//And then in any place you can just write:
-
-function errHandle($errNo, $errStr, $errFile, $errLine) {
-    $msg = "$errStr in $errFile on line $errLine";
-    if ($errNo == E_NOTICE || $errNo == E_WARNING) {
-        throw new ErrorException($msg, $errNo);
-    } else {
-        echo $msg;
-    }
-}
-
-set_error_handler('errHandle');
-
 
 $inDirectory = "MetroPCSPhoneRecords/";
 $caseID = 1;
 $serviceProviderId = getServiceProviderID("MetroPCS"); 
 
-function getServiceProviderID($serviceProvider) {
-	global $link;
-	$getServiceProviderIDQuery = "SELECT ServiceProviderID FROM ServiceProviders WHERE Name = '$serviceProvider'";
-	if ($serviceProvider = $link->query($getServiceProviderIDQuery)) {
-		$row = $serviceProvider->fetch_assoc();
-		return $row["ServiceProviderID"];
-	} else {
-		echo "serviceProvider not found<BR>";
-		die();
-	}	
-}
-function stripPhoneNumber ($number) {
-	$number = str_ireplace( array('(', ')', ' ', '-', '.'), array('', '', '', '', ''), $number);
-	if (strpos($number, '1') === 0) {
-		$number = substr($number, 1);
-	}
-	if ($number == '') {$number = 0;}
-	return $number;
-}
-function getPhoneID($phoneNumber) {
-	global $link;
-	//first check to see if the id is in the mysql database
-	$phoneNumQuery = "SELECT * FROM PHONES where PhoneNumber = $phoneNumber";
-//	echo "phoneNumQuery: $phoneNumQuery<BR>";
-	mysqli_query($link,$phoneNumQuery);
-	if ($phone = $link->query($phoneNumQuery)) {
-		if ($phone->num_rows === 0) {
-			echo "phone wasn't in database $phoneNumber <BR>";
-			// add the phone to the phones database;
-			$insertPhoneQuery = "INSERT INTO PHONES (CaseID, PhoneNumber, ServiceProviderID, Created, Modified, ShortName, LongName, Icon) VALUES (" . $GLOBALS['caseID'] . ", $phoneNumber, null, NOW(), NOW(), '', '', '')";  
-//			echo "insert phone query: $insertPhoneQuery <BR>";
-			mysqli_query($link,$insertPhoneQuery);
-			$phoneId = $link->insert_id;
-		} else {
-			$row = $phone->fetch_assoc();
-			$phoneId = $row["PhoneID"];
-		}
-		return $phoneId;
-	} else {
-		echo "sql query didn't work! ";
-		die();
-	}
-}
-function getSqlDate($date) {
-//	echo "date: $date<BR>";
-	if ($date =='') {
-		return "NULL"; 
-	} 
-//	echo "date: $date<BR>";
-	return "'".date_format($date, 'Y-m-d H:i:s' )."'";
-}
+
 function addRecords($filename) {
 	global $link;
 	if (!$link) {

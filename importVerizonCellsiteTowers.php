@@ -134,10 +134,13 @@ $di = new RecursiveDirectoryIterator($inDirectory, FilesystemIterator::SKIP_DOTS
 // actually loop through the file; this could be shortened, but I think it makes sense for now to leave.  
 foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
 	$basename = basename($filename);
+	if (strpos($filename, '.txt')) {
+		addRecords($filename);
+		echo "did it for $filename <BR>";	
+	}
 
 	// need to check for duplicates!!
-	addRecords($filename);
-	echo "did it for $filename <BR>";
+
 
 
 }

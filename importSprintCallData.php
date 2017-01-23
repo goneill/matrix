@@ -2,239 +2,150 @@
 
 // import sprint call data for phones with cellsite info
 // need ot pu tthis as a source - like we need to say where these calls come from!  
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
-error_reporting(E_ALL);
-date_default_timezone_set('America/New_York');
-set_time_limit(0);
-ini_set("memory_limit","2400M");
-ini_set("auto_detect_line_endings", true);
-foreach(glob('Includes/*.php') as $file) {
+foreach(glob('library/*.php') as $file) {
      include_once $file;
 }     
 
-// this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
-
-// ...
-
-//And then in any place you can just write:
-
-function errHandle($errNo, $errStr, $errFile, $errLine) {
-    $msg = "$errStr in $errFile on line $errLine";
-    if ($errNo == E_NOTICE || $errNo == E_WARNING) {
-        throw new ErrorException($msg, $errNo);
-    } else {
-        echo $msg;
-    }
-}
-
-set_error_handler('errHandle');
-
-
 $inDirectory = "sprintPhoneRecords/";
 $caseID = 1;
-$ServiceProviderId = 1; 
+$serviceProviderID = getServiceProviderID("Sprint PCS");
 
-function stripPhoneNumber ($number) {
-	$number = str_ireplace( array('(', ')', ' ', '-', '.'), array('', '', '', '', ''), $number);
-	if (strpos($number, '1') === 0) {
-		$number = substr($number, 1);
-	}
-	if ($number == '') {$number = 0;}
-	return $number;
-}
-function getPhoneID($phoneNumber) {
-	global $link;
-	//first check to see if the id is in the mysql database
-	$phoneNumQuery = "SELECT * FROM PHONES where PhoneNumber = $phoneNumber";
-//	echo "phoneNumQuery: $phoneNumQuery<BR>";
-	mysqli_query($link,$phoneNumQuery);
-	if ($phone = $link->query($phoneNumQuery)) {
-		if ($phone->num_rows === 0) {
-			echo "phone wasn't in database $phoneNumber <BR>";
-			// add the phone to the phones database;
-			$insertPhoneQuery = "INSERT INTO PHONES (CaseID, PhoneNumber, ServiceProviderID, Created, Modified, ShortName, LongName, Icon) VALUES (" . $GLOBALS['caseID'] . ", $phoneNumber, null, NOW(), NOW(), '', '', '')";  
-//			echo "insert phone query: $insertPhoneQuery <BR>";
-			mysqli_query($link,$insertPhoneQuery);
-			$phoneId = $link->insert_id;
-		} else {
-			$row = $phone->fetch_assoc();
-			$phoneId = $row["PhoneID"];
-		}
-		return $phoneId;
-	} else {
-		echo "sql query didn't work! ";
-		die();
-	}
-}
-function getSqlDate($date) {
-//	echo $date;
-	if ($date =='') {
-		$mysqldate = "NULL"; 
-	} else {
-		$mysqldate = "'".date( 'Y-m-d H:i:s', strtotime($date) )."'";
-	}
-	return $mysqldate;
-}
-function addRecords($filename) {
-	global $link;
-	if (!$link) {
-	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-	    exit;
-	}
+function getSource($filename) {
 	preg_match ('|[0-9]+|',$filename, $matches);
 	$source = $matches[0];
-	echo "source name = $source";
 
-	$i=1; 
+	return $source;
+}
+function getLatLongAz($NEID, $repoll, $cellNum, $sector ) {
+	global $link;
+	if ($sector) {
+		$query = "SELECT Latitude, Longitude, Azimuth FROM SprintTowers where NEID = $NEID AND REPOLL = $repoll AND CellNum = $cellNum AND Sector = $sector";
+	} else {
+		$query = "SELECT Latitude, Longitude, 0 as Azimuth FROM SprintTowers where NEID = $NEID AND REPOLL = $repoll AND CellNum = $cellNum";
+	}
+	$results = $link->query($query);
+	if ( ($results) && ($results->num_rows !== 0)) { 
+		$row=$results->fetch_assoc();
+//		print_r($row);
+		$cellSiteData['Latitude'] = $row['Latitude'];
+		$cellSiteData['Longitude'] = $row['Longitude'];
+		$cellSiteData['CellDirection'] = $row['Azimuth'];
+
+	} else {
+		if ($sector) {
+			$cellSiteData = getLatLongAz($NEID, $repoll, $cellNum, null);
+    	} else {
+    		$cellSiteData['Latitude'] = '0';
+			$cellSiteData['Longitude'] = '0';
+			$cellSiteData['CellDirection'] = '0';
+
+    	}
+    }
+    return $cellSiteData;
+}
+
+function getCellSiteData($line) {
+	global $link;
+	$cellSiteData = Array();
+//	echo implode(",",$line) . "<BR>";
+	$firstCell = trim($line[9]);
+	$lastCell = trim($line[10]);
+	$callDirection  = trim($line[3]);
+	$NEID = $line[7];
+	$repoll = $line[8];
+//	echo "$firstCell $lastCell <BR>";
+	if ($firstCell != '0') { // there is cellsite data on this line
+
+		$startCellNum = substr($firstCell, 1);
+		$startSector = substr($firstCell,0,1);
+		$startCellSiteData = getLatLongAz($NEID, $repoll, $startCellNum, $startSector);
+		$cellSiteData['FirstLatitude'] = $startCellSiteData['Latitude'];
+		$cellSiteData['FirstLongitude'] = $startCellSiteData['Longitude']; // get the end lat Long
+		$cellSiteData['FirstCellDirection'] = $startCellSiteData['CellDirection'];
+	} else {
+		$cellSiteData['FirstLatitude'] = '0';
+		$cellSiteData['FirstLongitude'] = '0'; // get the end lat Long
+		$cellSiteData['FirstCellDirection'] = '0';
+
+	}
+	if ($lastCell != '0') {
+		$endCellNum = substr($lastCell, 1);
+		$endSector = substr($lastCell,0,1);
+		$endCellSiteData = getLatLongAz($NEID, $repoll,$endCellNum, $endSector);
+		$cellSiteData['LastLatitude'] = $endCellSiteData['Latitude'];
+		$cellSiteData['LastLongitude'] = $endCellSiteData['Longitude']; // get the end lat Long
+		$cellSiteData['LastCellDirection'] = $endCellSiteData['CellDirection'];
+	} else { // if no cellsite data then set the cellsite stuff to 0
+		$cellSiteData['LastLatitude'] ='0';
+		$cellSiteData['LastLongitude'] = '0'; // get the end lat Long
+		$cellSiteData['LastCellDirection'] = '0';
+
+	}
+	return $cellSiteData;
+
+}
+
+
+function addRecords($filename) {
+	global $link;
+	global $serviceProviderID;
+	global $caseID;
+
+	$source = getSource($filename);
+	echo "source name = $source";
+	$callType = "Voice";
+	$i=0; 
+	$calls = array();
 	// big concern we could have duplicates in here.  
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
-//		fgets($handle);
-		//put each line of the file in the database
+
+		//put each line of the file into an array
 	    while (($line = fgetcsv($handle)) !== FALSE) {
-//			echo $line[0] . ", " . $line[1] . ", " . $line[2] . "<BR>";			
-			$mrNum = $line[3];
-			$callToNum = $line[1];
-			$callFromNum = $line[0];
-			$startDate = getSqlDate($line[4]);
-			$endDate = getSqlDate($line[5]);
-			// if 9&10 are not 0 then there is cellsite data included
-			if (!($line[9] == 0 AND $line[10] == 0)) {
-				$startCellNum = substr($line[9], 1);
-				$startSector = substr($line[9],0,1);
-				$startQuery = "SELECT Latitude, Longitude, Azimuth FROM SprintTowers where NEID = $line[7] AND REPOLL = $line[8] AND CellNum = $startCellNum AND Sector = $startSector";
-				mysqli_query($link,$startQuery);
-
-				// nothing returned; usually a problem with the sector so lets eliminate it 
-				if ($tower = $link->query($startQuery)) {
-					if ($tower->num_rows === 0) {
-	
-						$startQuery = "SELECT Latitude, Longitude FROM SprintTowers where NEID = $line[7] AND REPOLL = $line[8] AND CellNum = $startCellNum LIMIT 1";
-						mysqli_query($link,$startQuery);
-						$tower = $link->query($startQuery);
-						$row = $tower->fetch_assoc();
-						if ($tower->num_rows === 0 ) {
-							echo "nothing returned without sector: <BR> $startQuery <BR>";
-						} else {
-							$startLatitude = $row["Latitude"];
-							$startLongitude = $row["Longitude"];
-							$startAzimuth = 0;
-						}
-					} else {
-						$row = $tower->fetch_assoc();
-						$startLatitude = $row["Latitude"];
-						$startLongitude = $row["Longitude"];
-						$startAzimuth = $row["Azimuth"];
-
-					}
-
-				} // checking to see the start tower
-				$endCellNum = substr($line[10], 1);
-				$endSector = substr($line[10],0,1);
-				$endQuery = "SELECT Latitude, Longitude, Azimuth FROM SprintTowers where NEID = $line[7] AND REPOLL = $line[8] AND CellNum = $endCellNum AND Sector = $endSector";
-				mysqli_query($link,$endQuery);
-
-				// nothing returned; usually a problem with the sector so lets eliminate it 
-				if ($tower = $link->query($endQuery)) {
-					if ($tower->num_rows === 0) {
-				//		echo "nothing returned $filename: " . $line[4] . "<BR>";
-				//		echo "$endQuery <BR>";
-
-						$endQuery = "SELECT Latitude, Longitude FROM SprintTowers where NEID = $line[7] AND REPOLL = $line[8] AND CellNum = $endCellNum LIMIT 1";
-						mysqli_query($link,$endQuery);
-						$tower = $link->query($endQuery);
-						if ($tower->num_rows ===0 ) {
-							echo "nothing returned without sector: <BR> $endQuery <BR>";
-						} else {
-							$row = $tower->fetch_assoc();
-							$endLatitude = $row["Latitude"];
-							$endLongitude = $row["Longitude"];
-							$endAzimuth = 0;
-						}
-					} else {
-						$row = $tower->fetch_assoc();
-						$endLatitude = $row["Latitude"];
-						$endLongitude = $row["Longitude"];
-						$endAzimuth = $row["Azimuth"];
-
-					}
-
-				}	 // end of check end tower					
-			} else { // if no cellsite data then set the cellsite stuff to 0
-    			$startLatitude = '0';
-    			$startLongitude = '0';
-    			$startAzimuth = '';
-    			$endLatitude = '0';
-    			$endLongitude = '0';
-    			$endAzimuth = '';
-    		}
-
-//			echo "datetime: " . $line[4] . " latitude: $latitude | longitude $longitude | azimuth $azimuth <BR>";
-    		// check to see if either of these phones are in the phone table - if not add them in.  
-			$phoneFromId = getPhoneID(stripPhoneNumber($line[1]));
-			$phoneToId = getPhoneID(stripPhoneNumber($line[0]));	
-			// now put the phone calls in: 
-    		$insertCallQuery = "INSERT INTO PhoneCalls (
-    			CaseID, 
-    			CallToPhoneID,
-    			CallFromPhoneID,
-    			DialedDigits,
-    			MRNum,
-    			StartDate,
-    			EndDate,
-    			Duration,
-    			NEID,
-    			REPOLL,
-    			FirstCell,
-    			LastCell,
-    			FirstLatitude,
-    			FirstLongitude,
-    			FirstCellDirection,
-    			LastLatitude,
-    			LastLongitude,
-    			LastCellDirection,
-    			Pertinent,
-    			Notes,
-    			Source,
-    			Created,
-    			Modified
-    		) VALUES (".
-    			$GLOBALS['caseID']. ", 
-    			$phoneToId, 
-    			$phoneFromId, 
-    			'$line[2]',
-    			'$line[3]',
-    			$startDate,
-    			$endDate, 
-    			$line[6], 
-    			$line[7], 
-    			$line[8], 
-    			$line[9], 
-    			$line[10],
-    			$startLatitude,
-    			$startLongitude,
-    			'$startAzimuth',
-    			$endLatitude,
-    			$endLongitude,
-    			'$endAzimuth',
-    			1,
-    			'',
-    			'$source',
-    			NOW(),
-    			NOW()
-    			)";
-//    			echo "INSERT CALL QUERY: $insertCallQuery <BR>";
-//    			die();
-  //  		echo "$insertCallQuery <BR>";
-    		mysqli_query($link,$insertCallQuery);
-
-    		$i++;
-    //		if ($i > 100) {die();}
-    	}	// close while
+	    	$linestr = implode('',$line);
+	    	if ($linestr=='') {
+	    		echo "its a basically empty row!<BR>";
+	    		continue;
+	    	}
+		//	if ($i >12300 ) {
+				$cellSiteData = getCellSiteData($line);
+		    	$call= array();
+		    	$call['CaseID'] = $caseID;
+		    	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[1]));
+		    	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[0]));
+		    	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[1]))."'";
+		    	$call['Direction'] = "'".trim($line[3])."'";
+				$call['StartDate'] = getSqlDate(new datetime($line[4]));
+				if ($line[5]) {
+					$call['EndDate'] = getSqlDate(new datetime($line[5]));
+				} else { // if enddate is empty set it to start date
+					$call['EndDate'] = $call['StartDate'];
+				}
+				$call['Duration'] = trim($line[6]);
+				$call['NetworkElement'] = "'".trim($line[7])."'";
+				$call['Repoll'] = trim($line[8]);
+				$call['FirstCell'] = trim($line[9]);
+				$call['LastCell'] = trim($line[10]);
+				$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
+				$call['LastLatitude'] = $cellSiteData['LastLatitude'];
+				$call['FirstLongitude'] = $cellSiteData['FirstLongitude'];
+				$call['LastLongitude'] = $cellSiteData['LastLongitude'];
+				$call['FirstCellDirection'] = "'".$cellSiteData['FirstCellDirection']."'";
+				$call['LastCellDirection'] = "'".$cellSiteData['LastCellDirection']."'";
+				$call['Pertinent'] = 1;
+				$call['Notes'] = "''";
+				$call['Source'] = "'$source'";
+				$call['ServiceProviderID'] = $serviceProviderID;
+				$call['CallType'] = "'$callType'";
+				$call['Created'] = 'Now()';
+				$call['Modified'] = 'NOW()';
+				$calls[] = "(".implode(',',$call).")";
+	//		}
+	    	$i++;
+     	}	// close while
+		echo "finished creating the array: $i <BR>";
+		insertCalls($calls);
+   
     } // close if
     echo "inserted $i rows, hopefully <BR>";
 }

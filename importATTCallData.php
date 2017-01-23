@@ -2,301 +2,224 @@
 
 // import sprint call data for phones with cellsite info
 // need ot pu tthis as a source - like we need to say where these calls come from!  
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
-error_reporting(E_ALL);
-date_default_timezone_set('America/New_York');
-set_time_limit(0);
-ini_set("memory_limit","2400M");
-ini_set("auto_detect_line_endings", true);
-foreach(glob('Includes/*.php') as $file) {
+foreach(glob('library/*.php') as $file) {
      include_once $file;
 }     
-
-// this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
-
-// ...
-
 //And then in any place you can just write:
-
-function errHandle($errNo, $errStr, $errFile, $errLine) {
-    $msg = "$errStr in $errFile on line $errLine";
-    if ($errNo == E_NOTICE || $errNo == E_WARNING) {
-        throw new ErrorException($msg, $errNo);
-    } else {
-        echo $msg;
-    }
-}
-
-set_error_handler('errHandle');
 
 
 $inDirectory = "attPhoneRecords/";
 $caseID = 1;
-$ServiceProviderId = getServiceProviderID("AT&T"); 
+$serviceProviderID = getServiceProviderID("AT&T"); 
 
-function getServiceProviderID($serviceProvider) {
-	global $link;
-	$getServiceProviderIDQuery = "SELECT ServiceProviderID FROM ServiceProviders WHERE Name = '$serviceProvider'";
-	if ($serviceProvider = $link->query($getServiceProviderIDQuery)) {
-		$row = $serviceProvider->fetch_assoc();
-		return $row["ServiceProviderID"];
+function checkUsage($text) {
+	if (strpos($text, "Usage For:")) {
+		return true;
 	} else {
-		echo "serviceProvider not found<BR>";
-		die();
-	}	
-}
-function stripPhoneNumber ($number) {
-	$number = preg_replace('/[A-Z|a-z]/', '', $number);
-	$number = str_ireplace( array('(', ')', ' ', '-', '.','*',"A"), array('', '', '', '', '','',''), $number);
-	if (strpos($number, '1') === 0) {
-		$number = substr($number, 1);
-	}
-	if ($number == '') {$number = 0;}
-	return $number;
-}
-function getPhoneID($phoneNumber) {
-	global $link;
-	//first check to see if the id is in the mysql database
-	$phoneNumQuery = "SELECT * FROM PHONES where PhoneNumber = $phoneNumber";
-//	echo "phoneNumQuery: $phoneNumQuery<BR>";
-	mysqli_query($link,$phoneNumQuery);
-	if ($phone = $link->query($phoneNumQuery)) {
-		if ($phone->num_rows === 0) {
-			echo "phone wasn't in database $phoneNumber <BR>";
-			// add the phone to the phones database;
-			$insertPhoneQuery = "INSERT INTO PHONES (CaseID, PhoneNumber, ServiceProviderID, Created, Modified, ShortName, LongName, Icon) VALUES (" . $GLOBALS['caseID'] . ", $phoneNumber, ". $GLOBALS['ServiceProviderID']. ", NOW(), NOW(), '', '', '')";  
-//			echo "insert phone query: $insertPhoneQuery <BR>";
-			mysqli_query($link,$insertPhoneQuery);
-			$phoneId = $link->insert_id;
-		} else {
-			$row = $phone->fetch_assoc();
-			$phoneId = $row["PhoneID"];
-		}
-		return $phoneId;
-	} else {
-		echo "sql query didn't work! $phoneNumQuery";
-
-		die();
+		return false;
 	}
 }
-function getSqlDate($date) {
-//	echo "date: $date<BR>";
-	if ($date =='') {
-		return "NULL"; 
-	} 
-//	echo "date: $date<BR>";
-	return "'".date_format($date, 'Y-m-d H:i:s' )."'";
+
+function getSource($text) {
+	preg_match ('|[0-9]+|',stripPhoneNumber($text), $matches);
+	$source = $matches[0];
+	echo "source name = $source <BR>";
+	return $source;
+}
+function getCallType ($text) {
+	$type = trim(substr($text, 0, strpos($text, "Usage For")));
+	echo "type: $type <BR>";
+	return $type;
 }
 
+function skipLine($line) {
+	if (!isset($line[1])) {
+		return true;
+	}
+	if (strpos($line[0], "Item")!==FALSE) {
+		return true;
+	}
+	return false;
+}
+function getEndDate($startDate, $duration) {
+	$durationParts = explode(':',$duration);
+	$durationInterval = new DateInterval("PT$durationParts[0]M$durationParts[1]S");
+	$endDate = getSqlDate($startDate->add($durationInterval));
+	return $endDate;
+}
+
+function getDirection($toPhoneNum) {
+	global $source;
+	if (strpos($toPhoneNum, $source)!==FALSE) {
+		return 'Incoming';
+	} else {
+		return 'Outgoing';
+	}
+}
+
+function getCellSiteData($origData){
+
+	$origData = trim($origData);
+	if ($origData == null or $origData=='' or $origData=='[]') {
+		$cell['Latitude'] = 0;
+		$cell['Longitude'] = 0;
+		$cell['Azimuth'] = 0;
+	} else {
+		$cellArray = explode(":", str_replace(array('[',']'), "", $origData)); 	
+		$cell['Latitude'] = $cellArray[1];
+		$cell['Longitude'] = $cellArray[2];
+		$cell['Azimuth'] = $cellArray[3];
+	}
+	return $cell;
+}
+
+function setEmptyCellsite() {
+	$cell['Latitude'] = 0;
+	$cell['Longitude'] = 0;
+	$cell['Azimuth'] = 0;
+	return $cell;
+}
+
+function setVoiceCall($line, $source, $serviceProviderID, $callType) {
+	global $caseID;
+	$startDate = new DateTime(trim($line[1]));
+	$startDateEST = date_modify(new datetime($line[1]), '-5 hours');
+	$duration = trim($line[3]);
+	$toPhoneNum = stripPhoneNumber(trim($line[5]));
+	if (isset($line[16])) {
+		$firstCell = trim($line[16]);
+		$startCellSiteData = getCellSiteData($firstCell);
+	} else {
+		$firstCell = '';
+		$startCellSiteData = setEmptyCellsite();
+	}
+	if (isset($line[17])) {
+		$lastCell = trim($line[17]);
+		$endCellSiteData = getCellSiteData($lastCell);
+	} else {
+		$lastCell = '';
+		$endCellSiteData = setEmptyCellsite();
+	}
+		
+	$call = array();
+	$call['CaseID'] = $caseID;
+	$call['ToPhoneID'] = getPhoneID($toPhoneNum);
+	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[4]));
+	$call['DialedDigits'] = "'".$toPhoneNum."'";
+	$call['Direction'] = "'". getDirection($toPhoneNum)."'";
+	$call['StartDate'] = getSqlDate($startDateEST);
+	$call['EndDate'] = getEndDate($startDateEST, $duration);
+	$call['Duration'] = "'".$duration."'";  
+	$call['NetworkElement'] = "NULL";
+	$call['Repoll'] = 'NULL';
+	$call['FirstCell'] = "'".$firstCell."'";
+	$call['LastCell'] = "'".$lastCell."'";
+	$call['FirstLatitude'] = $startCellSiteData['Latitude'];
+	$call['FirstLongitude'] = $startCellSiteData['Longitude'];
+	$call['LastLatitude'] = $endCellSiteData['Latitude'];
+	$call['LastLongitude'] = $endCellSiteData['Longitude'];
+	$call['FirstCellDirection'] = "'".$startCellSiteData['Azimuth']."'";
+	$call['LastCellDirection'] = "'".$endCellSiteData['Azimuth']."'";
+	$call['Pertinent'] = 1;
+	$call['Notes'] = "''";
+	$call['Source'] = "'$source'";
+	$call['ServiceProviderID']  = $serviceProviderID;
+	$call['CallType'] = "'$callType'";
+	$call['Created'] = 'NOW()';
+	$call['Modified'] = 'NOW()';
+	return $call;
+}
+
+function setSMSCall($line, $source, $serviceProviderID, $callType) {
+	global $caseID;
+	$startDateEST = date_modify(new datetime($line[1]), '-5 hours');
+	$duration = "''";
+	$toPhoneNum = stripPhoneNumber(trim($line[3]));
+	$fromPhoneNum = stripPhoneNumber(trim($line[2]));
+	if (isset($line[9])) {
+		$firstCell = trim($line[9]);
+		$startCellSiteData = getCellSiteData($firstCell);
+	} else {
+		$firstCell = '';
+		$startCellSiteData = setEmptyCellsite();
+	}
+	$call['CaseID'] = $caseID;
+	$call['ToPhoneID'] = getPhoneID($toPhoneNum);
+	$call['FromPhoneID'] = getPhoneID($fromPhoneNum);
+	$call['DialedDigits'] = "'".$toPhoneNum."'";
+	$call['Direction'] = "'". getDirection($toPhoneNum)."'";
+	$call['StartDate'] = getSqlDate($startDateEST);
+	$call['EndDate'] = getSqlDate($startDateEST);
+	$call['Duration'] = "'".$duration."'";  
+	$call['NetworkElement'] = "NULL";
+	$call['Repoll'] = 'NULL';
+	$call['FirstCell'] = "'".$firstCell."'";
+	$call['LastCell'] = "'".$firstCell."'";
+	$call['FirstLatitude'] = $startCellSiteData['Latitude'];
+	$call['FirstLongitude'] = $startCellSiteData['Longitude'];
+	$call['LastLatitude'] = $startCellSiteData['Latitude'];
+	$call['LastLongitude'] = $startCellSiteData['Longitude'];
+	$call['FirstCellDirection'] = "'".$startCellSiteData['Azimuth']."'";
+	$call['LastCellDirection'] =  "'".$startCellSiteData['Azimuth']."'";
+	$call['Pertinent'] = 1;
+	$call['Notes'] = "''";
+	$call['Source'] = "'$source'";
+	$call['ServiceProviderID']  = $serviceProviderID;
+	$call['CallType'] = "'$callType'";
+	$call['Created'] = 'NOW()';
+	$call['Modified'] = 'NOW()';
+	return $call;
+
+}
 function addRecords($filename) {
 	//check if its a real filename
-
 	global $link;
-	if (!$link) {
-	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-	    exit;
-	}
-	if (!strpos($filename, '.txt')) {
-		return;
-	}
+	global $serviceProviderID;
+	global $caseID;
 
-	$i = 0;
-	// big concern we could have duplicates in here.  
+	$i=0;
+	$calls = array(); 
+
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
-
-		fgets($handle);
-		//put each line of the file in the database
+		$source = '';
+		$type = '';
 	    while (($line = fgetcsv($handle)) !== FALSE) {
-			if ($typeStop = strpos($line[0], " Usage For:")) {
-				// get the phone number out of this.  
-				preg_match ('|[0-9]+|',stripPhoneNumber($line[0]), $matches);
-				$source = $matches[0];
-				echo "source name = $source <BR>";
-				// get the type of call so we can figure out how to store it
-				$type = trim(substr($line[0], 0, $typeStop));
-				echo "type: $type <BR>"; 
-				continue;
-			}
-			if (!isset($line[1])) {
-				echo "not real: $line[0] <BR>";
-				continue;
-			} elseif (trim($line[1])== "ConnDateTime(UTC)") {
-				continue;
-			}
-			if ($type == "Voice") {
-				//continue;
-			}
-			//print_r($line);
-/*
-VOICE: Item,ConnDateTime(UTC),SeizureTime,ET,OriginatingNumber,TerminatingNumber,IMEI,IMSI,CT,Feature,DIALED,FORWARDED,TRANSLATED,ORIG_ORIG,MAKE,MODEL,CellLocation */		
+	//		if ($i>100) {break;}
 
-     
-			$item = $line[0];
-			$connDateTimeUTC = getSqlDate(new datetime($line[1]));
-//			echo "<BR> $connDateTimeUTC <BR>";
-			$datetimeEST = date_modify(new datetime($line[1]), '-5 hours');
-			$startDate = getSqlDate($datetimeEST);
-			if ($type == "Voice") {			
-				$seizureDateTime = $line[2];
-				$duration = $line[3];
-				$durationParts = explode(':',$duration);
-				$durationInterval = new DateInterval("PT$durationParts[0]M$durationParts[1]S");
-				$endDate = getSqlDate($datetimeEST->add($durationInterval));
-				$callFromNum = getPhoneID(stripPhoneNumber($line[4]));
-				$callToNum = getPhoneID(stripPhoneNumber($line[5]));
-				$IMEI = $line[6];
-				$imsi = $line[7];
-				$ct = $line[8];
-				$feature = $line[9];
-				$dialedDigitNumber = $line[10];
-				$forwarded = $line[11];
-				$translated = $line[12];
-				$orig_orig = $line[13];
-				$make = $line[14];
-				$model = $line[15];
-				$startLatitude = 0;
-				$startLongitude = 0; 
-				$startAzimuth = '';
-				$endLatitude = 0;
-				$endLongitude = 0;
-				$endAzimuth ='';
-				if (isset($line[16]) AND $line[16] != "[]" AND $line[16]!="") {
-									// [35034/21504:-73.9888519:40.7137453:330:-1.0,35034/12615:-73.9905:40.7101389:85:0.0]
-					$cellLocationArray = explode(":", str_replace(array('[',']'), "", $line[16])); 	
-				//	echo "cell Location array: <BR>";
-				//	print_r($cellLocationArray);
-				//	echo "<BR>";
-					$startLatitude = $cellLocationArray[1];
-					$startLongitude = $cellLocationArray[2];
-					$startAzimuth = $cellLocationArray[3];
-					$endLocationArray = explode(":", str_replace(array('[',']'), "", end($line))); 	
-					$endLatitude = $endLocationArray[1];
-					$endLongitude = $endLocationArray[2];
-					$endAzimuth = $endLocationArray[3];
-				}
-	    		$insertCallQuery = "INSERT INTO PhoneCalls (
-	    			CaseID, 
-	    			CallToPhoneID,
-	    			CallFromPhoneID,
-	    			DialedDigits,
-	    			StartDate,
-	    			EndDate,
-	    			Duration,
-	    			FirstLatitude,
-	    			FirstLongitude,
-	    			FirstCellDirection,
-	    			LastLatitude,
-	    			LastLongitude,
-	    			LastCellDirection,
-	    			Pertinent,
-	    			Notes,
-	    			Source,
-	    			CallType,
-	    			Created,
-	    			Modified
-	    		) VALUES (".
-	    			$GLOBALS['caseID']. ", 
-	    			$callToNum, 
-	    			$callFromNum, 
-	    			'$dialedDigitNumber',
-	    			$startDate,
-	    			$endDate,
-	    			'$duration', 
-	    			$startLatitude, 
-	    			$startLongitude,
-	    			'$startAzimuth',
-	    			$endLatitude,
-	    			$endLongitude,
-	    			'$endAzimuth',
-	    			1,
-	    			'',
-	    			'$source',
-	    			'$type',
-	    			NOW(),
-	    			NOW()
-	    			)";
- 			} elseif ($type == "SMS") {
+	    	if (checkUsage($line[0])) {
+	    		print_r($line);
+	    		$source =getSource($line[0]);
+	    		$type = getCallType($line[0]);
+	    		$i++;
+	    		continue;
+	    	}
+			if (skipLine($line)) {
+				$i++;
+				continue;
+			}
 /*
-SMS: 
-Item,ConnDateTime(UTC),OriginatingNumber,TerminatingNumber,IMEI,IMSI,Desc,MAKE,MODEL,CellLocation
-*/ 
-				$callFromNum = getPhoneID(stripPhoneNumber($line[2]));
-				$callToNum = getPhoneID(stripPhoneNumber($line[3]));
-				$IMEI = $line[4];
-				$imsi = $line[5];
-				$desc = $line[6];
-				$make = $line[7];
-				$model = $line[8];
-					$endLatitude = 0;
-					$endLongitude = 0;
-					$endAzimuth ='';
-					$startLatitude = 0;
-					$startLongitude = 0; 
-					$startAzimuth = '';
-				if (isset($line[9]) and $line[9]!="[]"and $line[9]!="") {
-					$cellLocation = $line[9];
-					// [35034/21504:-73.9888519:40.7137453:330:-1.0,35034/12615:-73.9905:40.7101389:85:0.0]
-					$cellLocationArray = explode(":", str_replace(array('[',']'), "", $line[9])); 	
-				//	echo "cell Location array: <BR>";
-				//	print_r($cellLocationArray);
-				//	echo "<BR>";
-					$startLatitude = $cellLocationArray[1];
-					$startLongitude = $cellLocationArray[2];
-					$startAzimuth = $cellLocationArray[3];
-				}
-	    		$insertCallQuery = "INSERT INTO PhoneCalls (
-	    			CaseID, 
-	    			CallToPhoneID,
-	    			CallFromPhoneID,
-	    			StartDate,
-	    			FirstLatitude,
-	    			FirstLongitude,
-	    			FirstCellDirection,
-	    			LastLatitude,
-	    			LastLongitude,
-	    			LastCellDirection,
-	    			Pertinent,
-	    			Notes,
-	    			Source,
-	    			Type,
-	    			Created,
-	    			Modified
-	    		) VALUES (".
-	    			$GLOBALS['caseID']. ", 
-	    			$callToNum, 
-	    			$callFromNum, 
-	    			$datetimeEST,
-	    			$startLatitude, 
-	    			$startLongitude,
-	    			'$startAzimuth',
-	    			$endLatitude,
-	    			$endLongitude,
-	    			'$endAzimuth',
-	    			1,
-	    			'',
-	    			'$source',
-	    			'$type',
-	    			NOW(),
-	    			NOW()
-	    			)";
+SMS: Item,ConnDateTime(UTC),OriginatingNumber,TerminatingNumber,IMEI,IMSI,Desc,MAKE,MODEL,CellLocation
 
- 			} 
-    		//	echo "Insert: $insertCallQuery <BR>";
-    	
-    		if (mysqli_query($link,$insertCallQuery)) {
-    		} else {
-    			echo "Couldn't insert: $insertCallQuery <BR>";
-    			print_r($line);
-    			die();
-    		}
+*/
+	    	$call= array();
+	    	$call['CaseID'] = $caseID;
+	    	if ($type =='Voice') {
+	    //		continue;
+	    		$call = setVoiceCall($line,  $source, $serviceProviderID, $type);
+	    	} elseif ($type == 'SMS') {
+//	    		echo "an SMS!";
+	    		$call = setSMSCall($line,  $source, $serviceProviderID, $type);
+	    	} else {
+	    		echo "no type!<BR>";
+	    		die();
+	    	}
+			$calls[] = "(".implode(',',$call).")";
+
     		$i++;
-    	//	if ($i > 100) {die();}
-    	}	// close while
+    	}
+		echo "finished creating the array: $i<BR>";
+    	insertCalls($calls);
     } // close if
     echo "inserted $i rows, hopefully <BR>";
 }
@@ -309,8 +232,12 @@ $di = new RecursiveDirectoryIterator($inDirectory, FilesystemIterator::SKIP_DOTS
 foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
 	$basename = basename($filename);
 	// need to check for duplicates!!
-	addRecords($filename);
-	echo "did it for $filename <BR>";
+	if (strpos($filename, '.txt')) {
+		addRecords($filename);
+		echo "did it for $filename <BR>";
+	}
+
+
 
 
 }

@@ -2,243 +2,162 @@
 
 // import sprint call data for phones with cellsite info
 // need ot pu tthis as a source - like we need to say where these calls come from!  
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
-error_reporting(E_ALL);
-date_default_timezone_set('America/New_York');
-set_time_limit(0);
-ini_set("memory_limit","2400M");
-ini_set("auto_detect_line_endings", true);
-foreach(glob('Includes/*.php') as $file) {
+foreach(glob('library/*.php') as $file) {
      include_once $file;
 }     
 
 // this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
-
-// ...
-
-//And then in any place you can just write:
-
-function errHandle($errNo, $errStr, $errFile, $errLine) {
-    $msg = "$errStr in $errFile on line $errLine";
-    if ($errNo == E_NOTICE || $errNo == E_WARNING) {
-        throw new ErrorException($msg, $errNo);
-    } else {
-        echo $msg;
-    }
-}
-
-set_error_handler('errHandle');
-
-
 $inDirectory = "verizonPhoneRecords/";
 $caseID = 1;
-$serviceProviderId = getServiceProviderID("Verizon"); 
+$serviceProviderID = getServiceProviderID("Verizon"); 
+echo $serviceProviderID. "<BR>";
+$missingElementName = Array();
 
-function getServiceProviderID($serviceProvider) {
-	global $link;
-	$getServiceProviderIDQuery = "SELECT ServiceProviderID FROM ServiceProviders WHERE Name = '$serviceProvider'";
-	if ($serviceProvider = $link->query($getServiceProviderIDQuery)) {
-		$row = $serviceProvider->fetch_assoc();
-		return $row["ServiceProviderID"];
-	} else {
-		echo "serviceProvider not found<BR>";
-		die();
-	}	
-}
-function stripPhoneNumber ($number) {
-	$number = str_ireplace( array('(', ')', ' ', '-', '.','*'), array('', '', '', '', '',''), $number);
-	if (strpos($number, '1') === 0) {
-		$number = substr($number, 1);
+
+function skipLine($line) {
+	if (strpos(trim($line[0]), 'Network Element Name') !== false) {
+		echo "header row!<BR>";
+		return true;
+	} elseif (implode('',$line)=='') {
+   		echo "its a basically empty row!<BR>";
+   		return true;
+   	} else {
+		return false;
 	}
-	if ($number == '') {$number = 0;}
-	return $number;
 }
-function getPhoneID($phoneNumber) {
+function getEndDate($startDate, $duration){
+	$durationInterval = new DateInterval("PT".$duration."S");
+	return $startDate->add($durationInterval);
+}
+//this isn't working!!!
+//NEED TO UPDATE VerizonSwitchElementMap!!!
+function getLatLongAz($cellSite, $cellFace, $networkElementName){
 	global $link;
-	//first check to see if the id is in the mysql database
-	$phoneNumQuery = "SELECT * FROM PHONES where PhoneNumber = $phoneNumber";
-//	echo "phoneNumQuery: $phoneNumQuery<BR>";
-	mysqli_query($link,$phoneNumQuery);
-	if ($phone = $link->query($phoneNumQuery)) {
-		if ($phone->num_rows === 0) {
-			echo "phone wasn't in database $phoneNumber <BR>";
-			// add the phone to the phones database;
-			$insertPhoneQuery = "INSERT INTO PHONES (CaseID, PhoneNumber, ServiceProviderID, Created, Modified, ShortName, LongName, Icon) VALUES (" . $GLOBALS['caseID'] . ", $phoneNumber, null, NOW(), NOW(), '', '', '')";  
-//			echo "insert phone query: $insertPhoneQuery <BR>";
-			mysqli_query($link,$insertPhoneQuery);
-			$phoneId = $link->insert_id;
+	global $missingElementName;
+	if ($cellFace == 'D4') {
+		$cellSiteQuery = "SELECT Latitude, Longitude, 0 AS Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $cellSite";
+	} else {
+		$cellSiteQuery = "SELECT Latitude, Longitude, Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $cellSite AND VerizonTowers.Sector = '$cellFace'";
+	}
+	if ($results = $link->query($cellSiteQuery)) {
+		if ($results->num_rows>0) {
+			$row = $results->fetch_assoc(); 
+			$cellSiteData['Latitude'] = $row['Latitude'];
+			$cellSiteData['Longitude'] = $row['Longitude'];
+			$cellSiteData['CellDirection'] = $row['Azimuth'];
 		} else {
-			$row = $phone->fetch_assoc();
-			$phoneId = $row["PhoneID"];
+			if (!in_array($networkElementName, $missingElementName)){
+				$missingElementName[]='$networkElementName';
+			//	echo "query didn't return anything: $cellSiteQuery <BR>";
+			}// else keep it at 0,0, '';
+			$cellSiteData['Latitude'] = 0;
+			$cellSiteData['Longitude'] = 0;
+			$cellSiteData['CellDirection'] = 0;
 		}
-		return $phoneId;
 	} else {
-		echo "sql query didn't work! $phoneNumQuery";
-
+		echo "query didn't work: $cellSiteQuery <BR>";
 		die();
 	}
-}
-function getSqlDate($date) {
-//	echo $date;
-	if ($date =='') {
-		$mysqldate = "NULL"; 
-	} else {
-		$mysqldate = "'".date( 'Y-m-d H:i:s', strtotime($date) )."'";
-	}
-	return $mysqldate;
-}
-function addRecords($filename) {
-	//check if its a real filename
+	return $cellSiteData;	
 
-	global $link;
-	if (!$link) {
-	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-	    exit;
+}
+function getCellSiteData($line) {
+	$networkElementName = trim($line[0]);
+	$firstServingCellSite = trim($line[6]);
+	$firstServingCellFace = "D".trim(substr($line[7],0,1));
+	$lastServingCellSite = trim($line[8]);
+	$lastServingCellFace = "D".trim(substr($line[9], 0,1));
+	$callingPartyNumber = trim($line[10]);
+
+	// if firstservingcellsite <= 0 then there is cellsite data included
+	if (($firstServingCellSite != 0)) {
+		$startCellSiteData = getLatLongAz($firstServingCellSite, $firstServingCellFace, $networkElementName);
+
+		$cellSiteData['FirstLatitude'] = $startCellSiteData['Latitude'];
+		$cellSiteData['FirstLongitude'] = $startCellSiteData['Longitude']; // get the end lat Long
+		$cellSiteData['FirstCellDirection'] = $startCellSiteData['CellDirection'];
+
+	} else {
+		$cellSiteData['FirstLatitude'] = '0';
+		$cellSiteData['FirstLongitude'] = '0'; // get the end lat Long
+		$cellSiteData['FirstCellDirection'] = '0';
+
+	}	
+	if ($lastServingCellSite != '0') {
+		$endCellSiteData = getLatLongAz($lastServingCellSite, $lastServingCellFace, $networkElementName);
+		$cellSiteData['LastLatitude'] = $endCellSiteData['Latitude'];
+		$cellSiteData['LastLongitude'] = $endCellSiteData['Longitude']; // get the end lat Long
+		$cellSiteData['LastCellDirection'] = $endCellSiteData['CellDirection'];
+	} else { // if no cellsite data then set the cellsite stuff to 0
+		$cellSiteData['LastLatitude'] ='0';
+		$cellSiteData['LastLongitude'] = '0'; // get the end lat Long
+		$cellSiteData['LastCellDirection'] = '0';
+
 	}
+	return $cellSiteData;
+}
+
+function addRecords($filename) {
+	global $link;
+	global $serviceProviderID;
+	global $caseID;
+
 	if (!strpos($filename, '.csv')) {
 		return;
 	}
 
-	$i=1; 
-	// big concern we could have duplicates in here.  
+	$i=0;
+	$calls = array(); 
+
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
 		$source = '';
-//		fgets($handle);
+		$callType = 'Voice';
+
 		//put each line of the file in the database
 	    while (($line = fgetcsv($handle)) !== FALSE) {
-/*Network Element Name,Mobile Directory Number,Dialed Digit Number,Call Direction,Seizure Dt Tm,Seizure Duration,First Serving Cell Site,First Serving Cell Face,Last Serving Cell Site,Last Serving Cell Face,Calling Party Number
-*/			if ($i==1) {
+			if (skipLine($line)) {
 				$i++;
 				continue;
 			}
 			if ($source == '') {
 				$source = $line[1];
 			}
-			$networkElementName = $line[0];
-			$mobileDirectoryNumber = $line[1];
-			$dialedDigitNumber = stripPhoneNumber($line[2]);
-			$callDirection = $line[3];
-			$SeizureDtTm = getSqlDate($line[4]);
-			$seizureDuration = $line[5];
-			$firstServingCellSite = $line[6];
-			$firstServingCellFace = "D".substr($line[7],0,1);
-			$lastServingCellSite = $line[8];
-			$lastServingCellFace = "D".substr($line[9], 0,1);
-			$callingPartyNumber = $line[10];
-			$mrNum = $line[3];
-			$callToNum = $line[1];
-			$callFromNum = $line[0];
-			$startDate = getSqlDate($line[4]);
-			$endDate = getSqlDate($line[5]);
-			$startLatitude = 0;
-			$startLongitude = 0; 
-			$startAzimuth = '';
-			$endLatitude = 0;
-			$endLongitude = 0;
-			$endAzimuth ='';
 
-			// if firstservingcellsite <= 0 then there is cellsite data included
-			if (($firstServingCellSite != 0)) {
-				$startCellSiteQuery = "SELECT Latitude, Longitude, Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $firstServingCellSite AND VerizonTowers.Sector = '$firstServingCellFace'";
-				if ($startTower = $link->query($startCellSiteQuery)) {
-					if ($startTower->num_rows>0) {
-						$row = $startTower->fetch_assoc(); 
-						$startLatitude = $row['Latitude'];
-						$startLongitude= $row['Longitude'];
-						$startAzimuth = $row['Azimuth'];
-					} else {
-						echo "query didn't return anything: $startCellSiteQuery <BR>";
-					}// else keep it at 0,0, '';
-				} else {
-					echo "query didn't work: $startCellSiteQuery <BR>";
-				}
-			} else {
-			}
-			if ($lastServingCellSite != 0) {
-				$endCellSiteQuery = "SELECT Latitude, Longitude, Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $lastServingCellSite AND VerizonTowers.Sector = '$lastServingCellFace'";
-				if ($endTower = $link->query($endCellSiteQuery)) {
-					if ($endTower->num_rows >0) {
-						$row = $endTower->fetch_assoc(); 
-						$endLatitude = $row['Latitude'];
-						$endLongitude= $row['Longitude'];
-						$endAzimuth = $row['Azimuth'];
-					} else {
+			$cellSiteData = getCellSiteData($line);
+			$duration = trim($line[5]);
+	    	$call= array();
+	    	$call['CaseID'] = $caseID;
+	    	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[2]));
+	    	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[10]));
+	    	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[2]))."'";
+	    	$call['Direction'] = "'".trim($line[3])."'";
+			$call['StartDate'] = getSqlDate(new datetime($line[4]));
+			$call['EndDate']= getSqlDate(getEndDate(new datetime($line[4]), $duration)); 
+			$call['Duration'] = $duration;
+			$call['NetworkElement'] = "'".trim($line[0])."'";
+			$call['Repoll'] = 'NULL';
+			$call['FirstCell'] = trim($line[6]);
+			$call['LastCell'] = trim($line[8]);
+			$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
+			$call['FirstLongitude'] = $cellSiteData['FirstLongitude'];
+			$call['LastLatitude'] = $cellSiteData['LastLatitude'];
+			$call['LastLongitude'] = $cellSiteData['LastLongitude'];
+			$call['FirstCellDirection'] = "'".$cellSiteData['FirstCellDirection']."'";
+			$call['LastCellDirection'] = "'".$cellSiteData['LastCellDirection']."'";
+			$call['Pertinent'] = 1;
+			$call['Notes'] = "''";
+			$call['Source'] = "'$source'";
+			$call['ServiceProviderID'] = $serviceProviderID;
+			$call['CallType'] = "'$callType'";
+			$call['Created'] = 'Now()';
+			$call['Modified'] = 'NOW()';
+			$calls[] = "(".implode(',',$call).")";
 
-						echo "nothing was returned for the endquery: $endCellSiteQuery<BR>";
-					}
-
-				} else {
-					echo "query didn't work: $endCellSiteQuery <BR>";
-					die();
-				} // checking to see the start tower
-			}
-				
-//			echo "datetime: " . $line[4] . " latitude: $latitude | longitude $longitude | azimuth $azimuth <BR>"
-    		// check to see if either of these phones are in the phone table - if not add them in.  
-    		$phoneFromId = getPhoneID(stripPhoneNumber($callingPartyNumber));
-    		$phoneToId = getPhoneID(stripPhoneNumber($dialedDigitNumber));
-			// now put the phone calls in: 
-    		$insertCallQuery = "INSERT INTO PhoneCalls (
-    			CaseID, 
-    			CallToPhoneID,
-    			CallFromPhoneID,
-    			DialedDigits,
-    			MRNum,
-    			StartDate,
-    			Duration,
-    			FirstCell,
-    			LastCell,
-    			FirstLatitude,
-    			FirstLongitude,
-    			FirstCellDirection,
-    			LastLatitude,
-    			LastLongitude,
-    			LastCellDirection,
-    			Pertinent,
-    			Notes,
-    			Source,
-    			ServiceProviderID,
-    			Created,
-    			Modified
-    		) VALUES (".
-    			$GLOBALS['caseID']. ", 
-    			$phoneToId, 
-    			$phoneFromId, 
-    			$dialedDigitNumber,
-    			'$callDirection',
-    			$SeizureDtTm,
-    			$seizureDuration, 
-    			$firstServingCellSite, 
-    			$lastServingCellSite, 
-    			$startLatitude, 
-    			$startLongitude,
-    			'$startAzimuth',
-    			$endLatitude,
-    			$endLongitude,
-    			'$endAzimuth',
-    			1,
-    			'',
-    			'$source',
-    			".$GLOBALS['caseID'].",
-    			NOW(),
-    			NOW()
-    			)";
-//    			echo "INSERT CALL QUERY: $insertCallQuery <BR>";
-//    			die();
-  //  		echo "$insertCallQuery <BR>";
-    		if (mysqli_query($link,$insertCallQuery)) {
-    		} else {
-    			echo "Couldn't insert: $insertCallQuery <BR>";
-    			die();
-    		}
     		$i++;
-    //		if ($i > 100) {die();}
-    	}	// close while
+    	}
+    	echo "finished creating the array: $i<BR>";
+    	insertCalls($calls);
     } // close if
     echo "inserted $i rows, hopefully <BR>";
 }
@@ -251,9 +170,10 @@ $di = new RecursiveDirectoryIterator($inDirectory, FilesystemIterator::SKIP_DOTS
 foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
 	$basename = basename($filename);
 	// need to check for duplicates!!
-	addRecords($filename);
-	echo "did it for $filename <BR>";
-
+	if (strpos($filename, '.csv')) {
+		addRecords($filename);
+		echo "did it for $filename <BR>";
+	}
 
 }
 
