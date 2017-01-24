@@ -24,7 +24,7 @@ if($result = $link->query($query)) {
 	}
 }
 
-$query = "SELECT  PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, PhoneCalls.PhoneCallID, PhoneCalls.StartDate, PhoneCalls.EndDate, PhoneCalls.Duration, PhoneCalls.FirstLatitude, PhoneCalls.FirstLongitude, PhoneCalls.Source, PhoneCalls.LastLatitude, PhoneCalls.LastLongitude FROM Phones as PhoneTo, PhoneCalls, Phones as PhoneFrom WHERE PhoneCalls.source = '$phoneNumber' AND PhoneTo.PhoneID = PhoneCalls.CallToPhoneID AND PhoneFrom.PhoneID = PhoneCalls.CallFromPhoneID ORDER BY StartDate";
+$query = "SELECT Calls.PhonecallID, PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, Calls.PhoneCallID, Calls.StartDate, Calls.EndDate, Calls.Duration, Calls.FirstLatitude, Calls.FirstLongitude, Calls.Source, Calls.LastLatitude, Calls.LastLongitude FROM Phones as PhoneTo, Calls, Phones as PhoneFrom WHERE Calls.source = '$phoneNumber' AND PhoneTo.PhoneID = Calls.ToPhoneID AND PhoneFrom.PhoneID = Calls.FromPhoneID AND Calls.FirstLatitude <> 0 ORDER BY PhoneCallID";
 echo $query;
 
 if ($rows = $link->query($query)) {
@@ -97,16 +97,16 @@ if ($rows = $link->query($query)) {
 //		fwrite($outputFile,$outputLine);
 
 	
-die();		
+//die();		
 	}
 	echo "in the if statement - no results...<BR>";
 } else {
 	echo "stmt didnt work<BR>";
-}	fwrite ($outFile, "
+}	fwrite ($outputFile, "
 	  </Document>
 	</kml>");
-	echo "finished $num<BR>";
-	fclose($attFile);
+	echo "finished <BR>";
+	fclose($outputFile);
 
 
 ?>
