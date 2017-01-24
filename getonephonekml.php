@@ -6,28 +6,34 @@ foreach(glob('library/*.php') as $file) {
 // get the phone number we want from the URL
 $phoneNumber = $_GET['number'];
 echo "$phoneNumber<BR>";
-
+$filename = $phoneNumber."_out.kml";
 try {
-	$outputFile = fopen("output.kml", "w");
+	$outputFile = fopen($filename, "w");
 } catch (Exception $e) {
 	echo "Caught exception", $e->getMessage(), "<br>";
 	die();
 }
-
+echo "$outputFile <BR>";
 // we are taking things that don't include kml data
+$query = "SELECT * FROM Phones WHERE PhoneNumber=$phoneNumber";
+if($result = $link->query($query)) {
+	while($row=$result->fetch_array()) {
+			$icon = $row['Icon'];
+			$prefix = $row['ShortName'];
+			// get the last 4 characters of both the source and the shortname - this isn't done!
+	}
+}
 
 $query = "SELECT  PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, PhoneCalls.PhoneCallID, PhoneCalls.StartDate, PhoneCalls.EndDate, PhoneCalls.Duration, PhoneCalls.FirstLatitude, PhoneCalls.FirstLongitude, PhoneCalls.Source, PhoneCalls.LastLatitude, PhoneCalls.LastLongitude FROM Phones as PhoneTo, PhoneCalls, Phones as PhoneFrom WHERE PhoneCalls.source = '$phoneNumber' AND PhoneTo.PhoneID = PhoneCalls.CallToPhoneID AND PhoneFrom.PhoneID = PhoneCalls.CallFromPhoneID ORDER BY StartDate";
 echo $query;
 
-if ($result = $link->query($query)) {
-	while($row=$result->fetch_array()) {
-		$rows[] = $row;
-	}
+if ($rows = $link->query($query)) {
+
    // $outputLine = "Start Date| End Date|Duration|To Number|To Short Name|From Phone Number|FromShortName|FirstLatitude|First Longitude|Last Latitude|Last Lontgitude|Source \n";
-	$outLine .=  '<?xml version="1.0" encoding="UTF-8"?>
+	$outputLine =  '<?xml version="1.0" encoding="UTF-8"?>
 	<kml xmlns="http://earth.google.com/kml/2.2">
 	<Document>
-	  <name>' . $prefix.' ' .$num.'</name>
+	  <name>' . $prefix.'</name>
 	  <Style id="pushpin">
 	    <IconStyle>
 	      <Icon>
@@ -42,13 +48,16 @@ if ($result = $link->query($query)) {
 
 	foreach($rows as $row) {
 		//combine shortName and phoneNumber
-		
-		$name = / get the name in kml format
-			    	if ($items[4] == $OriginatingNumber) {
-			    		$name = "$prefix To $items[5]: $timestampEST";
-			    	} else {
-			    		$name = "$prefix From $items[4]: $timestampEST";
-			    	}
+		if ($row['PhoneFromShortName']<>'') {
+		//	$from = $row['PhoneFromShortName'];
+		} else {
+			$from = $row['PhoneFromPhoneNumber'];
+		}
+		if ($row['PhoneToShortName']<>'') {
+			$to = $row['PhoneToShortName'];
+		} else {
+			$to = $row['PhoneToPhoneNumber'];
+		}
 
 		$toPhoneNumber = $row["PhoneToPhoneNumber"];
 		$toPhoneID = $row["PhoneToPhoneID"];
@@ -64,7 +73,12 @@ if ($result = $link->query($query)) {
 		$firstLongitude = $row['FirstLongitude'];
 		$lastLatitude = $row['LastLatitude'];
 		$lastLongitude = $row['LastLongitude'];		
-		$source = $row['Source'];
+
+		$startDate = $row['StartDate'];
+		$name =  "$from TO $to: $startDate";
+		$timestamp = $timestamp = date("Y-m-d",strtotime($startDate)) . 'T'.date("H:i:s",strtotime($startDate));
+		$coordinates = "$firstLatitude,$firstLongitude,0";
+
 		
 			$kmlLine = "
 	   	<Placemark>
@@ -77,21 +91,22 @@ if ($result = $link->query($query)) {
 		       	 	<coordinates>$coordinates</coordinates>
 		      	  </Point>
 		        </Placemark>";
-				fwrite ($outFile, $kmlLine);
+				fwrite ($outputFile, $kmlLine);
 //	    $outputLine = "\"$startDate\"|$endDate|$duration|$toPhoneNumber|$toShortName|$fromPhoneNumber|$fromShortName|$firstLatitude|$firstLongitude|$source\n";
 //	    echo $outputLine ."<BR>";
-		fwrite($outputFile,$outputLine);
+//		fwrite($outputFile,$outputLine);
 
 	
-		
+die();		
 	}
 	echo "in the if statement - no results...<BR>";
 } else {
 	echo "stmt didnt work<BR>";
-}
-
-echo "FINISHED!";
-
+}	fwrite ($outFile, "
+	  </Document>
+	</kml>");
+	echo "finished $num<BR>";
+	fclose($attFile);
 
 
 ?>

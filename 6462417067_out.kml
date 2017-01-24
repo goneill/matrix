@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<kml xmlns="http://earth.google.com/kml/2.2">
+	<Document>
+	  <name>CH 7067</name>
+	  <Style id="pushpin">
+	    <IconStyle>
+	      <Icon>
+	  	    <href>blue-pushpin.png</href>
+	      </Icon>
+	      <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+	    </IconStyle>
+	  </Style>
+	   	<Placemark>
+	  	  <name>5189868812 TO 828190: 2014-12-01 00:01:00</name>
+		    	  <TimeStamp>
+		    	    <when>2014-12-01T00:01:00</when>
+		    	  </TimeStamp>
+		    	  <styleUrl>#pushpin</styleUrl>
+		    	  <Point>
+		       	 	<coordinates>0.000000,0.000000,0</coordinates>
+		      	  </Point>
+		        </Placemark>
