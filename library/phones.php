@@ -1,14 +1,5 @@
 <?php 
 // Phone Library
-function errHandle($errNo, $errStr, $errFile, $errLine) {
-    $msg = "$errStr in $errFile on line $errLine";
-    if ($errNo == E_NOTICE || $errNo == E_WARNING) {
-        throw new ErrorException($msg, $errNo);
-    } else {
-        echo $msg;
-    }
-}
-
 function getServiceProviderID($serviceProvider) {
 	global $link;
 	$getServiceProviderIDQuery = "SELECT ServiceProviderID FROM ServiceProviders WHERE Name = '$serviceProvider'";
@@ -51,14 +42,6 @@ function getPhoneID($phoneNumber) {
 		echo "sql query didn't work:<BR>$phoneNumQuery";
 		die();
 	}
-}
-function getSqlDate($date) {
-//	echo "date: $date<BR>";
-	if ($date =='') {
-		return "NULL"; 
-	} 
-//	echo "date: $date<BR>";
-	return "'".date_format($date, 'Y-m-d H:i:s' )."'";
 }
 
 ini_set('display_errors', 1);
