@@ -2,7 +2,7 @@
 
 // import sprint call data for phones with cellsite info
 // need ot pu tthis as a source - like we need to say where these calls come from!  
-foreach(glob('library/*.php') as $file) {
+foreach(glob('../library/*.php') as $file) {
      include_once $file;
 }     
 

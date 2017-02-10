@@ -134,7 +134,7 @@ function setVoiceCall($line, $source, $serviceProviderID, $callType) {
 function setSMSCall($line, $source, $serviceProviderID, $callType) {
 	global $caseID;
 	$startDateEST = date_modify(new datetime($line[1]), '-5 hours');
-	$duration = "''";
+	$duration = "'0:00'";
 	$toPhoneNum = stripPhoneNumber(trim($line[3]));
 	$fromPhoneNum = stripPhoneNumber(trim($line[2]));
 	if (isset($line[9])) {
@@ -151,7 +151,7 @@ function setSMSCall($line, $source, $serviceProviderID, $callType) {
 	$call['Direction'] = "'". getDirection($toPhoneNum)."'";
 	$call['StartDate'] = getSqlDate($startDateEST);
 	$call['EndDate'] = getSqlDate($startDateEST);
-	$call['Duration'] = "'".$duration."'";  
+	$call['Duration'] = "";  
 	$call['NetworkElement'] = "NULL";
 	$call['Repoll'] = 'NULL';
 	$call['FirstCell'] = "'".$firstCell."'";

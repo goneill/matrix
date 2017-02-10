@@ -12,7 +12,7 @@ function getServiceProviderID($serviceProvider) {
 	}	
 }
 function stripPhoneNumber ($number) {
-	$number = str_ireplace( array('(', ')', ' ', '-', '.','*','A','B'), array('', '', '', '', '','','',''), $number);
+	$number = str_ireplace( array('(', ')', ' ', '-', '.','*','A','B','0111'), array('', '', '', '', '','','','',''), $number);
 	if (strpos($number, '1') === 0) {
 		$number = substr($number, 1);
 	}
@@ -59,7 +59,8 @@ function insertCalls($calls) {
 	global $link;
 	$sqlInsert = "INSERT INTO Calls (CaseID, ToPhoneID, FromPhoneID, DialedDigits, Direction, StartDate, EndDate, Duration, NetworkElement, Repoll, FirstCell, LastCell, FirstLatitude, FirstLongitude, LastLatitude, LastLongitude,  FirstCellDirection, LastCellDirection, Pertinent, Notes, Source, ServiceProviderID, CallType, Created, Modified) VALUES " . implode(',', $calls);
 	echo "finished creating the sql stmt<BR>";
-  //	echo $sqlInsert . "<BR>";
+
+ // 	echo $sqlInsert . "<BR>";
 	if (!$link->query($sqlInsert)) {
   		printf("Error message: %s\n", $link->error);
   		print_r($sqlInsert);
