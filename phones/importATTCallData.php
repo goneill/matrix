@@ -2,7 +2,7 @@
 
 // import sprint call data for phones with cellsite info
 // need ot pu tthis as a source - like we need to say where these calls come from!  
-foreach(glob('library/*.php') as $file) {
+foreach(glob('../library/*.php') as $file) {
      include_once $file;
 }     
 //And then in any place you can just write:
@@ -66,8 +66,8 @@ function getCellSiteData($origData){
 		$cell['Azimuth'] = 0;
 	} else {
 		$cellArray = explode(":", str_replace(array('[',']'), "", $origData)); 	
-		$cell['Latitude'] = $cellArray[1]+0;
-		$cell['Longitude'] = $cellArray[2]+0;
+		$cell['Latitude'] = $cellArray[2]+0;
+		$cell['Longitude'] = $cellArray[1]+0;
 		$cell['Azimuth'] = $cellArray[3]+0;
 	}
 	return $cell;
@@ -151,7 +151,7 @@ function setSMSCall($line, $source, $serviceProviderID, $callType) {
 	$call['Direction'] = "'". getDirection($toPhoneNum)."'";
 	$call['StartDate'] = getSqlDate($startDateEST);
 	$call['EndDate'] = getSqlDate($startDateEST);
-	$call['Duration'] = "";  
+	$call['Duration'] = $duration;  
 	$call['NetworkElement'] = "NULL";
 	$call['Repoll'] = 'NULL';
 	$call['FirstCell'] = "'".$firstCell."'";
@@ -187,8 +187,8 @@ function addRecords($filename) {
 		$type = '';
 	    while (($line = fgetcsv($handle)) !== FALSE) {
     		$i++;
-			//if ($i<8000) {break;}
- 
+//			if ($i>500) {break;}
+ 			//if ($i<=10000) {continue;}
 	    	if (checkUsage($line[0])) {
 	    		print_r($line);
 	    		$source =getSource($line[0]);
