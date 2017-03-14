@@ -1,13 +1,29 @@
 <?php 
 // Digest Library
 //only include those files which should be included.  Modify as needed
-function isIncluded($type, $prohibitedArray) {
-
+function isIncluded($type, $prohibitedArray, $filename) {
+	$phoneDumpTypeArray = Array ('pdf', 'html');
 	if (in_array($type, $prohibitedArray)) {
 		return false;
-	} else {
-		return true;
+	} 
+	if (strpos($filename, "Phone Dump")) {
+		if (!in_array($type, $phoneDumpTypeArray)) {
+			return false;
+		}
 	}
+	return true;
+}
+
+function getJailDate($filename) {
+	$bopNum = $GLOBALS['bopNum'];
+	$mon = substr($filename, 9,3);
+	$day = substr($filename, 13, 2);
+	$year = substr($filename, 16,4);
+	$hr= substr($filename, 21,2);
+	$min = substr($filename, 24, 2);
+	$sec = substr($filename, 27, 2);
+	$date = "$mon $day, $year $hr:$min:$sec";
+	return $date;
 }
 
 // extract the bates num from the the bates logfile from adobe acrobat

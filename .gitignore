@@ -1,4 +1,9 @@
-
 output.csv
-
 metroPCSPhoneRecords/CDT1545164_693443_3474446552.csv
+<<<<<<< HEAD
+matrix_2016-11-21.sqlmatrix_2017-01-20.sqlmatrix_2017-02-12.sql
+=======
+matrix_2016-11-21.sql
+matrix_2017-01-20.sql
+matrix_2017-02-12.sql
+>>>>>>> origin/master

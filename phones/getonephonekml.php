@@ -25,7 +25,7 @@ if ($result = $link->query($phoneInfoQuery)) {
 	}
 }
 
-$query = "SELECT  PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, Calls.PhoneCallID, Calls.StartDate, Calls.EndDate, Calls.Duration, Calls.FirstLatitude, Calls.FirstLongitude, Calls.Source FROM Phones as PhoneTo, Calls, Phones as PhoneFrom WHERE Calls.source = '$phoneNumber' AND PhoneTo.PhoneID = Calls.ToPhoneID AND PhoneFrom.PhoneID = Calls.FromPhoneID and Calls.FirstLatitude <> 0 AND calls.startdate <= '2015-04-01' and calls.startdate > '2015-03-01' ORDER BY StartDate";
+$query = "SELECT  PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, Calls.PhoneCallID, Calls.StartDate, Calls.EndDate, Calls.Duration, Calls.FirstLatitude, Calls.FirstLongitude, Calls.Source FROM Phones as PhoneTo, Calls, Phones as PhoneFrom WHERE Calls.source = '$phoneNumber' AND PhoneTo.PhoneID = Calls.ToPhoneID AND PhoneFrom.PhoneID = Calls.FromPhoneID and Calls.FirstLatitude <> 0 ORDER BY StartDate";
 echo $query;
 
 if ($result = $link->query($query)) {

@@ -50,6 +50,22 @@ function getCellSiteData($line) {
 	$cellSiteData['Longitude'] = '0'; // get the end lat Long
 	$cellSiteData['CellDirection'] = '0';
 	$cellSiteData['Azimuth'] = '0';
+
+	if ($line[11]<> '' AND $line[12] <> '') {
+		$query = "SELECT Latitude, Longitude, Orientation From MetroPCStowers WHERE Lac = " . $line[11] . " AND Cell_ID = " . $line[12];
+		$results = $link->query($query);
+		if ( ($results) && ($results->num_rows !== 0)) { 
+			$row=$results->fetch_assoc();
+		//		print_r($row);
+			$cellSiteData['Latitude'] = $row['Latitude'];
+			$cellSiteData['Longitude'] = $row['Longitude'];
+			$cellSiteData['CellDirection'] = $row['Orientation'];
+
+	} 	
+	$cellSiteData['Latitude'] = '0';
+	$cellSiteData['Longitude'] = '0'; // get the end lat Long
+	$cellSiteData['CellDirection'] = '0';
+	$cellSiteData['Azimuth'] = '0';
 	return $cellSiteData;
 }
 function addRecords($filename) {

@@ -53,15 +53,17 @@ function getCellSiteData($line) {
 	$callDirection  = trim($line[3]);
 	$NEID = $line[7];
 	$repoll = $line[8];
-//	echo "$firstCell $lastCell <BR>";
+//	echo "$firstCell $lastCell NEID: $NEID Repoll: $repoll<BR>";
 	if ($firstCell != '0') { // there is cellsite data on this line
 
 		$startCellNum = substr($firstCell, 1);
 		$startSector = substr($firstCell,0,1);
 		$startCellSiteData = getLatLongAz($NEID, $repoll, $startCellNum, $startSector);
+//		print_r($startCellSiteData);
 		$cellSiteData['FirstLatitude'] = $startCellSiteData['Latitude'];
 		$cellSiteData['FirstLongitude'] = $startCellSiteData['Longitude']; // get the end lat Long
 		$cellSiteData['FirstCellDirection'] = $startCellSiteData['CellDirection'];
+
 	} else {
 		$cellSiteData['FirstLatitude'] = '0';
 		$cellSiteData['FirstLongitude'] = '0'; // get the end lat Long
@@ -109,9 +111,17 @@ function addRecords($filename) {
 	    	}
 		//	if ($i >12300 ) {
 				$cellSiteData = getCellSiteData($line);
-		    	$call= array();
+/*				if ($cellSiteData['FirstLatitude']<>0) {
+					print_r($cellSiteData);
+					die();
+				} 
+*/		    	$call= array();
 		    	$call['CaseID'] = $caseID;
-		    	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[1]));
+		    	if (trim($line[2])<> '') {
+		    		$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[2]));
+			    } else {
+			    	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[1]));
+			    }
 		    	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[0]));
 		    	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[1]))."'";
 		    	$call['Direction'] = "'".trim($line[3])."'";
@@ -127,8 +137,8 @@ function addRecords($filename) {
 				$call['FirstCell'] = trim($line[9]);
 				$call['LastCell'] = trim($line[10]);
 				$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
-				$call['LastLatitude'] = $cellSiteData['LastLatitude'];
 				$call['FirstLongitude'] = $cellSiteData['FirstLongitude'];
+				$call['LastLatitude'] = $cellSiteData['LastLatitude'];
 				$call['LastLongitude'] = $cellSiteData['LastLongitude'];
 				$call['FirstCellDirection'] = "'".$cellSiteData['FirstCellDirection']."'";
 				$call['LastCellDirection'] = "'".$cellSiteData['LastCellDirection']."'";
@@ -139,6 +149,12 @@ function addRecords($filename) {
 				$call['CallType'] = "'$callType'";
 				$call['Created'] = 'Now()';
 				$call['Modified'] = 'NOW()';
+							
+/*				if ($cellSiteData['FirstLatitude']<>0) {
+					print_r($call);
+					die();
+				} 
+*/
 				$calls[] = "(".implode(',',$call).")";
 	//		}
 	    	$i++;

@@ -9,6 +9,13 @@ function errHandle($errNo, $errStr, $errFile, $errLine) {
     }
 }
 
+//used to change an empty value to null;
+function emptyToNull($val) {
+    if ($val == '') {
+        return 'null';
+    }
+    return str_replace("\xE1", "a", str_replace("\xD1", "N", str_replace("\xF3", "o", str_replace("\xED", "i", str_replace("\xF1","n", str_replace("\xBE", "3/4", str_replace("\xBD", "1/2",str_replace("\x92","\'",str_replace("\xA0", ' ',$val)))))))));
+}
 function getSqlDate($date) {
 //	echo "date: $date<BR>";
 	if ($date =='') {
@@ -28,6 +35,6 @@ ini_set("auto_detect_line_endings", true);
 set_error_handler('errHandle');
 // this code should be executed on every page/script load:
 $link = mysqli_connect("localhost", "root", "nathando123", "matrix");
-
+mysqli_set_charset($link, 'utf8');
 
 ?>
