@@ -60,7 +60,22 @@ function getBatesStringFilename($basename, $pattern) {
 	return $batesString;
 }
 
-function getBatesStringFoldername($fielname, $pattern) {
+function getBatesStringFoldername($filename, $pattern) {
+	// want to edit this to get the most pattern
+	preg_match_all($pattern, $filename, $matches);
+
+
+	$numBatesMatches = count($matches[0]);
+	if ($numBatesMatches == 0) {
+		$batesString = '';
+	} elseif ($numBatesMatches==1) {
+		$batesString = $matches[0][0];
+	} else {
+		$batesString = end($matches[0]);
+
+//		$batesString = $matches[0][0] . ' - ' . end($matches[0]);
+	}
+	return $batesString;
 
 }
 ?>

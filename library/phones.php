@@ -44,16 +44,7 @@ function getPhoneID($phoneNumber) {
 	}
 }
 
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
-error_reporting(E_ALL);
-date_default_timezone_set('America/New_York');
-set_time_limit(0);
-ini_set("memory_limit","2400M");
-ini_set("auto_detect_line_endings", true);
-set_error_handler('errHandle');
-// this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
+
 
 function insertCalls($calls) {
 	global $link;

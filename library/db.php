@@ -34,7 +34,7 @@ ini_set("memory_limit","2400M");
 ini_set("auto_detect_line_endings", true);
 set_error_handler('errHandle');
 // this code should be executed on every page/script load:
-$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
+$link = mysqli_connect("localhost", "root", "sylvia", "matrix");
 mysqli_set_charset($link, 'utf8');
 
 ?>
