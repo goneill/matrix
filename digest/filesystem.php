@@ -1,18 +1,18 @@
 <?php
-/* 	Header for Terrell Pinkney
+/* 	Header for Julio Marquez-Alejandro
 */
 foreach(glob('../library/*.php') as $file) {
      include_once $file;
 } 
 //this should be all you change, except if you have modifications to the isIncluded function
-$maindirectory = "/Volumes/Mance/Dropbox/cases/Gendreau, Rachel/RG Discovery/RG Discovery 20170221/Gendreau 2017.02/To Produce to Gendreau 2017.02.21";
-$preface = "../RG Discovery/RG Discovery 20170221/Gendreau 2017.02/To Produce to Gendreau 2017.02.21";
+$maindirectory = "/Volumes/Repository/Dropbox/cases/Marquez-Alejandro, Julio/JMA Discovery/JMA Discovery 20170630";
+$preface = "../JMA Discovery/JMA Discovery 20170630";
 #$batesRegExp = '/\b((US)|(CH))(_|\s)[0-9]{4,}\b/';
-$batesRegExp = '/\([0-9]{6}\-[0-9]{6}\)/';
+$batesRegExp = '/(\()?[0-9]{6}( )?\-( )?[0-9]{6}(\))?/';
 #$batesRegExp = '/(USA_RELATIVITY_)[0-9]{7}\b/';
-$prohibitedArray = ["inf","ico", "qm", "dll", "DS_Store", "","ini","dav","cab","BUP","IFO","db","cnt","eml","zip","clog","xml","ufdx","PBB","SMS","ufd"];
-$outname = 'RG Digest.csv';
-$folderName = "RG Discovery 20170101";
+$prohibitedArray = ["inf","ico", "qm", "dll", "DS_Store", "","ini","dav","cab","BUP","IFO","db","cnt","eml","zip","clog","xml","ufdx","PBB","SMS","ufd","wav"];
+$outname = 'JMA Digest.csv';
+$folderName = "JMA Discovery 20170630";
 //$bopNum = '75182053';
 // if the file exists it overwrites it and starts the pointer at the beginning.  If it doesn't exist it creates it.  
 //Make sure to set permissions in the folder in order to allow the script to create the file.  
