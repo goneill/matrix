@@ -11,8 +11,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $outname = 'output/cellebritetexts.csv';
+$phoneNumArray= Array("3472592317"=>"meth","9329"=> "__phone company","24273"=>"_bank", "9175647764"=> "Hound 1", "9172317779"=>"_scam man","6607224176" =>"gistol", "3476525240" =>"_chastity - daughter", "3473453941" => "justine daughter", "3478738671"=>"cooperator", "6462416830" =>"Unk Hound 2", "9292470525"=>"Unk Hound 3", "3479932040"=>"kendra");
+$numsToIgnore = array("7188255076", "3476525240", "266781", "3478478087", "9172317779", "3475828998", "3473442544", "9145251536", "6462728253", "7188255076", "7182197485", "3476561692","9329", "24273", "3479752712", "3475956011", "5164045228", "3479123679", "2016376124", "3473453941", "3473855991", "347410664", "9144267234", "9178048875", "2016371852", "3474190218", "3477921097", "7184507716", "3472514633", "3479428857", "3476417296", "9230", "9178265092", "3476916831", "3476177793", "6464060633", "78836", "8453911495", "256447", "837401", "9143256714", "9178688068", "3474418213", "9143256714", "9144074333", "3477407772", "3474357501", "3473606146","9174024156", "3479925994", "3478370326", "6465126078", "3477751713", "5163225414", '7189135640', "242733", "9085312815", "7186407871", "3476253656", "3473665908", "6462508130", "6469750577", "3479932040", "3479875011", "9145227984", "9178155847", "28581", "9292575707", "9173121908", "6467969584", "6466512054", "3474717052", "3475038009", "9174508866", "6465680635");
 try {
 	$outputFile = fopen($outname, "w");
+	$abridgeOutputFile = fopen('output/abridgedCelelbriteTexts.csv', "w");
 } catch (Exception $e) {
 	echo "Caught exception", $e->getMessage(), "<br>";
 	die();
@@ -40,8 +43,12 @@ function getDelimitedFields($string,$fieldNum,$delimeter) {
 	    }
 	} elseif (array_key_exists($fieldNum-1, $matches[0])) { // the last field
 		$field = substr($string, $matches[0][$fieldNum-1][1]);		# code...
-	} else { // the field is blank
-		$field = '';
+	} elseif ($fieldNum == 0) {
+		$field = trim($string);
+	
+	} else { // the string only has one field; need to fix this to get the last bits where field = 0;
+		$field = ''; //trim($string);
+		// echo "field: $field<BR>  field num: $fieldNum<BR>";
 	}
 
    
@@ -138,7 +145,12 @@ foreach ($lines as $line_num => $line) {
 			} elseif ($smsRow == 3) {
 				// check to see if there is a name in there - 
 				if (preg_match('/^[0-9]\)/', trim($line), $matches)) { // this means there is no contact name
-					$currText['contactName'] = '';
+					// check the phone num array to see if there is a match:
+					if (isset($phoneNumArray[$currText['phoneNumber']])) {
+						$currText['contactName'] = $phoneNumArray[$currText['phoneNumber']];
+					} else {
+						$currText['contactName'] = '';
+					}
 					$currText['time'] = $currText['time'].getDelimitedFields(trim($line), 0, $delimiter);
 					if ($isNetwork) {
 					$currText['timeStamp'] = $currText['timeStamp']. ' ' . getDelimitedFields(trim($line),1, $delimiter);
@@ -163,9 +175,15 @@ foreach ($lines as $line_num => $line) {
 					$currText['$timeStamp'] = $currText['timeStamp']. getDelimitedFields(trim($line), 0, $delimiter);
 					$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 1, $delimiter);
 				} else {
-						$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 0, $delimiter);
+					$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 0, $delimiter);
 				}
+				$smsRow = 5;
+			//	echo "smsRow = 5 | curr Line: $line<BR>";
+			} elseif ($smsRow==5) {
+			//	echo "line: $line<BR>";
+				$currText['message'] = $currText['message'] . ' ' . trim($line);
 			}
+
 			break;	
 
 	}
@@ -174,31 +192,37 @@ foreach ($lines as $line_num => $line) {
 // wnat to put the $texts array into a delimited structure
 
 // terrell's number is: (347) 677-7532
-$csvSMS = '"SMS Num", "DateTime", "From", "To", "Party", "Message", "Direction", "Date", "Status", "Number", "Time",  "SMS Type"';
+$csvSMS = '"SMS Num","DateTime","From","To","Party","Message","Direction","Date","Status","Number","Time","SMS Type"';
+$abridgeCsvSMS = '"SMS Num","DateTime","From","To","Party","Message","Direction","Date","Status","Number","Time","SMS Type"';
 foreach ($texts as $key => $currText) {
 
 	if (empty($currText)){
 		continue;
 	}
 	if ($currText['direction']=='To') {
-		$from = '3476777532';
+		$from = 'Terrell Pinkney';
 		$to = $currText['phoneNumber'];
 	} else {
 		$from = $currText['phoneNumber'];
-		$to = '3476777532';
+		$to = 'Terrell Pinkney';
 	}
-	$timeStamp = $currText['date']. ' '. $currText['time'];
+	$timeStamp = trim($currText['date']. ' '. $currText['time']);
 	$timeStampCut = strpos($timeStamp, '(');
 	$timeStamp = substr($timeStamp, 0, $timeStampCut);
 
-	$csvSMS.='"'. $currText['smsNumber'].'", "'. $timeStamp.'", "'.$from.'", "'.$to.'", "'. $currText['contactName']. '", "'. str_replace('"', "'", $currText['message']) . '", "' . $currText['direction'] . '", "' .  $currText['date'] . '", "' .  $currText['status'] . '", "' .  $currText['phoneNumber'] . '", "' .  $currText['time'] . '", "' .  $currText['SMSType'] . '", "'."\n";
+	$csvSMS.='"'. $currText['smsNumber'].'","'. $timeStamp.'","'.$from.'","'.$to.'","'. $currText['contactName']. '","'. str_replace('"', "'", $currText['message']) . '","' . $currText['direction'] . '","' .  $currText['date'] . '","' .  $currText['status'] . '","' .  $currText['phoneNumber'] . '","' .  $currText['time'] . '","' .  $currText['SMSType'] . '","'."\n";
 	//$csvSMS .= '"'.implode('","', $currText) . '"'."\n";
+	if (!in_array($currText['phoneNumber'], $numsToIgnore)) {
+		$abridgeCsvSMS.='"'. $currText['smsNumber'].'","'. $timeStamp.'","'.$from.'","'.$to.'","'. $currText['contactName']. '","'. str_replace('"', "'", $currText['message']) . '","' . $currText['direction'] . '","' .  $currText['date'] . '","' .  $currText['status'] . '","' .  $currText['phoneNumber'] . '","' .  $currText['time'] . '","' .  $currText['SMSType'] . '","'."\n";
+
+	}
+
 
 	# code...
 }
 //echo $csvSMS;
-		fwrite($outputFile,$csvSMS);
-
+	fwrite($outputFile,$csvSMS);
+fwrite($abridgeOutputFile, $abridgeCsvSMS);
 //file_put_contents($txtFile, $text);
 
 ?>
