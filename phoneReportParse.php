@@ -3,13 +3,20 @@
 
 // includes
 //include 'library/vendor/autoload.php';
-foreach(glob('../library/*.php') as $file) {
+foreach(glob('library/*.php') as $file) {
      include_once $file;
 } 
 set_time_limit(0);
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
+$outname = 'output/cellebritetexts.csv';
+try {
+	$outputFile = fopen($outname, "w");
+} catch (Exception $e) {
+	echo "Caught exception", $e->getMessage(), "<br>";
+	die();
+}
 
 $pdfFile = "input/LGLS675Report.pdf";
 $txtFile = "output/txtPhoneReport.txt";
@@ -52,13 +59,17 @@ $lines = file($txtFile);
 $sms = array();
 $smsRow = '';
 $currText = array();
+$texs = array();
+$delimiter = "\s{2,}"; 
 foreach ($lines as $line_num => $line) {
 	
 	if (empty(trim($line))) {
 		continue;
 	}
 	// first check to see if we are in a new type (SMS, user account, bookmark, etc.)
-
+	if ($status == 'UserAccounts') {
+		break;
+	}
 	switch ($status) {
 		case 'FindSMS':
 		$pattern = '/\fSMS Messages /';
@@ -75,64 +86,118 @@ foreach ($lines as $line_num => $line) {
 			if (preg_match($pattern, $line)) {
 				echo "done with SMS: $line <BR>";
 				$status = 'UserAccounts';
-				die();
+				$texts[] = $currText;
+
+				// want to leave the for loop once we get here because we are only parsing the sms for now.
 				break;
 			}
 			// check to see if the pdf is indicating a new source of the txt
 			$pattern = '/\w+\s\([0-9]+\)/'; // SMS Header
 			if (preg_match($pattern, $line, $matches)) {
-				$SMSType = trim($matches[0]); // need to trim out the num in parens
+				$SMSType = substr(trim($matches[0]), 0, strpos($matches[0], ' ')); // need to trim out the num in parens
 				echo "SMS TYPE: $SMSType . <BR>";
 
 			}
 			$pattern = '/^\s*[0-9]+\s+(From|To)/'; //$smsRow = 1
 			if (preg_match($pattern, $line)) { // this means that we are generating actual data on this line - a first line of data
 				//getDelimitedFields($string,$fieldNum,$delimeter)
+			
+				$texts[] = $currText;
 				$currText = array();  
-				$delimiter = "\s{3,}"; 
-				$currText['smsNumber'] = getDelimitedFields(trim($line), 0,$delimiter);
+
+				$currText['SMSType'] = $SMSType;
+				$currText['smsNumber'] = str_replace("\f", '', trim(getDelimitedFields(trim($line), 0,$delimiter)));
 				$currText['direction'] = getDelimitedFields(trim($line), 1,$delimiter);
 				$currText['date'] = getDelimitedFields(trim($line), 2,$delimiter);
-				$currText['status ']= getDelimitedFields(trim($line), 4,$delimiter);
-				$currText['message'] = getDelimitedFields(trim($line), 5,$delimiter);
-				echo "direction: ". $currText['direction'] ."<BR>";
+				$network = trim(getDelimitedFields(trim($line), 3,$delimiter));
+				if ($network =="Network:") {
+					$isNetwork = true;
+					$currText['status']= getDelimitedFields(trim($line), 4,$delimiter);
+					$currText['message'] = getDelimitedFields(trim($line), 5,$delimiter);
+				} else { 
+					$isNetwork = false;
+					$currText['status']= getDelimitedFields(trim($line), 3,$delimiter);
+					$currText['message'] = getDelimitedFields(trim($line), 4,$delimiter);
+				}
+				// echo "direction: ". $currText['direction'] ."<BR>";
 				$smsRow = 2;
 			} elseif ($smsRow == 2) {
-				$delimiter = "\s{3,}"; 
-				$currText['phoneNumber'] = getDelimitedFields(trim($line), 0,$delimiter);
+				$currText['phoneNumber'] = stripPhoneNumber(getDelimitedFields(trim($line), 0,$delimiter));
 				$currText['time'] = getDelimitedFields(trim($line), 1,$delimiter);
+				if ($isNetwork) {
 				$currText['timeStamp'] = getDelimitedFields(trim($line), 2,$delimiter);
 				$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 3,$delimiter);
+				$currText['contactName'] = '';
+				} else {
+					$currText['timeStamp'] = '';
+					$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 2,$delimiter);
+					$currText['contactName'] = '';
+		
+				} 
 				$smsRow = 3;
 			} elseif ($smsRow == 3) {
 				// check to see if there is a name in there - 
-				$delimiter = "\s{3,}"; 
 				if (preg_match('/^[0-9]\)/', trim($line), $matches)) { // this means there is no contact name
 					$currText['contactName'] = '';
 					$currText['time'] = $currText['time'].getDelimitedFields(trim($line), 0, $delimiter);
+					if ($isNetwork) {
 					$currText['timeStamp'] = $currText['timeStamp']. ' ' . getDelimitedFields(trim($line),1, $delimiter);
 					$currText['message'] = $currText['message'].' ' . getDelimitedFields(trim($line),2, $delimiter);
+					} else {
+						$currText['message'] = $currText['message'].' ' . getDelimitedFields(trim($line),1, $delimiter);
+					}
 				} else {
 					$currText['contactName'] = getDelimitedFields(trim($line), 0, $delimiter);
 					$currText['time'] = $currText['time'].getDelimitedFields(trim($line), 1, $delimiter);
-					$currText['timeStamp'] = $currText['timeStamp']. ' ' . getDelimitedFields(trim($line),2, $delimiter);
-					$currText['message'] = $currText['message'].' ' . getDelimitedFields(trim($line),3, $delimiter);
-
+					if ($isNetwork) {
+						$currText['timeStamp'] = $currText['timeStamp']. ' ' . getDelimitedFields(trim($line),2, $delimiter);
+						$currText['message'] = $currText['message'].' ' . getDelimitedFields(trim($line),3, $delimiter);
+					} else {
+						$currText['message'] = $currText['message'].' ' . getDelimitedFields(trim($line),2, $delimiter);
+					} 
 				}
-				print_r($matches);
-				print_r($currText);
+				
 				$smsRow = 4;
 			} elseif ($smsRow == 4) {
-				$delimiter = "\s{3,}";
-				$currText['$timeStamp'] = $currText['timeStamp']. getDelimitedFields(trim($line), 0, $delimiter);
-				$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 1, $delimiter);
+				if ($isNetwork) {
+					$currText['$timeStamp'] = $currText['timeStamp']. getDelimitedFields(trim($line), 0, $delimiter);
+					$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 1, $delimiter);
+				} else {
+						$currText['message'] = $currText['message'] . ' ' . getDelimitedFields(trim($line), 0, $delimiter);
+				}
 			}
 			break;	
 
 	}
 }
 
+// wnat to put the $texts array into a delimited structure
 
+// terrell's number is: (347) 677-7532
+$csvSMS = '"SMS Num", "DateTime", "From", "To", "Party", "Message", "Direction", "Date", "Status", "Number", "Time",  "SMS Type"';
+foreach ($texts as $key => $currText) {
+
+	if (empty($currText)){
+		continue;
+	}
+	if ($currText['direction']=='To') {
+		$from = '3476777532';
+		$to = $currText['phoneNumber'];
+	} else {
+		$from = $currText['phoneNumber'];
+		$to = '3476777532';
+	}
+	$timeStamp = $currText['date']. ' '. $currText['time'];
+	$timeStampCut = strpos($timeStamp, '(');
+	$timeStamp = substr($timeStamp, 0, $timeStampCut);
+
+	$csvSMS.='"'. $currText['smsNumber'].'", "'. $timeStamp.'", "'.$from.'", "'.$to.'", "'. $currText['contactName']. '", "'. str_replace('"', "'", $currText['message']) . '", "' . $currText['direction'] . '", "' .  $currText['date'] . '", "' .  $currText['status'] . '", "' .  $currText['phoneNumber'] . '", "' .  $currText['time'] . '", "' .  $currText['SMSType'] . '", "'."\n";
+	//$csvSMS .= '"'.implode('","', $currText) . '"'."\n";
+
+	# code...
+}
+//echo $csvSMS;
+		fwrite($outputFile,$csvSMS);
 
 //file_put_contents($txtFile, $text);
 
