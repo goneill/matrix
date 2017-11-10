@@ -2,6 +2,7 @@
 // Phone Library
 function getServiceProviderID($serviceProvider) {
 	global $link;
+	echo "serviceProvider: $serviceProvider <BR>";
 	$getServiceProviderIDQuery = "SELECT ServiceProviderID FROM ServiceProviders WHERE Name = '$serviceProvider'";
 	if ($serviceProvider = $link->query($getServiceProviderIDQuery)) {
 		$row = $serviceProvider->fetch_assoc();
@@ -48,6 +49,7 @@ function getPhoneID($phoneNumber) {
 
 function insertCalls($calls) {
 	global $link;
+	echo "about to insert the calls!<BR>";
 	$sqlInsert = "INSERT INTO Calls (CaseID, ToPhoneID, FromPhoneID, DialedDigits, Direction, StartDate, EndDate, Duration, NetworkElement, Repoll, FirstCell, LastCell, FirstLatitude, FirstLongitude, LastLatitude, LastLongitude,  FirstCellDirection, LastCellDirection, Pertinent, Notes, Source, ServiceProviderID, CallType, Created, Modified) VALUES " . implode(',', $calls);
 	echo "finished creating the sql stmt<BR>";
 

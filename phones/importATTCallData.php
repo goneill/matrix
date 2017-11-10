@@ -8,7 +8,7 @@ foreach(glob('../library/*.php') as $file) {
 //And then in any place you can just write:
 
 
-$inDirectory = "attPhoneRecords/";
+$inDirectory = "../input/attPhoneRecords/";
 $caseID = 1;
 $serviceProviderID = getServiceProviderID("AT&T"); 
 
@@ -42,9 +42,15 @@ function skipLine($line) {
 	return false;
 }
 function getEndDate($startDate, $duration) {
+//	echo "startDate: " . $startDate->format(DATE_W3C);
 	$durationParts = explode(':',$duration);
-	$durationInterval = new DateInterval("PT$durationParts[0]M$durationParts[1]S");
-	$endDate = getSqlDate($startDate->add($durationInterval));
+	$endDate = $startDate;
+	$durationString = "PT" . $durationParts[0] . 'M'. $durationParts[1] . 'S';
+	$durationInterval = new DateInterval($durationString);
+	$endDate =  $endDate->add($durationInterval);
+	$endDate = getSqlDate($endDate);
+//	echo " end date: $endDate <BR>";
+//	die();
 	return $endDate;
 }
 
@@ -81,6 +87,7 @@ function setEmptyCellsite() {
 }
 
 function setVoiceCall($line, $source, $serviceProviderID, $callType) {
+
 	global $caseID;
 	$startDate = new DateTime(trim($line[1]));
 	$startDateEST = date_modify(new datetime($line[1]), '-5 hours');
@@ -128,6 +135,7 @@ function setVoiceCall($line, $source, $serviceProviderID, $callType) {
 	$call['CallType'] = "'$callType'";
 	$call['Created'] = 'NOW()';
 	$call['Modified'] = 'NOW()';
+
 	return $call;
 }
 
@@ -172,7 +180,57 @@ function setSMSCall($line, $source, $serviceProviderID, $callType) {
 	return $call;
 
 }
+function setDataCall($line, $source, $serviceProviderID, $callType) {
+	global $caseID;
+	$toESTInterval = 'PT5H0S';
+	$startDateEST = new datetime($line[1]);
+	$startDateEST = $startDateEST->sub(new DateInterval($toESTInterval)); 
+//	echo "start date est" . $startDateEST->format(DATE_W3C) . "<BR>";
+
+	$endDateEST = new datetime($line[1]);
+	$endDateEST = $endDateEST->sub(new DateInterval($toESTInterval)); 
+	$duration = trim($line[3]);
+	$endDateEST = getEndDate($endDateEST, $duration);
+	$toPhoneNum = stripPhoneNumber(trim($line[2]));
+	$fromPhoneNum = stripPhoneNumber(trim($line[2]));
+	if (isset($line[10])) {
+		$firstCell = trim($line[10]);
+		$startCellSiteData = getCellSiteData($firstCell);
+	} else {
+		$firstCell = '';
+		$startCellSiteData = setEmptyCellsite();
+	}
+	$call['CaseID'] = $caseID;
+	$call['ToPhoneID'] = getPhoneID($toPhoneNum);
+	$call['FromPhoneID'] = getPhoneID($fromPhoneNum);
+	$call['DialedDigits'] = stripPhoneNumber(trim($line[2]));
+	$call['Direction'] = "'". getDirection($toPhoneNum)."'";
+	$call['StartDate'] = getSqlDate($startDateEST);
+	$call['EndDate'] = $endDateEST;
+	$call['Duration'] = "'".$duration."'";  
+	$call['NetworkElement'] = "NULL";
+	$call['Repoll'] = 'NULL';
+	$call['FirstCell'] = "'".$firstCell."'";
+	$call['LastCell'] = "'".$firstCell."'";
+	$call['FirstLatitude'] = $startCellSiteData['Latitude'];
+	$call['FirstLongitude'] = $startCellSiteData['Longitude'];
+	$call['LastLatitude'] = $startCellSiteData['Latitude'];
+	$call['LastLongitude'] = $startCellSiteData['Longitude'];
+	$call['FirstCellDirection'] = "'".$startCellSiteData['Azimuth']."'";
+	$call['LastCellDirection'] =  "'".$startCellSiteData['Azimuth']."'";
+	$call['Pertinent'] = 1;
+	$call['Notes'] = "''";
+	$call['Source'] = "'$source'";
+	$call['ServiceProviderID']  = $serviceProviderID;
+	$call['CallType'] = "'$callType'";
+	$call['Created'] = 'NOW()';
+	$call['Modified'] = 'NOW()';
+	return $call;
+
+}
 function addRecords($filename) {
+	echo "in the add records <BR>";
+
 	//check if its a real filename
 	global $link;
 	global $serviceProviderID;
@@ -183,6 +241,7 @@ function addRecords($filename) {
 
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
+
 		$source = '';
 		$type = '';
 	    while (($line = fgetcsv($handle)) !== FALSE) {
@@ -207,22 +266,34 @@ SMS: Item,ConnDateTime(UTC),OriginatingNumber,TerminatingNumber,IMEI,IMSI,Desc,M
 	    	$call= array();
 	    	$call['CaseID'] = $caseID;
 	    	if ($type =='Voice') {
-	    //		continue;
+//	    		continue;
 	    		$call = setVoiceCall($line,  $source, $serviceProviderID, $type);
+
 	    	} elseif ($type == 'SMS') {
+//	    		continue;
 //	    		echo "an SMS!";
 	    		$call = setSMSCall($line,  $source, $serviceProviderID, $type);
+	    			
+	    	} elseif ($type == 'Data') {
+//	    		echo "we got data!<BR>";
+//	    		die();
+	    		$call = setDataCall($line, $source, $serviceProviderID, $type);
+//	    		die();
+
 	    	} else {
-	    		echo "no type!<BR>";
+	    		echo "no type:  <BR>";
+	    		print_r($line);
 	    		die();
+
 	    	}
+
 			$calls[] = "(".implode(',',$call).")";
-
-
+			
     	}
 		echo "finished creating the array: $i<BR>";
-	//	print_r($calls);
+//		print_r($calls);
 	    if (!empty($calls)) {
+//	    	echo "we've gotten thte calls but something else is wrong...";
 	    	insertCalls($calls);
 	    }	
     } // close if

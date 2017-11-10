@@ -12,10 +12,10 @@ INSERT INTO phones (
 	Modified
 ) VALUES (
 	1,  
-	"3474446552",
-	1,
-	"Frank Jenkins",
-	"FJ",
+	"9178541604",
+	3,
+	"Kevin Walker iPhone4",
+	"KW-iP4",
 	"red-pushpin.png",
 	now(),
 	now()
@@ -32,10 +32,10 @@ INSERT INTO phones 	(
 	Modified
 ) VALUES (
 	1,  
-	"6462417067",
+	"9178081374",
 	1,
-	"Cory Harris",
-	"CH",
+	"Kevin Walker iPhone6",
+	"KW-iP6",
 	"blue-pushpin.png",
 	now(), 
 	now()
@@ -52,10 +52,10 @@ INSERT INTO phones (
 	Modified
 ) VALUES (
 	1,  
-	"3479931973",
+	"2032930277",
 	1,
-	"UNK 1",
-	"UN1",
+	"Kevin Walker Google",
+	"KW-G",
 	"green-pushpin.png",
 	now(), 
 	now()	
