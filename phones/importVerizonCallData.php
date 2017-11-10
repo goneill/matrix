@@ -8,7 +8,7 @@ foreach(glob('../library/*.php') as $file) {
 
 // this code should be executed on every page/script load:
 $inDirectory = "verizonPhoneRecords/";
-$caseID = 1;
+$caseID = 2;
 $serviceProviderID = getServiceProviderID("Verizon"); 
 echo $serviceProviderID. "<BR>";
 $missingElementName = Array();
