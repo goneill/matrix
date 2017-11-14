@@ -7,7 +7,7 @@ foreach(glob('../library/*.php') as $file) {
 }     
 
 // this code should be executed on every page/script load:
-$inDirectory = "verizonPhoneRecords/";
+$inDirectory = "../input/verizonPhoneRecords/";
 $caseID = 2;
 $serviceProviderID = getServiceProviderID("Verizon"); 
 echo $serviceProviderID. "<BR>";
@@ -34,10 +34,11 @@ function getEndDate($startDate, $duration){
 function getLatLongAz($cellSite, $cellFace, $networkElementName){
 	global $link;
 	global $missingElementName;
+	global $caseID;
 	if ($cellFace == 'D4') {
-		$cellSiteQuery = "SELECT Latitude, Longitude, 0 AS Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $cellSite";
+		$cellSiteQuery = "SELECT Latitude, Longitude, 0 AS Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $cellSite AND CaseID = $caseID";
 	} else {
-		$cellSiteQuery = "SELECT Latitude, Longitude, Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $cellSite AND VerizonTowers.Sector = '$cellFace'";
+		$cellSiteQuery = "SELECT Latitude, Longitude, Azimuth FROM VerizonTowers,VerizonSwitchElementMap   WHERE VerizonSwitchElementMap.NetworkElementName = '$networkElementName' AND VerizonSwitchElementMap.SwitchName = VerizonTowers.SwitchName AND VerizonTowers.CellNumber = $cellSite AND VerizonTowers.Sector = '$cellFace' AND CaseID = $caseID";
 	}
 	if ($results = $link->query($cellSiteQuery)) {
 		if ($results->num_rows>0) {
@@ -97,6 +98,75 @@ function getCellSiteData($line) {
 	return $cellSiteData;
 }
 
+function setVoiceCall($line, $serviceProviderID, $callType) {
+	global $caseID;
+	$cellSiteData = getCellSiteData($line);
+	$duration = trim($line[5]);
+	$call= array();
+	$call['CaseID'] = $caseID;
+	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[2]));
+	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[10]));
+	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[2]))."'";
+	$call['Direction'] = "'".trim($line[3])."'";
+	$call['StartDate'] = getSqlDate(new datetime($line[4]));
+	$call['EndDate']= getSqlDate(getEndDate(new datetime($line[4]), $duration)); 
+	$call['Duration'] = $duration;
+	$call['NetworkElement'] = "'".trim($line[0])."'";
+	$call['Repoll'] = 'NULL';
+	$call['FirstCell'] = trim($line[6]);
+	$call['LastCell'] = trim($line[8]);
+	$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
+	$call['FirstLongitude'] = $cellSiteData['FirstLongitude'];
+	$call['LastLatitude'] = $cellSiteData['LastLatitude'];
+	$call['LastLongitude'] = $cellSiteData['LastLongitude'];
+	$call['FirstCellDirection'] = "'".$cellSiteData['FirstCellDirection']."'";
+	$call['LastCellDirection'] = "'".$cellSiteData['LastCellDirection']."'";
+	$call['Pertinent'] = 1;
+	$call['Notes'] = "''";
+	$call['Source'] = "'".$line[1]."'";
+	$call['ServiceProviderID'] = $serviceProviderID;
+	$call['CallType'] = "'$callType'";
+	$call['Created'] = 'Now()';
+	$call['Modified'] = 'NOW()';
+
+	return $call;
+}
+function setSMSCall($line, $serviceProviderID, $callType) {
+//Network Element Name,Switch Type Indicator,MDN,Msg Send Date,Msg Deliver Date,Message Completion Status,Originating Address,Destination Address,Message Direction Indicator,MIN,
+//Mapleshade_96,M,3478801529,01/11/2016 22:37:36,01/11/2016 22:37:37,16,3478801529,900080004101,4,0,
+	global $caseID;
+
+	$duration ="''";
+	$call= array();
+	$call['CaseID'] = $caseID;
+	$fromPhoneNum = 
+	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[7]));
+	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[6]));
+	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[7]))."'";
+	$call['Direction'] = "'".trim($line[8])."'";
+	$call['StartDate'] = getSqlDate(new datetime($line[3]));
+	$call['EndDate']= $call['StartDate'];
+	$call['Duration'] = $duration;
+	$call['NetworkElement'] = "'".trim($line[0])."'";
+	$call['Repoll'] = 'NULL';
+	$call['FirstCell'] = "''";
+	$call['LastCell'] = "''"; 
+	$call['FirstLatitude'] ='NULL';
+	$call['FirstLongitude'] = 'NULL';
+	$call['LastLatitude'] = 'NULL';
+	$call['LastLongitude'] = 'NULL';
+	$call['FirstCellDirection'] = "''";
+	$call['LastCellDirection'] = "''";
+	$call['Pertinent'] = 1;
+	$call['Notes'] = "''";
+	$call['Source'] = "'".$line[2]."'";
+	$call['ServiceProviderID'] = $serviceProviderID;
+	$call['CallType'] = "'$callType'";
+	$call['Created'] = 'Now()';
+	$call['Modified'] = 'NOW()';
+	return $call;
+
+}
 function addRecords($filename) {
 	global $link;
 	global $serviceProviderID;
@@ -112,7 +182,14 @@ function addRecords($filename) {
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
 		$source = '';
-		$callType = 'Voice';
+   		if (strpos($filename, 'Text_Message')) {
+    			echo "its SMS: $filename <BR>";
+   			$callType = 'SMS';
+
+   		} else {
+   			echo "Voice file: $filename<BR>";
+   			$callType = 'Voice';
+    	}
 
 		//put each line of the file in the database
 	    while (($line = fgetcsv($handle)) !== FALSE) {
@@ -120,38 +197,13 @@ function addRecords($filename) {
 				$i++;
 				continue;
 			}
-			if ($source == '') {
-				$source = $line[1];
+
+			if ($callType =='Voice') {
+	    		$call = setVoiceCall($line, $serviceProviderID, $callType);
+			} elseif ($callType == 'SMS') {
+				$call = setSMSCall($line, $serviceProviderID, $callType);
 			}
 
-			$cellSiteData = getCellSiteData($line);
-			$duration = trim($line[5]);
-	    	$call= array();
-	    	$call['CaseID'] = $caseID;
-	    	$call['ToPhoneID'] = getPhoneID(stripPhoneNumber($line[2]));
-	    	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[10]));
-	    	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[2]))."'";
-	    	$call['Direction'] = "'".trim($line[3])."'";
-			$call['StartDate'] = getSqlDate(new datetime($line[4]));
-			$call['EndDate']= getSqlDate(getEndDate(new datetime($line[4]), $duration)); 
-			$call['Duration'] = $duration;
-			$call['NetworkElement'] = "'".trim($line[0])."'";
-			$call['Repoll'] = 'NULL';
-			$call['FirstCell'] = trim($line[6]);
-			$call['LastCell'] = trim($line[8]);
-			$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
-			$call['FirstLongitude'] = $cellSiteData['FirstLongitude'];
-			$call['LastLatitude'] = $cellSiteData['LastLatitude'];
-			$call['LastLongitude'] = $cellSiteData['LastLongitude'];
-			$call['FirstCellDirection'] = "'".$cellSiteData['FirstCellDirection']."'";
-			$call['LastCellDirection'] = "'".$cellSiteData['LastCellDirection']."'";
-			$call['Pertinent'] = 1;
-			$call['Notes'] = "''";
-			$call['Source'] = "'$source'";
-			$call['ServiceProviderID'] = $serviceProviderID;
-			$call['CallType'] = "'$callType'";
-			$call['Created'] = 'Now()';
-			$call['Modified'] = 'NOW()';
 			$calls[] = "(".implode(',',$call).")";
 
     		$i++;
@@ -170,7 +222,7 @@ $di = new RecursiveDirectoryIterator($inDirectory, FilesystemIterator::SKIP_DOTS
 foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
 	$basename = basename($filename);
 	// need to check for duplicates!!
-	if (strpos($filename, '.csv')) {
+	if (strpos($filename, '.csv')|| strpos($filename, '.txt')) {
 		addRecords($filename);
 		echo "did it for $filename <BR>";
 	}

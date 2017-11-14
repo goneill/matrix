@@ -7,3 +7,5 @@ matrix_2017-02-12.sql
 library/.DS_Store
 library/PdfParser/.DS_Store
 .DS_Store
+library/db.php
+Database/*.*

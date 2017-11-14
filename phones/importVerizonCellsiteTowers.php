@@ -1,57 +1,34 @@
 <?php 
 // import sprint cellsite data
-// mysql connection 
-ini_set('display_errors', 1);
-ini_set('log_errors', 0);
-error_reporting(E_ALL);
-date_default_timezone_set('America/New_York');
-set_time_limit(0);
-ini_set("memory_limit","2400M");
-ini_set("auto_detect_line_endings", true);
-foreach(glob('Includes/*.php') as $file) {
+
+foreach(glob('../library/*.php') as $file) {
      include_once $file;
 }     
-
-function errHandle($errNo, $errStr, $errFile, $errLine) {
-    $msg = "$errStr in $errFile on line $errLine";
-    if ($errNo == E_NOTICE || $errNo == E_WARNING) {
-        throw new ErrorException($msg, $errNo);
-    } else {
-        echo $msg;
-    }
-}
-
-set_error_handler('errHandle');
-
-
-$inDirectory = "verizonPhoneTowers/";
+// per case variables 
+$caseID = 2;
+$inDirectory = "../input/verizonPhoneTowers/";
 
 //******* FUNCTIONS ****//
 function addRecords($filename) {
+	global $link;
+	global $caseID;
+	echo "begging the add records function<BR>";
+	echo "$filename <BR>";
+	$verizonTowerFilename = substr($filename, strrpos($filename, "/")+1);
+	$verizonTowerFilename = substr($verizonTowerFilename, 0, strrpos($verizonTowerFilename, "."));
+	echo "VerizonTowerFilename : $verizonTowerFilename";
 
-	$source = substr($filename, strpos($filename, "/")+1);
-	$source = substr($source, 0, strrpos($source, "."));
-
-
-	$link = mysqli_connect("localhost", "root", "nathando123", "matrix");
-	if (!$link) {
-	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-	    exit;
-	}
+	
 	// check to see if this file has already been entered into the database
 	
-	$query = "Select * from VerizonTowerFiles WHERE FileName = '$source'";
-	if (!$result = mysqli_query($link, $query)) {
-		die('Error: ' . mysqli_error($link));
-	}
+	$query = "Select VerizonTowerFileID from VerizonTowerFiles WHERE FileName = '$verizonTowerFilename' and CaseID = ". $GLOBALS['caseID'];
+	$result = $link->query($query);
 	if(mysqli_num_rows($result) > 0){
-	    echo "$source already in the database <BR>";
+	    echo "$verizonTowerFilename already in the database <BR>";
 	    return;
 	} else {
-		echo "not in there yet: $source <BR>";
-		$query = "INSERT INTO VerizonTowerFiles (FileName) VALUES ('$source')";
+		echo "not in there yet: $verizonTowerFilename <BR>";
+		$query = "INSERT INTO VerizonTowerFiles (FileName, CaseID) VALUES ('$verizonTowerFilename', $caseID)";
 		if (! mysqli_query($link,$query)) {
 			echo "query: $query <BR>";
 			echo "MySQL Error: " .$link->error ; 
@@ -59,8 +36,9 @@ function addRecords($filename) {
 		} else {
 			$sourceID = $link->insert_id;
 		}
-
 	}
+	// need to get the tower file id
+
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		fgets($handle);
 		//put each line of the file in the database
@@ -78,6 +56,8 @@ function addRecords($filename) {
 				continue;
 			}
 			$query = "INSERT INTO VerizonTowers (
+				VerizonTowerFileID,
+				CaseID,
 				MarketSID,
 				SwitchNumber,
 				SwitchName,
@@ -95,6 +75,8 @@ function addRecords($filename) {
 				Created,
 				Modified
 			) VALUES (
+				$sourceID,
+				$caseID,
 				'$line[0]',
 				'$line[1]',
 				'$line[2]',
@@ -133,14 +115,17 @@ $di = new RecursiveDirectoryIterator($inDirectory, FilesystemIterator::SKIP_DOTS
 
 // actually loop through the file; this could be shortened, but I think it makes sense for now to leave.  
 foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
+	echo"beginning for the first file: $filename <BR>";
+	
 	$basename = basename($filename);
-	if (strpos($filename, '.txt')) {
+	if (strpos($filename, '.csv')) {
 		addRecords($filename);
 		echo "did it for $filename <BR>";	
+	} else {
+		echo "skipping the file: $filename <BR>";
 	}
 
 	// need to check for duplicates!!
-
 
 
 }

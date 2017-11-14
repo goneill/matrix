@@ -141,6 +141,10 @@ function setVoiceCall($line, $source, $serviceProviderID, $callType) {
 
 function setSMSCall($line, $source, $serviceProviderID, $callType) {
 	global $caseID;
+
+//	Network Element Name,Switch Type Indicator,MDN,Msg Send Date,Msg Deliver Date,Message Completion Status,Originating Address,Destination Address,Message Direction Indicator,MIN,
+//Mapleshade_96,M,3478801529,01/11/2016 22:37:36,01/11/2016 22:37:37,16,3478801529,900080004101,4,0,
+
 	$startDateEST = date_modify(new datetime($line[1]), '-5 hours');
 	$duration = "'0:00'";
 	$toPhoneNum = stripPhoneNumber(trim($line[3]));

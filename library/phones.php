@@ -23,7 +23,7 @@ function stripPhoneNumber ($number) {
 function getPhoneID($phoneNumber) {
 	global $link;
 	//first check to see if the id is in the mysql database
-	$phoneNumQuery = "SELECT * FROM PHONES where PhoneNumber = $phoneNumber";
+	$phoneNumQuery = "SELECT * FROM PHONES where PhoneNumber = '$phoneNumber'";
 //	echo "phoneNumQuery: $phoneNumQuery<BR>";
 	mysqli_query($link,$phoneNumQuery);
 	if ($phone = $link->query($phoneNumQuery)) {
