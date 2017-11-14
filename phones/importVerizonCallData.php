@@ -47,8 +47,15 @@ function getLatLongAz($cellSite, $cellFace, $networkElementName){
 			$cellSiteData['Longitude'] = $row['Longitude'];
 			$cellSiteData['CellDirection'] = $row['Azimuth'];
 		} else {
+			// check to see if we can get a lat long azimuth would be zero
+		
+			echo "cellsite doesn't exist: $cellSite netowrk element name: $networkElementName<BR> cellSiteQuery: $cellSiteQuery <BR>";
 			if (!in_array($networkElementName, $missingElementName)){
-				$missingElementName[]='$networkElementName';
+				$missingElementName[$networkElementName]=1;
+
+			} else {
+				$missingElementName[$networkElementName]= $missingElementName[$networkElementName+1];
+
 			//	echo "query didn't return anything: $cellSiteQuery <BR>";
 			}// else keep it at 0,0, '';
 			$cellSiteData['Latitude'] = 0;
@@ -56,7 +63,7 @@ function getLatLongAz($cellSite, $cellFace, $networkElementName){
 			$cellSiteData['CellDirection'] = 0;
 		}
 	} else {
-		echo "query didn't work: $cellSiteQuery <BR>";
+		echo "getLatLongAZ query didn't work: $cellSiteQuery <BR>";
 		die();
 	}
 	return $cellSiteData;	
@@ -228,7 +235,7 @@ foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
 	}
 
 }
-
-
+echo "missing network element names: <BR>";
+print_r($missingElementName);
 
 ?>
