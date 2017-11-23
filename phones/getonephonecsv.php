@@ -6,7 +6,7 @@ foreach(glob('../library/*.php') as $file) {
 
 $phoneNumber = $_GET['number'];
 echo "Phone Num: $phoneNumber<BR>";
-$outFile = "../CHarris/CH_".$phoneNumber."_out.csv";
+$outFile = "../output/KW_".$phoneNumber."_out.csv";
 
 try {
 	$outputFile = fopen($outFile, "w");
@@ -15,7 +15,7 @@ try {
 	die();
 }
 
-$query = "SELECT  PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, Calls.PhoneCallID, Calls.StartDate, Calls.EndDate, Calls.Duration, Calls.FirstLatitude, Calls.FirstLongitude, Calls.Source FROM Phones as PhoneTo, Calls, Phones as PhoneFrom WHERE Calls.source = '$phoneNumber' AND PhoneTo.PhoneID = Calls.ToPhoneID AND PhoneFrom.PhoneID = Calls.FromPhoneID ORDER BY StartDate";
+$query = "SELECT  PhoneTo.PhoneNumber as PhoneToPhoneNumber, PhoneTo.PhoneID as PhoneToPhoneID, PhoneTo.ShortName as PhoneToShortName, PhoneFrom.PhoneNumber as PhoneFromPhoneNumber, PhoneFrom.PhoneID as PhoneFromPhoneID, PhoneFrom.ShortName as PhoneFromShortName, Calls.PhoneCallID, Calls.StartDate, Calls.EndDate, Calls.Duration, Calls.FirstLatitude, Calls.FirstLongitude, Calls.CallType, Calls.Source FROM Phones as PhoneTo, Calls, Phones as PhoneFrom WHERE Calls.source = '$phoneNumber' AND PhoneTo.PhoneID = Calls.ToPhoneID AND PhoneFrom.PhoneID = Calls.FromPhoneID ORDER BY StartDate";
 echo $query;
 
 
@@ -24,7 +24,7 @@ if ($result = $link->query($query)) {
 	while($row=$result->fetch_array()) {
 		$rows[] = $row;
 	}
-    $outputLine = "Start Date| End Date|Duration|To Number|To Short Name|From Phone Number|FromShortName|Latitude| Longitude|Source \n";
+    $outputLine = "Start Date|End Date|Duration|To Number|To Short Name|From Number|From Short Name|Latitude|Longitude|Call Type|Source \n";
     echo $outputLine ."<BR>";
 	fwrite($outputFile,$outputLine);
 
@@ -43,9 +43,10 @@ if ($result = $link->query($query)) {
 
 		$firstLatitude = $row['FirstLatitude'];
 		$firstLongitude = $row['FirstLongitude'];
+		$callType = $row['CallType'];
 		$source = $row['Source'];
 		
-	    $outputLine = "\"$startDate\"|$endDate|$duration|$toPhoneNumber|$toShortName|$fromPhoneNumber|$fromShortName|$firstLatitude|$firstLongitude|$source\n";
+	    $outputLine = "\"$startDate\"|$endDate|$duration|$toPhoneNumber|$toShortName|$fromPhoneNumber|$fromShortName|$firstLatitude|$firstLongitude|$callType|$source\n";
 //	    
 		fwrite($outputFile,$outputLine);
 

@@ -22,44 +22,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/2/16 06:36:44</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-02T11:36:44</begin>
-					<end>2016-02-02T11:36:44</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 2126621816 To KW 9515 2/2/16 07:43:07</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-02T12:43:07</begin>
 					<end>2016-02-02T12:43:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/2/16 07:43:07</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-02T12:43:07</begin>
-					<end>2016-02-02T12:43:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/3/16 06:52:16</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-03T11:52:16</begin>
-					<end>2016-02-03T11:52:16</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -88,44 +55,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/3/16 12:57:59</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-03T17:57:59</begin>
-					<end>2016-02-03T17:57:59</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.949379,40.813057,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 6462942492 To KW 9515 2/3/16 17:10:34</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-03T22:10:34</begin>
 					<end>2016-02-03T22:10:34</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 6462942492 To KW 9515 2/3/16 17:10:34</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-03T22:10:34</begin>
-					<end>2016-02-03T22:10:34</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/3/16 20:18:44</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-04T01:18:44</begin>
-					<end>2016-02-04T01:18:44</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
@@ -154,17 +88,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/3/16 21:58:19</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-04T02:58:19</begin>
-					<end>2016-02-04T02:58:19</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS KW 9515 To 3477942725 2/4/16 23:07:26</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -173,28 +96,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3477942725 2/4/16 23:07:26</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-05T04:07:26</begin>
-					<end>2016-02-05T04:07:26</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9176073847 To KW 9515 2/5/16 06:43:58</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-05T11:43:58</begin>
-					<end>2016-02-05T11:43:58</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -220,28 +121,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 6462942492 To KW 9515 2/5/16 13:01:50</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-05T18:01:50</begin>
-					<end>2016-02-05T18:01:50</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930557,40.796391,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3476442430 To KW 9515 2/5/16 15:14:06</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-05T20:14:06</begin>
-					<end>2016-02-05T20:14:06</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.942223,40.650833,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3476442430 To KW 9515 2/5/16 15:14:06</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -258,28 +137,6 @@
 			    	  <TimeSpan>
 					<begin>2016-02-05T23:19:47</begin>
 					<end>2016-02-05T23:19:47</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.907387,40.646370,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2013544169 To KW 9515 2/5/16 18:19:47</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-05T23:19:47</begin>
-					<end>2016-02-05T23:19:47</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.907387,40.646370,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3472363897 To KW 9515 2/6/16 11:02:42</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-06T16:02:42</begin>
-					<end>2016-02-06T16:02:42</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.907387,40.646370,0</coordinates>
@@ -308,17 +165,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS KW 9515 To KW 9515 2/6/16 17:31:00</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-06T22:31:00</begin>
-					<end>2016-02-06T22:31:00</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.995003,40.709442,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS KW 9515 To KW 9515 2/8/16 09:54:48</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -327,28 +173,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.940552,40.805000,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To KW 9515 2/8/16 09:54:48</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-08T14:54:48</begin>
-					<end>2016-02-08T14:54:48</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.940552,40.805000,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW iP4 To KW 9515 2/12/16 15:09:03</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-12T20:09:03</begin>
-					<end>2016-02-12T20:09:03</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -374,17 +198,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3232859517 To KW 9515 2/12/16 16:09:59</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-12T21:09:59</begin>
-					<end>2016-02-12T21:09:59</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.949379,40.813057,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 6465773753 To KW 9515 2/12/16 16:11:42</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -393,28 +206,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 6465773753 To KW 9515 2/12/16 16:11:42</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-12T21:11:42</begin>
-					<end>2016-02-12T21:11:42</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 6462507078 To KW 9515 2/13/16 21:27:12</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T02:27:12</begin>
-					<end>2016-02-14T02:27:12</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.947777,40.821667,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -440,28 +231,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 6462507078 To KW 9515 2/13/16 21:29:09</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T02:29:09</begin>
-					<end>2016-02-14T02:29:09</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 6462507078 To KW 9515 2/13/16 21:32:48</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T02:32:48</begin>
-					<end>2016-02-14T02:32:48</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.947777,40.821667,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 6462507078 To KW 9515 2/13/16 21:32:48</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -478,28 +247,6 @@
 			    	  <TimeSpan>
 					<begin>2016-02-14T02:53:22</begin>
 					<end>2016-02-14T02:53:22</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 6462507078 2/13/16 21:53:22</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T02:53:22</begin>
-					<end>2016-02-14T02:53:22</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 6462507078 2/13/16 22:01:12</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T03:01:12</begin>
-					<end>2016-02-14T03:01:12</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
@@ -528,44 +275,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/14/16 16:35:35</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T21:35:35</begin>
-					<end>2016-02-14T21:35:35</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3473170938 To KW 9515 2/14/16 18:58:15</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-14T23:58:15</begin>
 					<end>2016-02-14T23:58:15</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/14/16 18:58:15</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-14T23:58:15</begin>
-					<end>2016-02-14T23:58:15</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/14/16 19:23:41</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-15T00:23:41</begin>
-					<end>2016-02-15T00:23:41</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
@@ -594,17 +308,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/15/16 19:51:57</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-16T00:51:57</begin>
-					<end>2016-02-16T00:51:57</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3473170938 To KW 9515 2/16/16 06:53:06</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -613,28 +316,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/16/16 06:53:06</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-16T11:53:06</begin>
-					<end>2016-02-16T11:53:06</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/16/16 10:35:55</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-16T15:35:55</begin>
-					<end>2016-02-16T15:35:55</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -660,44 +341,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/16/16 11:02:38</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-16T16:02:38</begin>
-					<end>2016-02-16T16:02:38</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.924446,40.846111,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 6463341707 To KW 9515 2/16/16 15:32:05</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-16T20:32:05</begin>
 					<end>2016-02-16T20:32:05</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 6463341707 To KW 9515 2/16/16 15:32:05</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-16T20:32:05</begin>
-					<end>2016-02-16T20:32:05</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 2/17/16 09:26:21</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-17T14:26:21</begin>
-					<end>2016-02-17T14:26:21</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -726,17 +374,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS KW-G To KW 9515 2/17/16 09:33:16</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-17T14:33:16</begin>
-					<end>2016-02-17T14:33:16</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 6465380095 To KW 9515 2/17/16 14:02:25</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -745,28 +382,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 6465380095 To KW 9515 2/17/16 14:02:25</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-17T19:02:25</begin>
-					<end>2016-02-17T19:02:25</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 7185748260 To KW 9515 2/18/16 11:12:51</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-18T16:12:51</begin>
-					<end>2016-02-18T16:12:51</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -792,17 +407,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 7185748260 To KW 9515 2/18/16 12:19:25</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-18T17:19:25</begin>
-					<end>2016-02-18T17:19:25</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.927223,40.821110,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 7185748260 To KW 9515 2/18/16 14:55:59</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -811,28 +415,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.923889,40.692223,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 7185748260 To KW 9515 2/18/16 14:55:59</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-18T19:55:59</begin>
-					<end>2016-02-18T19:55:59</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.923889,40.692223,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 7185748260 To KW 9515 2/18/16 17:07:35</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-18T22:07:35</begin>
-					<end>2016-02-18T22:07:35</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.947777,40.821667,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -858,17 +440,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 7185748260 To KW 9515 2/18/16 19:02:43</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-19T00:02:43</begin>
-					<end>2016-02-19T00:02:43</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.924446,40.846111,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3164536555 To KW 9515 2/18/16 19:15:02</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -877,28 +448,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3164536555 To KW 9515 2/18/16 19:15:02</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-19T00:15:02</begin>
-					<end>2016-02-19T00:15:02</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 5183608329 To KW 9515 2/19/16 10:45:13</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-19T15:45:13</begin>
-					<end>2016-02-19T15:45:13</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -924,44 +473,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 2/19/16 22:04:38</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-20T03:04:38</begin>
-					<end>2016-02-20T03:04:38</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.868019,40.865891,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 2126621816 To KW 9515 2/20/16 10:32:40</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-20T15:32:40</begin>
 					<end>2016-02-20T15:32:40</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2126621816 To KW 9515 2/20/16 10:32:40</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-20T15:32:40</begin>
-					<end>2016-02-20T15:32:40</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/20/16 20:43:39</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-21T01:43:39</begin>
-					<end>2016-02-21T01:43:39</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -990,44 +506,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 2124707061 To KW 9515 2/21/16 08:51:38</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-21T13:51:38</begin>
-					<end>2016-02-21T13:51:38</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 2124707061 To KW 9515 2/21/16 08:54:06</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-21T13:54:06</begin>
 					<end>2016-02-21T13:54:06</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2124707061 To KW 9515 2/21/16 08:54:06</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-21T13:54:06</begin>
-					<end>2016-02-21T13:54:06</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2124707061 To KW 9515 2/21/16 08:54:51</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-21T13:54:51</begin>
-					<end>2016-02-21T13:54:51</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1056,17 +539,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS KW 9515 To 2124707061 2/21/16 08:55:15</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-21T13:55:15</begin>
-					<end>2016-02-21T13:55:15</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3472629090 To KW 9515 2/21/16 14:59:14</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1075,28 +547,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.947777,40.821667,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 2/21/16 14:59:14</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-21T19:59:14</begin>
-					<end>2016-02-21T19:59:14</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.947777,40.821667,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/21/16 22:39:31</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-22T03:39:31</begin>
-					<end>2016-02-22T03:39:31</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956947,40.773056,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -1122,28 +572,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/24/16 06:58:49</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-24T11:58:49</begin>
-					<end>2016-02-24T11:58:49</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/24/16 07:35:31</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-24T12:35:31</begin>
-					<end>2016-02-24T12:35:31</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.941666,40.810833,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 2/24/16 07:35:31</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1166,44 +594,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3479082124 To KW 9515 2/24/16 11:52:32</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-24T16:52:32</begin>
-					<end>2016-02-24T16:52:32</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 2/24/16 18:13:14</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-24T23:13:14</begin>
 					<end>2016-02-24T23:13:14</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/24/16 18:13:14</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-24T23:13:14</begin>
-					<end>2016-02-24T23:13:14</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/24/16 18:17:45</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-24T23:17:45</begin>
-					<end>2016-02-24T23:17:45</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1232,17 +627,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/25/16 01:08:38</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T06:08:38</begin>
-					<end>2016-02-25T06:08:38</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.918610,40.863335,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 2/25/16 01:21:24</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1251,28 +635,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.836662,40.911945,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/25/16 01:21:24</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T06:21:24</begin>
-					<end>2016-02-25T06:21:24</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.836662,40.911945,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/25/16 06:55:24</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T11:55:24</begin>
-					<end>2016-02-25T11:55:24</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.941666,40.810833,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -1298,28 +660,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/25/16 07:56:30</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T12:56:30</begin>
-					<end>2016-02-25T12:56:30</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.940460,40.819008,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2126450218 To KW 9515 2/25/16 09:43:25</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T14:43:25</begin>
-					<end>2016-02-25T14:43:25</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.927223,40.821110,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 2126450218 To KW 9515 2/25/16 09:43:25</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1336,28 +676,6 @@
 			    	  <TimeSpan>
 					<begin>2016-02-25T19:52:30</begin>
 					<end>2016-02-25T19:52:30</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9416810922 To KW 9515 2/25/16 14:52:30</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T19:52:30</begin>
-					<end>2016-02-25T19:52:30</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9416810922 To KW 9515 2/25/16 14:53:01</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-25T19:53:01</begin>
-					<end>2016-02-25T19:53:01</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1386,28 +704,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/27/16 16:48:18</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-27T21:48:18</begin>
-					<end>2016-02-27T21:48:18</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/27/16 20:46:02</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-28T01:46:02</begin>
-					<end>2016-02-28T01:46:02</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.977501,40.820278,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 2/27/16 20:46:02</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1424,28 +720,6 @@
 			    	  <TimeSpan>
 					<begin>2016-02-28T01:47:04</begin>
 					<end>2016-02-28T01:47:04</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 2/27/16 20:47:04</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-28T01:47:04</begin>
-					<end>2016-02-28T01:47:04</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 2/28/16 16:21:46</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-28T21:21:46</begin>
-					<end>2016-02-28T21:21:46</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1474,44 +748,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS KW 9515 To 9294313876 2/28/16 16:58:24</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-28T21:58:24</begin>
-					<end>2016-02-28T21:58:24</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.941666,40.810833,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9738383500 To KW 9515 2/29/16 14:17:07</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-02-29T19:17:07</begin>
 					<end>2016-02-29T19:17:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9738383500 To KW 9515 2/29/16 14:17:07</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-02-29T19:17:07</begin>
-					<end>2016-02-29T19:17:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/1/16 10:00:04</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-01T15:00:04</begin>
-					<end>2016-03-01T15:00:04</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1540,28 +781,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/1/16 12:03:22</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-01T17:03:22</begin>
-					<end>2016-03-01T17:03:22</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.881386,40.857224,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/1/16 12:08:29</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-01T17:08:29</begin>
-					<end>2016-03-01T17:08:29</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.890343,40.856831,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 3/1/16 12:08:29</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1578,28 +797,6 @@
 			    	  <TimeSpan>
 					<begin>2016-03-02T11:58:44</begin>
 					<end>2016-03-02T11:58:44</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW-G To KW 9515 3/2/16 06:58:44</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T11:58:44</begin>
-					<end>2016-03-02T11:58:44</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 7188717433 To KW 9515 3/2/16 09:55:43</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T14:55:43</begin>
-					<end>2016-03-02T14:55:43</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1628,28 +825,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/2/16 11:25:09</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T16:25:09</begin>
-					<end>2016-03-02T16:25:09</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/2/16 11:29:10</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T16:29:10</begin>
-					<end>2016-03-02T16:29:10</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/2/16 11:29:10</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1666,28 +841,6 @@
 			    	  <TimeSpan>
 					<begin>2016-03-02T17:57:24</begin>
 					<end>2016-03-02T17:57:24</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW-G To KW 9515 3/2/16 12:57:24</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T17:57:24</begin>
-					<end>2016-03-02T17:57:24</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/2/16 13:35:57</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T18:35:57</begin>
-					<end>2016-03-02T18:35:57</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
@@ -1716,44 +869,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/2/16 16:48:59</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-02T21:48:59</begin>
-					<end>2016-03-02T21:48:59</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.869164,40.733612,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 3/2/16 20:22:50</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-03T01:22:50</begin>
 					<end>2016-03-03T01:22:50</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/2/16 20:22:50</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-03T01:22:50</begin>
-					<end>2016-03-03T01:22:50</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/2/16 20:31:11</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-03T01:31:11</begin>
-					<end>2016-03-03T01:31:11</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1782,44 +902,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3471630700 To KW 9515 3/3/16 09:31:09</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-03T14:31:09</begin>
-					<end>2016-03-03T14:31:09</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 3/3/16 12:31:11</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-03T17:31:11</begin>
 					<end>2016-03-03T17:31:11</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/3/16 12:31:11</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-03T17:31:11</begin>
-					<end>2016-03-03T17:31:11</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/3/16 17:53:10</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-03T22:53:10</begin>
-					<end>2016-03-03T22:53:10</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1848,44 +935,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/3/16 18:53:35</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-03T23:53:35</begin>
-					<end>2016-03-03T23:53:35</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.903107,40.867249,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/3/16 22:16:05</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-04T03:16:05</begin>
 					<end>2016-03-04T03:16:05</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/3/16 22:16:05</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-04T03:16:05</begin>
-					<end>2016-03-04T03:16:05</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/3/16 22:21:58</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-04T03:21:58</begin>
-					<end>2016-03-04T03:21:58</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -1914,17 +968,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/4/16 06:22:38</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-04T11:22:38</begin>
-					<end>2016-03-04T11:22:38</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.947777,40.821667,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/4/16 08:52:45</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -1933,28 +976,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.835861,40.877331,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/4/16 08:52:45</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-04T13:52:45</begin>
-					<end>2016-03-04T13:52:45</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.835861,40.877331,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3307361174 To KW 9515 3/4/16 12:49:43</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-04T17:49:43</begin>
-					<end>2016-03-04T17:49:43</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.940460,40.819008,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -1980,44 +1001,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/4/16 20:06:57</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-05T01:06:57</begin>
-					<end>2016-03-05T01:06:57</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.834610,40.904446,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3472629090 To KW 9515 3/5/16 10:27:12</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-05T15:27:12</begin>
 					<end>2016-03-05T15:27:12</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 3/5/16 10:27:12</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-05T15:27:12</begin>
-					<end>2016-03-05T15:27:12</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/5/16 12:47:44</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-05T17:47:44</begin>
-					<end>2016-03-05T17:47:44</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2046,44 +1034,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/5/16 16:14:31</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-05T21:14:31</begin>
-					<end>2016-03-05T21:14:31</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 8004838314 To KW 9515 3/6/16 13:02:41</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-06T18:02:41</begin>
 					<end>2016-03-06T18:02:41</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 8004838314 To KW 9515 3/6/16 13:02:41</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-06T18:02:41</begin>
-					<end>2016-03-06T18:02:41</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/6/16 13:09:00</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-06T18:09:00</begin>
-					<end>2016-03-06T18:09:00</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2112,17 +1067,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/6/16 13:22:54</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-06T18:22:54</begin>
-					<end>2016-03-06T18:22:54</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9172796250 To KW 9515 3/6/16 14:02:30</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -2131,28 +1075,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9172796250 To KW 9515 3/6/16 14:02:30</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-06T19:02:30</begin>
-					<end>2016-03-06T19:02:30</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/6/16 20:40:29</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T01:40:29</begin>
-					<end>2016-03-07T01:40:29</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -2178,28 +1100,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 2019968030 To KW 9515 3/7/16 09:11:31</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T14:11:31</begin>
-					<end>2016-03-07T14:11:31</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 10:08:57</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T15:08:57</begin>
-					<end>2016-03-07T15:08:57</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.942970,40.799377,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/7/16 10:08:57</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -2216,28 +1116,6 @@
 			    	  <TimeSpan>
 					<begin>2016-03-07T15:25:20</begin>
 					<end>2016-03-07T15:25:20</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.970001,40.794998,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 10:25:20</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T15:25:20</begin>
-					<end>2016-03-07T15:25:20</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.970001,40.794998,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 10:26:31</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T15:26:31</begin>
-					<end>2016-03-07T15:26:31</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.970001,40.794998,0</coordinates>
@@ -2266,44 +1144,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 10:27:18</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T15:27:18</begin>
-					<end>2016-03-07T15:27:18</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.970001,40.794998,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/7/16 15:47:37</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-07T20:47:37</begin>
 					<end>2016-03-07T20:47:37</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.941666,40.810833,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 15:47:37</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T20:47:37</begin>
-					<end>2016-03-07T20:47:37</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.941666,40.810833,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3475250596 3/7/16 16:17:17</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-07T21:17:17</begin>
-					<end>2016-03-07T21:17:17</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.941666,40.810833,0</coordinates>
@@ -2332,44 +1177,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 2014880544 To KW 9515 3/7/16 20:34:21</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T01:34:21</begin>
-					<end>2016-03-08T01:34:21</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/7/16 21:30:35</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-08T02:30:35</begin>
 					<end>2016-03-08T02:30:35</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 21:30:35</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T02:30:35</begin>
-					<end>2016-03-08T02:30:35</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/7/16 22:35:26</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T03:35:26</begin>
-					<end>2016-03-08T03:35:26</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2398,44 +1210,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/8/16 11:37:11</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T16:37:11</begin>
-					<end>2016-03-08T16:37:11</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 2014880544 To KW 9515 3/8/16 14:11:07</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-08T19:11:07</begin>
 					<end>2016-03-08T19:11:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 2014880544 To KW 9515 3/8/16 14:11:07</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T19:11:07</begin>
-					<end>2016-03-08T19:11:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/8/16 15:13:19</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T20:13:19</begin>
-					<end>2016-03-08T20:13:19</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2464,44 +1243,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/8/16 17:41:33</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T22:41:33</begin>
-					<end>2016-03-08T22:41:33</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS KW-G To KW 9515 3/8/16 17:44:47</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-08T22:44:47</begin>
 					<end>2016-03-08T22:44:47</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW-G To KW 9515 3/8/16 17:44:47</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T22:44:47</begin>
-					<end>2016-03-08T22:44:47</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW-G To KW 9515 3/8/16 17:46:19</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T22:46:19</begin>
-					<end>2016-03-08T22:46:19</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2530,44 +1276,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/8/16 18:27:07</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T23:27:07</begin>
-					<end>2016-03-08T23:27:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/8/16 18:53:44</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-08T23:53:44</begin>
 					<end>2016-03-08T23:53:44</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/8/16 18:53:44</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-08T23:53:44</begin>
-					<end>2016-03-08T23:53:44</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/8/16 19:34:42</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T00:34:42</begin>
-					<end>2016-03-09T00:34:42</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2596,44 +1309,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9173457496 To KW 9515 3/8/16 21:55:04</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T02:55:04</begin>
-					<end>2016-03-09T02:55:04</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/9/16 01:13:08</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-09T06:13:08</begin>
 					<end>2016-03-09T06:13:08</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/9/16 01:13:08</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T06:13:08</begin>
-					<end>2016-03-09T06:13:08</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 04:43:33</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T09:43:33</begin>
-					<end>2016-03-09T09:43:33</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2662,44 +1342,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 05:34:37</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T10:34:37</begin>
-					<end>2016-03-09T10:34:37</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS KW 9515 To 3473170938 3/9/16 05:34:43</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-09T10:34:43</begin>
 					<end>2016-03-09T10:34:43</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3473170938 3/9/16 05:34:43</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T10:34:43</begin>
-					<end>2016-03-09T10:34:43</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3473170938 3/9/16 05:34:50</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T10:34:50</begin>
-					<end>2016-03-09T10:34:50</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2728,44 +1375,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 05:37:55</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T10:37:55</begin>
-					<end>2016-03-09T10:37:55</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3473170938 To KW 9515 3/9/16 06:11:27</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-09T11:11:27</begin>
 					<end>2016-03-09T11:11:27</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 06:11:27</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T11:11:27</begin>
-					<end>2016-03-09T11:11:27</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 06:20:25</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T11:20:25</begin>
-					<end>2016-03-09T11:20:25</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -2794,28 +1408,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3473170938 3/9/16 07:29:37</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T12:29:37</begin>
-					<end>2016-03-09T12:29:37</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.834610,40.904446,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3473170938 3/9/16 07:29:44</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T12:29:44</begin>
-					<end>2016-03-09T12:29:44</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.834610,40.904446,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS KW 9515 To 3473170938 3/9/16 07:29:44</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -2838,44 +1430,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3047194897 To KW 9515 3/9/16 10:21:13</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T15:21:13</begin>
-					<end>2016-03-09T15:21:13</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930000,40.814999,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/9/16 13:53:58</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-09T18:53:58</begin>
 					<end>2016-03-09T18:53:58</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/9/16 13:53:58</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T18:53:58</begin>
-					<end>2016-03-09T18:53:58</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 3/9/16 13:55:04</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T18:55:04</begin>
-					<end>2016-03-09T18:55:04</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
@@ -2904,44 +1463,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/9/16 14:39:07</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T19:39:07</begin>
-					<end>2016-03-09T19:39:07</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9173457496 To KW 9515 3/9/16 14:52:57</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-09T19:52:57</begin>
 					<end>2016-03-09T19:52:57</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9173457496 To KW 9515 3/9/16 14:52:57</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T19:52:57</begin>
-					<end>2016-03-09T19:52:57</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/9/16 14:54:33</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T19:54:33</begin>
-					<end>2016-03-09T19:54:33</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
@@ -2970,17 +1496,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 15:43:42</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T20:43:42</begin>
-					<end>2016-03-09T20:43:42</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3473170938 To KW 9515 3/9/16 17:02:13</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -2989,28 +1504,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.927223,40.821110,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 17:02:13</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T22:02:13</begin>
-					<end>2016-03-09T22:02:13</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.927223,40.821110,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 17:06:14</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T22:06:14</begin>
-					<end>2016-03-09T22:06:14</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.930832,40.831665,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -3036,28 +1529,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 17:39:41</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T22:39:41</begin>
-					<end>2016-03-09T22:39:41</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.951111,40.805832,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/9/16 18:24:08</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T23:24:08</begin>
-					<end>2016-03-09T23:24:08</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.949379,40.813057,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3473170938 To KW 9515 3/9/16 18:24:08</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -3080,44 +1551,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/9/16 18:48:43</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-09T23:48:43</begin>
-					<end>2016-03-09T23:48:43</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.954430,40.820534,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3475250596 To KW 9515 3/10/16 14:02:29</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-10T19:02:29</begin>
 					<end>2016-03-10T19:02:29</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/10/16 14:02:29</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-10T19:02:29</begin>
-					<end>2016-03-10T19:02:29</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3473170938 To KW 9515 3/10/16 16:38:45</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-10T21:38:45</begin>
-					<end>2016-03-10T21:38:45</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
@@ -3146,17 +1584,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 9143619903 To KW 9515 3/11/16 18:40:05</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-11T23:40:05</begin>
-					<end>2016-03-11T23:40:05</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.956039,40.814228,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 9143619903 To KW 9515 3/11/16 18:41:37</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -3165,28 +1592,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9143619903 To KW 9515 3/11/16 18:41:37</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-11T23:41:37</begin>
-					<end>2016-03-11T23:41:37</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 9733802018 To KW 9515 3/11/16 19:37:47</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-12T00:37:47</begin>
-					<end>2016-03-12T00:37:47</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.951111,40.805832,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
@@ -3212,28 +1617,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/12/16 15:59:34</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-12T20:59:34</begin>
-					<end>2016-03-12T20:59:34</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3477942725 To KW 9515 3/13/16 15:05:15</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-13T20:05:15</begin>
-					<end>2016-03-13T20:05:15</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3477942725 To KW 9515 3/13/16 15:05:15</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -3256,44 +1639,11 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS KW 9515 To 3477942725 3/13/16 17:48:24</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-13T22:48:24</begin>
-					<end>2016-03-13T22:48:24</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.964813,40.756119,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 3472629090 To KW 9515 3/15/16 18:51:11</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
 					<begin>2016-03-15T23:51:11</begin>
 					<end>2016-03-15T23:51:11</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 3/15/16 18:51:11</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-15T23:51:11</begin>
-					<end>2016-03-15T23:51:11</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 3/15/16 19:21:24</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-16T00:21:24</begin>
-					<end>2016-03-16T00:21:24</end>
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
@@ -3322,28 +1672,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 3472629090 To KW 9515 3/15/16 23:01:28</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-16T04:01:28</begin>
-					<end>2016-03-16T04:01:28</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.942947,40.680138,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 7404301442 To KW 9515 3/16/16 11:34:02</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-16T16:34:02</begin>
-					<end>2016-03-16T16:34:02</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS 7404301442 To KW 9515 3/16/16 11:34:02</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -3366,17 +1694,6 @@
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
-		  	  <name>SMS 5183797935 To KW 9515 3/16/16 17:02:25</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-16T22:02:25</begin>
-					<end>2016-03-16T22:02:25</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
 		  	  <name>SMS KW 9515 To 5183797935 3/16/16 18:47:42</name>
 			    	  <styleUrl>#pushpin</styleUrl>
 			    	  <TimeSpan>
@@ -3385,28 +1702,6 @@
 					</TimeSpan>
 			    	  <Point>
 			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS KW 9515 To 5183797935 3/16/16 18:47:42</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-16T23:47:42</begin>
-					<end>2016-03-16T23:47:42</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.961388,40.812500,0</coordinates>
-			      	  </Point>
-			        </Placemark>
-		   	<Placemark>
-		  	  <name>SMS 3475250596 To KW 9515 3/16/16 21:37:55</name>
-			    	  <styleUrl>#pushpin</styleUrl>
-			    	  <TimeSpan>
-					<begin>2016-03-17T02:37:55</begin>
-					<end>2016-03-17T02:37:55</end>
-					</TimeSpan>
-			    	  <Point>
-			       	 	<coordinates>-73.953682,40.809765,0</coordinates>
 			      	  </Point>
 			        </Placemark>
 		   	<Placemark>
