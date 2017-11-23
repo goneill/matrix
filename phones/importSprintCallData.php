@@ -6,8 +6,8 @@ foreach(glob('../library/*.php') as $file) {
      include_once $file;
 }     
 
-$inDirectory = "sprintPhoneRecords/";
-$caseID = 1;
+$inDirectory = "../input/sprintPhoneRecords/";
+$caseID = 2;
 $serviceProviderID = getServiceProviderID("Sprint PCS");
 
 function getSource($filename) {
@@ -19,14 +19,14 @@ function getSource($filename) {
 function getLatLongAz($NEID, $repoll, $cellNum, $sector ) {
 	global $link;
 	if ($sector) {
-		$query = "SELECT Latitude, Longitude, Azimuth FROM SprintTowers where NEID = $NEID AND REPOLL = $repoll AND CellNum = $cellNum AND Sector = $sector";
+		$query = "SELECT Latitude, Longitude, Azimuth FROM SprintTowers where NEID = $NEID AND CellNum = $cellNum AND Sector = $sector";
 	} else {
-		$query = "SELECT Latitude, Longitude, 0 as Azimuth FROM SprintTowers where NEID = $NEID AND REPOLL = $repoll AND CellNum = $cellNum";
+		$query = "SELECT Latitude, Longitude, 0 as Azimuth FROM SprintTowers where NEID = $NEID AND CellNum = $cellNum";
 	}
+
 	$results = $link->query($query);
 	if ( ($results) && ($results->num_rows !== 0)) { 
 		$row=$results->fetch_assoc();
-//		print_r($row);
 		$cellSiteData['Latitude'] = $row['Latitude'];
 		$cellSiteData['Longitude'] = $row['Longitude'];
 		$cellSiteData['CellDirection'] = $row['Azimuth'];
@@ -51,8 +51,8 @@ function getCellSiteData($line) {
 	$firstCell = trim($line[9]);
 	$lastCell = trim($line[10]);
 	$callDirection  = trim($line[3]);
-	$NEID = $line[7];
-	$repoll = $line[8];
+	$NEID = $line[8];
+	$repoll = $line[9];
 //	echo "$firstCell $lastCell NEID: $NEID Repoll: $repoll<BR>";
 	if ($firstCell != '0') { // there is cellsite data on this line
 
@@ -95,7 +95,6 @@ function addRecords($filename) {
 
 	$source = getSource($filename);
 	echo "source name = $source";
-	$callType = "Voice";
 	$i=0; 
 	$calls = array();
 	// big concern we could have duplicates in here.  
@@ -109,12 +108,17 @@ function addRecords($filename) {
 	    		echo "its a basically empty row!<BR>";
 	    		continue;
 	    	}
+	    	if ($line[0]== 'CALLING_NBR') {
+	    		echo "header row <BR>";
+	    		continue;
+	    	}
 		//	if ($i >12300 ) {
 				$cellSiteData = getCellSiteData($line);
 /*				if ($cellSiteData['FirstLatitude']<>0) {
 					print_r($cellSiteData);
 					die();
 				} 
+				//CALLING_NBR,CALLED_NBR,DIALED_DIGITS,MOBILE ROLE,START_DATE,END_DATE,DURATION (SEC),Call Type,NEID,1ST CELL,LAST CELL
 */		    	$call= array();
 		    	$call['CaseID'] = $caseID;
 		    	if (trim($line[2])<> '') {
@@ -132,8 +136,8 @@ function addRecords($filename) {
 					$call['EndDate'] = $call['StartDate'];
 				}
 				$call['Duration'] = trim($line[6]);
-				$call['NetworkElement'] = "'".trim($line[7])."'";
-				$call['Repoll'] = trim($line[8]);
+				$call['NetworkElement'] = "'".trim($line[8])."'";
+				$call['Repoll'] = "0";
 				$call['FirstCell'] = trim($line[9]);
 				$call['LastCell'] = trim($line[10]);
 				$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
@@ -146,7 +150,7 @@ function addRecords($filename) {
 				$call['Notes'] = "''";
 				$call['Source'] = "'$source'";
 				$call['ServiceProviderID'] = $serviceProviderID;
-				$call['CallType'] = "'$callType'";
+				$call['CallType'] = "'.".$line[7]."'";
 				$call['Created'] = 'Now()';
 				$call['Modified'] = 'NOW()';
 							
@@ -154,6 +158,7 @@ function addRecords($filename) {
 					print_r($call);
 					die();
 				} 
+
 */
 				$calls[] = "(".implode(',',$call).")";
 	//		}
@@ -174,9 +179,12 @@ $di = new RecursiveDirectoryIterator($inDirectory, FilesystemIterator::SKIP_DOTS
 foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
 	$basename = basename($filename);
 	// need to check for duplicates!!
-	addRecords($filename);
+	if (strpos($filename, '.csv')|| strpos($filename, '.txt')) {
+		addRecords($filename);
 	echo "did it for $filename <BR>";
-
+	} else {
+		echo "skipped $filename <BR>";
+	}
 
 }
 

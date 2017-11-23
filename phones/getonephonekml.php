@@ -6,7 +6,7 @@ foreach(glob('../library/*.php') as $file) {
 
 $phoneNumber = $_GET['number'];
 echo "Phone Num: $phoneNumber<BR>";
-$outFile = "../output/Kw_".$phoneNumber."_out.kml";
+$outFile = "../output/KW_".$phoneNumber."_out.kml";
 
 try {
 	$outputFile = fopen($outFile, "w");
