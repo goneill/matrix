@@ -3,9 +3,9 @@
 // 2 different wiretaps in 1 case: US v. Blackledge; Gillard is another defendant.  
 
 Class GLSParseUtil {
-	protected $linesheetHTMLDir;
-	protected $linesheetPDFDir;
-	protected $linesheetTXTDir;
+	protected $htmlDir = "../html";
+	protected $pdfDir = "pdf/";
+	protected $txtDir = "txt/";
 	protected $origAudioLink;
 	protected $finalAudioLink;
 	protected $outputFile;
@@ -45,23 +45,7 @@ Class GLSParseUtil {
 	    	}
     	}
 	}	
-	public function transformPDFToText($main, $count=0){
-	    $textdir = str_replace('pdf','txt',$main);
-	    $olddir = '';
-	    $dirHandle = opendir($main);
-	    while($file = readdir($dirHandle)){
-	    	echo "in the while loop";
-			if (preg_match('/.pdf/',$file, $matches)) {
-	            $textfile = str_replace('pdf','txt',$file);
-	            $execstring = "/usr/local/bin/pdftotext  -layout '" .$main . $file ."' '$textdir$textfile'";
-	            echo "executing: " . $execstring . "\n<BR>";
-	           system($execstring, $output);
-	            $count++;
-	            echo "$count: filename: $file in $main \n<br />";
-	        }
-	    }
-	    return $count;
-	}
+
 	public function findTargetName() {
 		$lineText = $this->line->getLineText();
 		$pattern = "/Participants:(\\s)+(.)*/";
@@ -181,7 +165,7 @@ Class GLSParseUtil {
 		//08/21/2014 19:57:20 EDT                                      None                                    12 of 4822
 	}
 	public function parsePDFFile() {
-		$this->fileArray  = file($this->file);
+		$this->fileArray  = file("pdf/".$this->file);
 
 		$fileLength = count($this->fileArray);
 		echo "file length is: $fileLength <BR>";
@@ -434,14 +418,14 @@ Class GLSParseUtil {
 =HYPERLINK("MiguelCoronado\202-241-0206 2014-05-20 20-13-52 00002-001.wav","202-241-0206 2014-05-20 20-13-52 00002-001.wav")
  */
 //  			$pdfHyperlink = '"=HYPERLINK(""MiguelCoronado202-241-0206.pdf"")";"';
-	 		$audioHyperLink = '"=HYPERLINK(""'.'MikeThomas/'.$call->getAudioFilename().'"",""'.$call->getShortAudioFilename().'"")";"';
+	 		//$audioHyperLink = '"=HYPERLINK(""'.'MikeThomas/'.$call->getAudioFilename().'"",""'.$call->getShortAudioFilename().'"")";"';
  //				$audioHyperLink = '"=HYPERLINK(""MiguelCoronado/00002_AUDIO.wav"")";"';
  				$textHyperLink = '";"';
  				$convertedFileLink = '";"';
 			 $outputLine = 			 $audioHyperLink 
 				/*. $transcriptHyperLink 
 				. */ 
-				. $call->getSession() . '";"'
+			//	. $call->getSession() . '";"'
 				. $call->getDate() . '";"'
 				. $call->getClassification() . '";"'
 				. $call->getDurationMonitored() . '";"'
@@ -472,6 +456,15 @@ Class GLSParseUtil {
 			fwrite ($fileHandle,$outputLine);
 		}
 	}
+
+	 function transformPDFToText($file){
+	    $textfile = str_replace('pdf','txt',$file);
+	    $execstring = "/usr/local/bin/pdftotext  -layout '" . $this->pdfDir.$file ."' '".$this->txtDir.$textfile."'";
+	    echo "executing: " . $execstring . "\n<BR>";
+	   	system($execstring, $output);
+  		return;
+	}
+
 	public function loopThroughFiles(){
 		//first loop through the pdfs
 		echo "dir handle". $this->dirHandle . "<BR>";
@@ -480,14 +473,14 @@ Class GLSParseUtil {
 	   		echo "filename: $file <BR>";
 
 			if (preg_match('/.pdf/',$file, $matches)) {
-				transformPDFToText($file);
-		
-		/*		$document = new Document();
+		//		$this->transformPDFToText($file);
+				$document = new Document();
 				$document->setTitle($file);
 				$linesheet = new Linesheet();
 				$this->file = $file;
-				$this->parseFile();
-		*/
+				$this->parsePDFFile();
+				$this->outputFile = $file."_OUT.csv";
+				$this->outputCalls();
 			} // end if 
 
 	   	} // end while
