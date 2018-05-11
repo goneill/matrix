@@ -155,6 +155,12 @@ class GLSPDFCall extends Call{
 	public function getParticipants() {
 		return $this->participants;
 	}
+	public function setPrimaryLanguage($primaryLanguage) {
+		$this->primaryLanguage = $primaryLanguage;
+	}
+	public function getPrimaryLanguage() {
+		return $this->primaryLanguage;
+	}
 	public function setComment($comment) {
 		$this->comment = $comment;
 	}
@@ -185,205 +191,170 @@ class GLSPDFCall extends Call{
 	public function setInText($val) {
 		$this->inText = true;
 	}
+	//session classficiation direction
 	public function setFirstLine($line) {
 		$lineText = $line->getLineText();
-		$dateStart = strpos($lineText, "Date:"); //5
 		$classificationStart = strpos($lineText, "Classification:"); //15
-		$durationMonitoredStart = strpos($lineText, "Duration:"); //9
+		$directionStart = strpos($lineText, "Direction:"); //9
 		// pattern for session
 		$pattern = "/(\\s)*Session:(\\s)+[0-9]+/";
 		preg_match($pattern, $lineText, $matches);
 		$session = trim(substr(trim($matches[0]), 8));
 		$this->setSession($session);
-		// patern for Date
-		$date = trim(substr($lineText, $dateStart+5, $classificationStart-$dateStart-5));
-		$this->setDate($date);
 		// pattern for Classification
-
-		$classification = trim(substr($lineText, $classificationStart+15,$durationMonitoredStart-$classificationStart-15));
-	//	echo "classification: $classification <BR>";
+		$classification = trim(substr($lineText, $classificationStart+15,$directionStart-$classificationStart-15));
 		$this->setClassification($classification);
 
-		//pattern for Duration
-//		$durationMonitoredLen = $inOutDigitsStart - $durationMonitoredStart - 19;
-		$durationMonitored = trim(substr($lineText, $durationMonitoredStart+9));
-		$this->setDurationMonitored($durationMonitored);
-/*
-		$pattern = "/Times minimized:(\\s)+[0-9]+/";
-		preg_match($pattern, $lineText, $matches);
-		$timesMinimized = trim(substr(trim($matches[0]), 16));
-		$this->setTimesMinimized($timesMinimized);
-		// patern for  Associate DN
-		$loc = strpos($lineText, "Associate DN:");
-		$associateDN = trim(substr($lineText, $loc+13));
-		$this->setAssociateDN($associateDN);
-//		echo "session: $session times minimized: $timesMinimized associateDN: $associateDN <BR>";
-
-*/
-	}
-	public function setSecondLine($line) {
-		$lineText = $line->getLineText();
-		$monitorIDStart = strpos($lineText, "Monitored By:"); //13
-		$startTimeStart = strpos($lineText, "Start Time:"); //11
-		$completeStart = strpos($lineText, "Complete:"); //9
-		$directionStart = strpos($lineText, "Direction:"); //10
-//		$directionLen = $languageStart-$directionStart-9;
-
-		//monitorID
-		$monitorID = trim(substr($lineText, $monitorIDStart + 13,$startTimeStart-$monitorIDStart-13));
-		$this->setMonitorID($monitorID);
-
-		//start time
-		$startTime = trim(substr($lineText, $startTimeStart+11,$completeStart-$startTimeStart-11));
-		$this->setStartTime($startTime);
-
-		//complete
-		
-		$complete = trim(substr($lineText, $completeStart+9, $directionStart-$completeStart-9));
-		$this->setComplete($complete);
-
-		//direction
+		//pattern for direction
 		$direction = trim(substr($lineText, $directionStart+10));
 		$this->setDirection($direction);
+	//	echo "session $session | classification $classification | direction $direction <BR>";
+	}
+	//date start associate dn
+	public function setSecondLine($line) {
+		$lineText = $line->getLineText();
+	//	echo $lineText . "<BR>";
+		$dateStart = strpos($lineText, "Date:"); //5
+		$associateDNStart = strpos($lineText, "Associate DN:"); //13
+		if ($associateDNStart) {
+			// patern for Date
+			$date = trim(substr($lineText, $dateStart+5, $associateDNStart-$dateStart-18));
+			$this->setDate($date);
+			//pattern for Associate DN
+			$associateDN = trim(substr($lineText, $associateDNStart+13,30));
+			$this->setAssociateDN($associateDN);
+		} else { // no associate dn on this 
 
-//		echo "start time: $startTime | duration Minimized: $durationMinimized | Monitor ID: $monitorID <BR>";
+			$date = trim(substr($lineText, $dateStart+5));
+			$this->setDate($date);
+		}
+		// if there is no associate dn on this line 
 
 	}
 	// stop time duration monitored, inoutdigits
 	public function setThirdLine($line) {
-		//Out Digits | Asscociate Number | Participants
+		// Start Time | Content | In/Out Digits
 		$lineText = $line->getLineText();
-		$associateDNStart = strpos($lineText, "Asscociate Number:"); //18
+		$startTimeStart = strpos($lineText, "Start Time:"); //11
+		$contentStart = strpos($lineText, "Content:"); //8
 		$inOutDigitsStart = strpos($lineText, "Out Digits:"); //11
-		$participantsStart = strpos($lineText, "Participants:"); //13
-		//in out digits
-		$inOutDigits = trim(substr($lineText, $inOutDigitsStart+11, $associateDNStart-$inOutDigitsStart-11));
-		$this->setInOutDigits($inOutDigits);
+		$associateDNStart = strPos($lineText, "Associate DN:"); //13
+		//start time
+		$startTime = trim(substr($lineText, $startTimeStart+11,$contentStart-$startTimeStart-11));
+		$this->setStartTime($startTime);
+		if ($inOutDigitsStart) {
 
-		$associateDN = trim(substr($lineText, $associateDNStart+18, $participantsStart-$associateDNStart-18));
-		$this->setAssociateDN($associateDN);
+			//content
+			$content = trim(substr($lineText, $contentStart+8, $inOutDigitsStart-$contentStart-11));
+			$this->setContent($content);
+			$inOutDigits = trim(substr($lineText, $inOutDigitsStart+11, 20));
+			$this->setInOutDigits($inOutDigits);
+		} elseif ($associateDNStart) {
+			//content
+			$content = trim(substr($lineText, $contentStart+8, $associateDNStart-$contentStart-11));
+			$this->setContent($content);
+			$associateDN = trim(substr($lineText, $associateDNStart+13, 20));
+			$this->setAssociateDN($associateDN);
+
+		}
+//		echo "startTime $startTime | content: $content | inOutDigits: $inOutDigits <BR>";
+	}
+
+	// stop Time | Subscriber
+	public function setFourthLine($line) {
+		$lineText = $line->getLineText();
+
+		$stopTimeStart = strpos($lineText, "Stop Time:"); //10
+		$subscriberStart = strpos($lineText, "Subscriber:"); //12
+		//iapsystemID: 12
+		//start time
+		if($subscriberStart) {
+			$stopTime = trim(substr($lineText, $stopTimeStart+10,$subscriberStart-$stopTimeStart-10));
+		} else {
+			$stopTime = trim(substr($lineText, $stopTimeStart+10));
+		}
+		$this->setStopTime($stopTime);
+		if ($subscriberStart) {
+			$subscriber = trim(substr($lineText, $subscriberStart+12, 20));
+			$this->setSubscriber($subscriber);
+		}
+
+	}
+	// duration | primary language | participants
+	public function setFifthLine($line) {
+		$lineText = $line->getLineText();
+		$durationStart = strpos($lineText, "Duration:"); //+9;
+		$primaryLanguageStart = strpos($lineText, "Primary Language:"); //+17;
+		$participantsStart = strpos($lineText, "Participants:"); //+13;
+		$inOutDigitsStart = strpos($lineText, "Out Digits:"); //11
+
+		//total duration
+		$duration = trim(substr($lineText, $durationStart+9,$primaryLanguageStart-$durationStart-10));
+		$this->setTotalDuration($duration); 
+		if ($participantsStart) {
+			//primary language
+			$primaryLanguage = trim(substr($lineText, $primaryLanguageStart+17,$participantsStart-$primaryLanguageStart-17));
+			$this->setPrimaryLanguage($primaryLanguage); 
+
+			$participants = trim(substr($lineText, $participantsStart+13));
+			$this->setParticipants($participants);
+
+//		echo "duration $duration | primaryLanguage: $primaryLanguage | participants: $participants <BR>";
+		} elseif ($inOutDigitsStart) {
+			//primary language
+			$primaryLanguage = trim(substr($lineText, $primaryLanguageStart+17,$inOutDigitsStart-$primaryLanguageStart-17));
+			$this->setPrimaryLanguage($primaryLanguage);
+			$inOutDigits = trim(substr($lineText, $inOutDigitsStart+11));
+			$this->setInOutDigits($inOutDigits);
+		} else {
+			$primaryLanguage = trim(substr($lineText, $primaryLanguageStart+17));
+			$this->setPrimaryLanguage($primaryLanguage);
+
+		}
+
+
+	}	
+
+	//Complete | Possible more participants      
+	public function setSixthLine($line) {
+		$lineText = $line->getLineText();
+		$completeStart = strpos($lineText, "Complete:"); //+9;
+		$subscriberStart = strpos($lineText, "Subscriber:"); //+11
+		$participantsStart = $completeStart + 30; 
+	
+		//content
+		$complete = trim(substr($lineText, $completeStart+9, 22));
+		$this->setComplete($complete);
+		if ($subscriberStart) {
+			$subscriber = trim(substr($lineText, $subscriberStart+11));
+		} else {
+			//participants
+			$participants = trim(substr($lineText, $participantsStart));
+			$this->setParticipants($this->getParticipants(). " " . $participants);
+		}
+//		echo "complete: $complete | participants: " . $this->getParticipants() . "<BR>";
+	}
+	//Monitor ID: | Possible more participants      
+	public function setSeventhLine($line) {
+		$lineText = $line->getLineText();
+		$monitorIDStart = strpos($lineText, "Monitor ID:"); //+11
+		$participantsStart = strpos($lineText, "Participants:"); //+13;
+		if (!$participantsStart) {
+			$participantsStart = $monitorIDStart + 16; 
+		}
+		//monitor ID
+		$monitorID = trim(substr($lineText, $monitorIDStart+11, 19));
+		$this->setMonitorID($monitorID);
 
 		//participants
 		$participants = trim(substr($lineText, $participantsStart+13));
-		$this->setParticipants($participants);
-/*		$durationMonitoredStart = strpos($lineText, "Duration monitored:");
-		$inOutDigitsStart = strpos($lineText, "Out Digits:");
-		$stopTimeLen = $durationMonitoredStart - 10;
-		$durationMonitoredLen = $inOutDigitsStart - $durationMonitoredStart - 19;
+		$this->setParticipants($this->getParticipants(). " " . $participants);
 
-		//stoptime
-		$stopTime = trim(substr($lineText, 10, $stopTimeLen));
-		$this->setStopTime($stopTime);
+//		echo "monitor ID: $monitorID | participants: " . $this->getParticipants() . "<BR>";
 
-		//durationMonitored
-		$durationMonitored = trim(substr($lineText, $durationMonitoredStart+19, $durationMonitoredLen));
-		$this->setDurationMonitored($durationMonitored);
-
-//		echo "stop time: $stopTime | duration monitored: $durationMonitored | inOutDigits: $inOutDigits <BR>";
-		
-		if ($matches) {
-			$match = trim($matches[0]);
-			$participants = trim(substr($match, 13));
-			$this->participants = $participants;
-		}
-		$pattern = "/Digits:(\\s)*[0-9]+(\\s)+/";
-		preg_match($pattern, $lineText, $matches);
-		if ($matches) {
-			$match = trim($matches[0]);
-			$digit = trim(substr($match, 7));
-			$this->otherParty = $digit;
-		}
-		if ($this->direction == 'Outgoing') {
-			$this->fromPhone = $util->getTargetPhone();
-			$this->mainFromParticipant = $util->getTargetName();
-			$this->toPhone = $this->otherParty;
-		} else {
-			$this->fromPhone = $this->otherParty;
-			$this->toPhone = $util->getTargetPhone();
-			$this->mainToParticipant = $util->getTargetName();
-		}
-		echo "from phone: $this->fromPhone | to phone: $this->toPhone <BR>";
-*/
-	}
-		// date, total duration, subscriber
-	public function setFourthLine($line) {
-		$lineText = $line->getLineText();
-		$locationStart = strpos($lineText, "Location:"); //9
-		//iapsystemID: 12
-		$IAPSystemID = trim(substr($lineText, 12,$locationStart-12));
-		$this->setIAPSystemID($IAPSystemID);
-		$location = trim(substr($lineText, $locationStart+9));
-		$this->setLocation($location);
-/*		$dateStart = strpos($lineText, "Date:")+5;
-		$totalDurationStart = strpos($lineText, "Total Duration:")+15;
-		$subscriberStart = strpos($lineText, "Subscriber:")+11;
-		$dateLen = $totalDurationStart-$dateStart-15;
-		$totalDurationLen = $subscriberStart-$totalDurationStart-11;
-
-		//date
-		$date = trim(substr($lineText, $dateStart, $dateLen));
-		$this->setDate($date);
-
-		//total duration
-		$totalDuration = trim(substr($lineText, $totalDurationStart, $totalDurationLen));
-		$this->setTotalDuration($totalDuration); 
-
-		//subscriber
-		$subscriber = trim(substr($lineText, $subscriberStart));
-		$this->setSubscriber($subscriber);
-
-//		echo "date: $date | total Duration: $totalDuration | subscriber: $subscriber <BR>";
-*/
-	}
-	
-	//Direction:    Language:       Classification:   
-	public function setFifthLine($line) {
-/*		$lineText = $line->getLineText();
-		$directionStart = strpos($lineText, "Direction:")+10;
-		$languageStart = strpos($lineText, "Language:")+9;
-		$classificationStart = strpos($lineText, "Classification:")+15;
-		$directionLen = $languageStart-$directionStart-9;
-		$languageLen = $classificationStart-$languageStart-15;
-
-		//direction
-		$direction = trim(substr($lineText, $directionStart, $directionLen));
-		$this->setDirection($direction);
-
-		//language
-		$language = trim(substr($lineText, $languageStart, $languageLen));
-		$this->setLanguage($language); 
-
-		//classification
-		$classification = trim(substr($lineText, $classificationStart));
-		$this->setClassification($classification);
-		*/
-
-//		echo "direction: $direction | language: $language | classification: $classification <BR>";
 	}
 
-	//Content:           Complete:       Participants:
-	public function setSixthLine($line) {
-		$lineText = $line->getLineText();
-		$contentStart = strpos($lineText, "Content:")+8;
-		$completeStart = strpos($lineText, "Complete:")+9;
-		$participantsStart = strpos($lineText, "Participants:")+13;
-		$contentLen = $completeStart-$contentStart-9;
-		$completeLen = $participantsStart-$completeStart-13;
 
-		//content
-		$content = trim(substr($lineText, $contentStart, $contentLen));
-		$this->setContent($content);
-
-		//complete
-		$complete = trim(substr($lineText, $completeStart, $completeLen));
-		$this->setComplete($complete);
-
-		//participants
-		$participants = trim(substr($lineText, $participantsStart));
-
-		$this->setParticipants($participants); 
-		//		echo "content: $content | complete: $complete | participants: $participants <BR>";
-	}
 	public function setCommentsLine($line) {
 		$lineText= $line->getLineText();
 		if ($this->getComment() == '') {
@@ -393,7 +364,8 @@ class GLSPDFCall extends Call{
 		}
 	}
 	public function setSynopsisLine($line){
-		$lineText = $line->getLineText();
+		$in = $line->getLineText();
+		$lineText = preg_replace('/\s+/', ' ', $in);
 		if ($this->getSynopsis1() == '') {
 			$this->setSynopsis1($lineText); 
 		} else {
@@ -434,13 +406,20 @@ class GLSPDFCall extends Call{
 			return false;
 		}
 	}
+
+	// changing this to account for the case where the line is Synopsis plus other stuff...
 	public function isSynopsis($line) {
-		$lineText = $line->getLineText();
-		if ($lineText != 'Synopsis') {
+		$lineText = trim($line->getLineText());
+		if (strpos($lineText, 'Synopsis') === FALSE) {
+//		if ($lineText != 'Synopsis') {
 /*			$this->setComment($this->getComment(). "\n" . $lineText);
 			echo "comments: " . $this->getComment() . "<BR>";
 */			return false;
-		} else {
+		} elseif ($lineText == 'Synopsis') {
+			return true;
+		} else { //there is synopsis plus!  
+			$synopsis = substr($lineText, 8);
+			$this->setSynopsis1($synopsis);
 			return true;
 		}
 	}

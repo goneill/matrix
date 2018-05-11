@@ -125,6 +125,8 @@ Class GLSParseUtil {
 //		echo "line text: " . substr($lineText, 0, 17) . "<BR>";
 		if (strpos($lineText, "User:") && strpos($lineText, "Christian E. Tovar")) {
 			return true;
+		} elseif (strpos($lineText, "User:") && strpos($lineText, "Mikhail Vinopol")) {
+			return true;
 		} elseif (substr($lineText, 0,18)=='Minimization Event') {
 //			echo "junk: $lineText <BR>";
 			return true;
@@ -165,7 +167,7 @@ Class GLSParseUtil {
 		//08/21/2014 19:57:20 EDT                                      None                                    12 of 4822
 	}
 	public function parsePDFFile() {
-		$this->fileArray  = file("pdf/".$this->file);
+		$this->fileArray  = file($this->file);
 
 		$fileLength = count($this->fileArray);
 		echo "file length is: $fileLength <BR>";
@@ -174,11 +176,13 @@ Class GLSParseUtil {
 //		for ($i=0; $i <200; $i++) {
 			$line = new GLSLine(trim($this->fileArray[$i]));
 			if (!(trim($line->getLineText())=='')) {
+		//		print_r($line);
 				$this->line = $line;
 				$lineText = $line->getLineText();
 				if (substr(trim($lineText), 0,8)=="Session:") {
 					if ($this->currCall) {
 						$this->calls[] = $this->currCall; 
+
 			//			echo "<BR>";
 					}
 					$this->currCall = new GLSPDFCall($this->currPageNum);
@@ -195,9 +199,26 @@ Class GLSParseUtil {
 					continue;
 				} elseif ($lineIs == 'third') {
 					$this->currCall->setThirdLine($line);
-					$lineIs='checkForIAP';
+					$lineIs='fourth';
 					continue;
-				}elseif ($lineIs == 'checkForIAP') {
+				}elseif ($lineIs == 'fourth') {
+					$this->currCall->setFourthLine($line);
+					$lineIs='fifth';
+					continue;
+				} elseif ($lineIs == 'fifth') {
+					$this->currCall->setFifthLine($line);
+					$lineIs='sixth';
+					continue;
+
+				} elseif($lineIs == 'sixth') {
+					$this->currCall->setSixthLine($line);
+					$lineIs='seventh';
+					continue;
+				} elseif ($lineIs== 'seventh') {
+					$this->currCall->setSeventhLine($line);
+					$lineIs='checkForSynopsis';
+					continue;
+				} elseif ($lineIs == 'checkForIAP') {
 					if ($this->currCall->isIAP($line)) {
 						$this->currCall->setFourthLine($line);
 						$lineIs='checkForSynopsis';
@@ -402,56 +423,36 @@ Class GLSParseUtil {
 
 	}
 	protected function writeOutput() {
-		$outputLine = '"Audio";"Session";"Date";"Classification";"Duration";"Monitored By";"Start Time";"Complete";"Direction";"Out Digits";'.
-		'"Associate Number";"Participants";"IAPSystemID";"Location";"Synopsis"'."\r\n";
+		$outputLine = '"Session","Classification","Direction","Date","Associate DN","Start Time","Content","In Out Digits","Stop Time","Subscriber","Duration","Primary Languages","Participants","Complete","Monitor ID","Synopsis"'."\r\n";
 	//	echo $outputLine . "<BR>";
 		return $outputLine;
 	}
 	public function outputCalls() {
 		$calls = $this->calls;
-		$fileHandle = fopen($this->outputFile,"a");
+		$fileHandle = fopen($this->outputFile,"w");
 		$outputLine = $this->writeOutput();
-		//echo $outputLine . "<BR>";
 		fwrite ($fileHandle,$outputLine);
 		foreach($calls as $call) {
-/*=HYPERLINK("MiguelCoronado\202-241-0206 2014-05-20 20-13-52 00002-001.wav","202-241-0206 2014-05-20 20-13-52 00002-001.wav")
-=HYPERLINK("MiguelCoronado\202-241-0206 2014-05-20 20-13-52 00002-001.wav","202-241-0206 2014-05-20 20-13-52 00002-001.wav")
- */
-//  			$pdfHyperlink = '"=HYPERLINK(""MiguelCoronado202-241-0206.pdf"")";"';
-	 		//$audioHyperLink = '"=HYPERLINK(""'.'MikeThomas/'.$call->getAudioFilename().'"",""'.$call->getShortAudioFilename().'"")";"';
- //				$audioHyperLink = '"=HYPERLINK(""MiguelCoronado/00002_AUDIO.wav"")";"';
- 				$textHyperLink = '";"';
- 				$convertedFileLink = '";"';
-			 $outputLine = 			 $audioHyperLink 
-				/*. $transcriptHyperLink 
-				. */ 
-			//	. $call->getSession() . '";"'
-				. $call->getDate() . '";"'
-				. $call->getClassification() . '";"'
-				. $call->getDurationMonitored() . '";"'
-				. $call->getMonitorId() . '";"'
-				. $call->getStartTime() . '";"'
-				. $call->getComplete() . '";"'
-				. $call->getDirection() . '";"'
-				. $call->getInOutDigits() . '";"'
-				. $call->getAssociateDN() . '";"'
-				. $call->getParticipants() . '";"'
-				. $call->getIAPSystemID() . '";"'
-				. $call->getLocation() . '";"'
+ 			$textHyperLink = '","';
+			$convertedFileLink = '","';
+			$outputLine = 			'"'.
+			$call->getSession() . '","'
+				. $call->getClassification() . '","'
+				. $call->getDirection() . '","'
+				. $call->getDate() . '","'
+				. $call->getAssociateDN() . '","'
+				. $call->getStartTime() . '","'
+				. $call->getContent() . '","'
+				. $call->getInOutDigits() . '","'
+				. $call->getStopTime() . '","'
+				. $call->getSubscriber() . '","'
+				. $call->getTotalDuration() . '","'
+				. $call->getPrimaryLanguage() . '","'
+				. $call->getParticipants() . '","'
+				. $call->getComplete() . '","'
+				. $call->getMonitorId() . '","'
 				. str_replace('"', '""', $call->getSynopsis1()) . '"'
-
-		//		. $call->getHeaderNotes() . '";"'
-/*				. $call->getReference() . '";"'
-				. $call->getCallProgress() . '";"'
-				. $call->getAssociateNumber() . '";"'
-				. $call->getIAP() . '";"'
-				. $call->getMonitor() . '";"'
-				. $call->getFirstTower() . '";"'				
-				. $call->getLastTower() . '";"'
-				. $call->getMinimization() . '";"'
-				. $call->getMinimizedTime() . '";"'
-				. $call->getSynopsis2() . '"'
-*/				."\r\n";
+				."\r\n";
 
 			fwrite ($fileHandle,$outputLine);
 		}
@@ -459,7 +460,7 @@ Class GLSParseUtil {
 
 	 function transformPDFToText($file){
 	    $textfile = str_replace('pdf','txt',$file);
-	    $execstring = "/usr/local/bin/pdftotext  -layout '" . $this->pdfDir.$file ."' '".$this->txtDir.$textfile."'";
+	//    $execstring = "/usr/local/bin/pdftotext  -layout '" . $this->pdfDir.$file ."' '".$this->txtDir.$textfile."'";
 	    echo "executing: " . $execstring . "\n<BR>";
 	   	system($execstring, $output);
   		return;
@@ -472,14 +473,20 @@ Class GLSParseUtil {
 	   	while(false != ($file = readdir($pdfDir))){
 	   		echo "filename: $file <BR>";
 
-			if (preg_match('/.pdf/',$file, $matches)) {
-		//		$this->transformPDFToText($file);
+			if (preg_match('/.pdf/',$file, $matches)) { // loop through the pdfs
+		//		$this->transformPDFToText($file); // make them into txt files
+				echo "file: $file <BR>";
+				$txtFileName = str_replace(".pdf", ".txt", $file);
+				$txtFile = $this->txtDir. $txtFileName;
+				echo "txt File: " . $txtFile ."<BR>";
 				$document = new Document();
-				$document->setTitle($file);
+				$document->setTitle($txtFile);
 				$linesheet = new Linesheet();
-				$this->file = $file;
+				$this->file = $txtFile;
 				$this->parsePDFFile();
-				$this->outputFile = $file."_OUT.csv";
+				$this->outputFile = "out/".$file."_OUT.csv";
+				echo "output file: " . $this->outputFile . "<BR>";
+				
 				$this->outputCalls();
 			} // end if 
 
