@@ -19,6 +19,9 @@ Class GLSParseUtil {
 	protected $currCall = false;
 	protected $targetPhone=false;
 	protected $targetName = false;
+	protected $targetProvider = false;
+	protected $user = false;
+	protected $linesheetDateRange = false;
 
 	function __construct($inDirectory, $outDirectory) {
 		
@@ -125,8 +128,14 @@ Class GLSParseUtil {
 //		echo "line text: " . substr($lineText, 0, 17) . "<BR>";
 		if (strpos($lineText, "User:") && strpos($lineText, "Christian E. Tovar")) {
 			return true;
+		} elseif(substr($lineText, 0, 9) =="Linesheet") {
+
+ 			return true;
 		} elseif (strpos($lineText, "User:") && strpos($lineText, "Mikhail Vinopol")) {
 			return true;
+		} elseif (strpos($lineText, "Criteria") && strpos($lineText, "Report")) {
+			return true;
+
 		} elseif (substr($lineText, 0,18)=='Minimization Event') {
 //			echo "junk: $lineText <BR>";
 			return true;
@@ -155,8 +164,8 @@ Class GLSParseUtil {
 //			get the current page num:
 			$currPageNumPattern = '^\d+\sof^';
 			preg_match($currPageNumPattern, $lineText, $matches);
-			$ofLoc = strpos($matches[0], 'of');
-			$currPageNum = substr($matches[0], 0,$ofLoc);
+			$ofLoc = strpos($newPage, 'of');
+			$currPageNum = substr($newPage, 0,$ofLoc);
 			$this->currPage = $currPageNum;
 	//		echo "curr page num: $currPageNum <BR>";
 			return true;
@@ -166,15 +175,32 @@ Class GLSParseUtil {
 		//check to see if it is 
 		//08/21/2014 19:57:20 EDT                                      None                                    12 of 4822
 	}
+	public function parseCALEAFile (){
+		echo "its a CALEA file<BR>";
+		$this->fileArray  = file($this->file);
+
+		$fileLength = count($this->fileArray);
+		$lineIs = '';
+//		for ($i=0; $i <$fileLength; $i++) {
+		for ($i=0; $i <200; $i++) {
+			$line = new GLSLine(trim($this->fileArray[$i]));
+		}
+
+	}
 	public function parsePDFFile() {
 		$this->fileArray  = file($this->file);
 
 		$fileLength = count($this->fileArray);
-		echo "file length is: $fileLength <BR>";
+//		echo "file length is: $fileLength <BR>";
 		$lineIs = '';
 		for ($i=0; $i <$fileLength; $i++) {
 //		for ($i=0; $i <200; $i++) {
 			$line = new GLSLine(trim($this->fileArray[$i]));
+			if ( strpos($line->getLineText(), "C.A.L.E.A. Surveillance Intercept Reportx") !== FALSE) {
+				parseCALEAFile();
+				break; //check this 
+			}
+
 			if (!(trim($line->getLineText())=='')) {
 		//		print_r($line);
 				$this->line = $line;
@@ -241,8 +267,26 @@ Class GLSParseUtil {
 					}
 				}elseif ($lineIs =='synopsis') {
 					$this->currCall->setSynopsisLine($line);
-				}
+				} elseif ($usrLoc = (strpos($line->getLineText(), "User:")!== FALSE)) {
+					$this->user = trim (substr($line->getLineText(), $usrLoc+6));
+//					echo "user line: " . $this->user . "<BR>";
+				} elseif ($lineLoc = (strpos($line->getLineText(), "Line:")=== 0)) {
+					$this->targetPhone = trim (substr($line->getLineText(), $lineLoc+5, 15));
+//					echo "Phone number line:  line: " . $this->targetPhone . "<BR>";
+					$this->targetProvider = trim(substr($line->getLineText(), 20));
+//					echo "targetProvider =".$this->targetProvider . "<BR>";
+				} elseif ( strpos($line->getLineText(), "'Date")!== FALSE) {
+					$linesheetDate = substr($line->getLineText(), 6);
+					$linesheetDate = str_replace(":", "", str_replace("/", "", $linesheetDate)); 
+ 					$this->linesheetDateRange = $linesheetDate;
+// 					echo "sheet date: " . $this->linesheetDate. "<BR>";
+					$this->user = trim (substr($line->getLineText(), $usrLoc+6));
+//					echo "user line: " . $this->user . "<BR>";
+				} else {
 
+					//echo "this is a regular line: " . $line->getLineText() . "<BR>";
+				//	die();
+				}
 			}
 		}
 		$this->calls[] = $this->currCall; // put the remaining call in
@@ -460,32 +504,34 @@ Class GLSParseUtil {
 
 	 function transformPDFToText($file){
 	    $textfile = str_replace('pdf','txt',$file);
-	//    $execstring = "/usr/local/bin/pdftotext  -layout '" . $this->pdfDir.$file ."' '".$this->txtDir.$textfile."'";
-	    echo "executing: " . $execstring . "\n<BR>";
+	   $execstring = "/usr/local/bin/pdftotext  -layout '" . $this->pdfDir.$file ."' '".$this->txtDir.$textfile."'";
+//	    echo "executing: " . $execstring . "\n<BR>";
 	   	system($execstring, $output);
   		return;
 	}
 
 	public function loopThroughFiles(){
 		//first loop through the pdfs
-		echo "dir handle". $this->dirHandle . "<BR>";
+//		echo "dir handle". $this->dirHandle . "<BR>";
 		$pdfDir = opendir($this->dirHandle);
 	   	while(false != ($file = readdir($pdfDir))){
-	   		echo "filename: $file <BR>";
+//	   		echo "filename: $file <BR>";
 
 			if (preg_match('/.pdf/',$file, $matches)) { // loop through the pdfs
-		//		$this->transformPDFToText($file); // make them into txt files
-				echo "file: $file <BR>";
+	//			$this->transformPDFToText($file); // make them into txt files
+//				echo "file: $file <BR>";
 				$txtFileName = str_replace(".pdf", ".txt", $file);
 				$txtFile = $this->txtDir. $txtFileName;
-				echo "txt File: " . $txtFile ."<BR>";
+//				echo "txt File: " . $txtFile ."<BR>";
 				$document = new Document();
 				$document->setTitle($txtFile);
 				$linesheet = new Linesheet();
 				$this->file = $txtFile;
 				$this->parsePDFFile();
-				$this->outputFile = "out/".$file."_OUT.csv";
-				echo "output file: " . $this->outputFile . "<BR>";
+//				echo "linesheet Date " . $this->linesheetDate . "<BR>";
+				$this->outputFile = 'out/'.$this->targetPhone."_".$this->linesheetDateRange."_".$this->targetProvider.".csv";
+//				$this->outputFile = "out/".$file."_OUT.csv";
+				echo "files: $file | $txtFile | " . $this->outputFile . "<BR>";
 				
 				$this->outputCalls();
 			} // end if 

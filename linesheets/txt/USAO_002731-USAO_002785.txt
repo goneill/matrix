@@ -1,0 +1,3381 @@
+                                                                     User:     Mikhail Vinopol
+
+
+
+
+                                          Linesheet
+  Selection Criteria                                       Report Comments:
+  Line: (347) 209-3683 T-Mobile VOLTE
+  'Date 05/28/2017-10/07/2017:
+  Start Date/Time between (Date only) 05/28/2017 and
+  10/07/2017 in time zone (UTC-05:00) Eastern Time (US &
+  Canada)' filter applied
+
+
+
+
+10/20/2017 14:41:02 EDT                                               USAO_002731   1 of 55
+                                                            Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin             Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      7                 Classification:     Unknown           Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio             Associate DN: (646) 705-8473
+Start Time: 05:01:59 EDT        Primary Language:   Unknown           In/Out Digits: 16467058473
+Stop Time: 05:02:37 EDT         Complete:           Completed         Subscriber:
+Duration:   00:00:38            Monitor ID:                           Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                      JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      8                 Classification:     Unknown           Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio             Associate DN: (646) 996-1900
+Start Time:   05:02:52 EDT      Primary Language:   Unknown           In/Out Digits: 16469961900
+Stop Time:    05:03:27 EDT      Complete:           Completed         Subscriber:
+Duration:     00:00:35          Monitor ID:                           Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                      JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      9                 Classification:     Unknown           Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio             Associate DN: (917) 929-9144
+Start Time:   05:06:48 EDT      Primary Language:   Unknown           In/Out Digits: 19179299144
+Stop Time:    05:22:21 EDT      Complete:           Completed         Subscriber:
+Duration:     00:15:33          Monitor ID:                           Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                      JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      10                Classification:     Unknown           Direction:     Incoming
+Date:         06/09/2017        Content:            Audio             Associate DN: (917) 929-9144
+Start Time:   05:27:00 EDT      Primary Language:   Unknown           In/Out Digits: 19179299144
+Stop Time:    05:27:02 EDT      Complete:           Completed         Subscriber:
+Duration:     00:00:02          Monitor ID:                           Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                      JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      11                Classification:     Unknown           Direction:    None
+Date:         06/09/2017        Content:            None              Associate DN:
+Start Time:   05:27:33 EDT      Primary Language:   Unknown           In/Out Digits:
+Stop Time:    05:27:38 EDT      Complete:           Not Applicable    Subscriber:
+Duration:     00:00:05          Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:02 EDT                                                                                   USAO_002732       2 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      12                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   05:28:28 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    05:28:58 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:30          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      13                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   05:29:27 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    05:33:00 EDT      Complete:           Completed        Subscriber:
+Duration:     00:03:33          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      14                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   05:39:08 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    05:46:20 EDT      Complete:           Completed        Subscriber:
+Duration:     00:07:12          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      15                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   05:48:35 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    05:59:09 EDT      Complete:           Completed        Subscriber:
+Duration:     00:10:34          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:02 EDT                                                                                  USAO_002733       3 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      16                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (347) 543-6884
+Start Time: 07:11:24 EDT        Primary Language:   Unknown          In/Out Digits: 13475436884
+Stop Time: 07:12:03 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:39            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM6884 [weed supplier]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      17                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   07:22:19 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    07:22:49 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:30          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      18                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   07:27:37 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    07:28:44 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:07          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      19                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 543-6884
+Start Time:   07:28:52 EDT      Primary Language:   Unknown          In/Out Digits: 13475436884
+Stop Time:    07:33:24 EDT      Complete:           Completed        Subscriber:
+Duration:     00:04:32          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM6884 [weed supplier]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      20                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            None             Associate DN: (347) 200-2200
+Start Time:   10:08:56 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    10:09:26 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:30          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+
+
+10/20/2017 14:41:02 EDT                                                                                  USAO_002734       4 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      21                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (347) 200-2200
+Start Time: 10:10:39 EDT        Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time: 10:11:20 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:41            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      22                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   10:15:20 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    10:16:33 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:13          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      23                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   10:16:53 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    10:17:07 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:14          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      24                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   10:17:23 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    10:17:32 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:09          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:02 EDT                                                                                  USAO_002735       5 of 55
+                                                            Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin             Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      25                Classification:     Unknown           Direction:     Outgoing
+Date:       06/09/2017          Content:            None              Associate DN: (646) 705-8473
+Start Time: 10:18:30 EDT        Primary Language:   Unknown           In/Out Digits: 16467058473
+Stop Time: 10:19:03 EDT         Complete:           Not Completed     Subscriber:
+Duration:   00:00:33            Monitor ID:                           Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                      JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      26                Classification:     Unknown           Direction:    None
+Date:         06/09/2017        Content:            None              Associate DN:
+Start Time:   10:19:08 EDT      Primary Language:   Unknown           In/Out Digits:
+Stop Time:    10:19:13 EDT      Complete:           Not Applicable    Subscriber:
+Duration:     00:00:05          Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      27                Classification:     Unknown           Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio             Associate DN: (917) 214-0116
+Start Time:   10:27:11 EDT      Primary Language:   Unknown           In/Out Digits: 19172140116
+Stop Time:    10:27:40 EDT      Complete:           Completed         Subscriber:
+Duration:     00:00:29          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UM0116 [brother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      28                Classification:     Unknown           Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio             Associate DN: (347) 200-2200
+Start Time: 10:28:04 EDT        Primary Language:   Unknown           In/Out Digits: 13472002200
+Stop Time: 10:28:23 EDT         Complete:           Completed         Subscriber:
+Duration:   00:00:19            Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      29                Classification:     Unknown           Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio             Associate DN: (347) 200-2200
+Start Time:   10:28:27 EDT      Primary Language:   Unknown           In/Out Digits: 13472002200
+Stop Time:    10:29:10 EDT      Complete:           Completed         Subscriber:
+Duration:     00:00:43          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UM2200 (Father)
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:02 EDT                                                                                   USAO_002736       6 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      30                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   10:29:31 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    10:30:30 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:59          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      31                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   10:30:22 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    10:31:04 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:42          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      32                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   10:31:26 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    10:39:01 EDT      Complete:           Completed        Subscriber:
+Duration:     00:07:35          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      33                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   10:36:47 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    10:37:15 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:28          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_002737       7 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      34                Classification:     Unknown          Direction:     Incoming
+Date:       06/09/2017          Content:            None             Associate DN: (347) 200-2200
+Start Time: 10:37:18 EDT        Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time: 10:37:23 EDT         Complete:           Not Completed    Subscriber:
+Duration:   00:00:05            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      35                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   10:39:16 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    10:40:41 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:25          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      36                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            None             Associate DN: (917) 929-9144
+Start Time:   10:40:49 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    10:40:50 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:01          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      37                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   10:48:46 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    10:48:59 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:13          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      38                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   11:01:04 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    11:01:07 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:03          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_002738       8 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      39                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 11:02:55 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 11:03:29 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:34            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      40                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   11:03:41 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    11:04:18 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:37          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      41                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   11:06:42 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    11:07:01 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:19          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      42                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   11:08:03 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    11:08:15 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:12          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_002739       9 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      43                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 512-3757
+Start Time: 11:08:25 EDT        Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time: 11:08:55 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:30            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      44                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   11:12:13 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    11:12:41 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:28          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      45                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: 16469726785
+Start Time:   11:13:09 EDT      Primary Language:   Unknown          In/Out Digits: 16469726785
+Stop Time:    11:13:12 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:03          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      46                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (347) 816-2150
+Start Time: 11:16:40 EDT        Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time: 11:17:13 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:33            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      47                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN: (347) 816-2150
+Start Time:   11:17:24 EDT      Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time:    11:17:24 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_00274010 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      48                Classification:     Unknown          Direction:    Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   11:17:25 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    11:17:25 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      49                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 816-2150
+Start Time:   11:19:55 EDT      Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time:    11:20:32 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:37          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      50                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   11:20:55 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    11:21:16 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:21          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      51                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 11:22:39 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 11:23:15 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:36            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      52                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (862) 888-3235
+Start Time:   11:24:25 EDT      Primary Language:   Unknown          In/Out Digits: 18628883235
+Stop Time:    11:25:35 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:10          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UNKNOWN3235
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_00274111 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      53                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (917) 731-1003
+Start Time: 11:27:10 EDT        Primary Language:   Unknown          In/Out Digits: 19177311003
+Stop Time: 11:27:57 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:47            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [ID'd in Session 523 by Target]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      54                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   11:32:28 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    11:33:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:38          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      55                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   11:42:14 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    11:42:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      56                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   12:53:21 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    12:53:57 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:36          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      57                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   13:08:01 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    13:08:29 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:28          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_00274212 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      58                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 705-8473
+Start Time: 13:14:42 EDT        Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time: 13:15:19 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:37            Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      59                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   14:41:09 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    14:41:43 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      60                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   14:49:21 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    14:50:04 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:43          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      61                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   14:50:13 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    14:50:42 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:29          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_00274313 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      62                Classification:     Unknown          Direction:     Unknown
+Date:       06/09/2017          Content:            Audio            Associate DN: (212) 477-7777
+Start Time: 15:53:59 EDT        Primary Language:   Unknown          In/Out Digits: 12124777777
+Stop Time: 15:56:38 EDT         Complete:           Completed        Subscriber:
+Duration:   00:02:39            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     LOWER EAST SIDE CAR SERVICE
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      63                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   15:58:18 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    15:58:28 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:10          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      64                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   15:58:38 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    15:58:42 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      65                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   15:59:08 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    15:59:15 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:07          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      66                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            SMS              Associate DN: (347) 512-7569
+Start Time:   15:59:37 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    15:59:37 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_00274414 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      67                Classification:     Unknown          Direction:    Incoming
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   15:59:38 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    15:59:38 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      68                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   16:00:11 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    16:00:15 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      69                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   16:02:31 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    16:03:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      70                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   16:03:30 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    16:04:07 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:37          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:03 EDT                                                                                  USAO_00274515 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      71                Classification:     Unknown          Direction:     Incoming
+Date:       06/09/2017          Content:            Audio            Associate DN: (347) 512-7569
+Start Time: 16:06:34 EDT        Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time: 16:06:40 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:06            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      72                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   16:06:46 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    16:06:52 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:06          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      73                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   16:25:44 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    16:25:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      74                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   16:30:58 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    16:31:02 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      75                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            None             Associate DN: (347) 512-7569
+Start Time:   16:31:08 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    16:31:10 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:02          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00274616 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      76                Classification:     Unknown          Direction:     Incoming
+Date:       06/09/2017          Content:            SMS              Associate DN: (347) 512-7569
+Start Time: 16:31:28 EDT        Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time: 16:31:28 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:00            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      77                Classification:     Unknown          Direction:    Incoming
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   16:31:28 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    16:31:28 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      78                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   16:42:32 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    16:45:55 EDT      Complete:           Completed        Subscriber:
+Duration:     00:03:23          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      79                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   16:46:10 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    16:46:45 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00274717 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      80                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 17:33:43 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 17:34:17 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:34            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      81                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   17:59:13 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    18:02:51 EDT      Complete:           Completed        Subscriber:
+Duration:     00:03:38          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      82                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   18:03:13 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    18:03:51 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:38          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      83                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   18:04:37 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    18:05:08 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:31          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      84                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   18:05:52 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    18:06:26 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00274818 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      85                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 705-8473
+Start Time: 18:06:43 EDT        Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time: 18:07:19 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:36            Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      86                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   18:14:16 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    18:14:50 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      87                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   18:22:04 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    18:22:35 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:31          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      88                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            None             Associate DN: (646) 705-8473
+Start Time:   18:22:39 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    18:22:49 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:10          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00274919 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      89                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 705-8473
+Start Time: 18:33:37 EDT        Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time: 18:42:08 EDT         Complete:           Completed        Subscriber:
+Duration:   00:08:31            Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      90                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 816-2150
+Start Time:   18:42:49 EDT      Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time:    18:43:24 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      91                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   18:43:39 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    18:50:09 EDT      Complete:           Completed        Subscriber:
+Duration:     00:06:30          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      92                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 705-8473
+Start Time: 18:54:00 EDT        Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time: 18:57:43 EDT         Complete:           Completed        Subscriber:
+Duration:   00:03:43            Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      93                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   18:57:15 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    18:57:24 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:09          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00275020 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      94                Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   18:57:35 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    19:09:03 EDT      Complete:           Completed        Subscriber:
+Duration:     00:11:28          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      95                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   19:09:08 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    19:09:46 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:38          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      96                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 731-1003
+Start Time:   19:10:55 EDT      Primary Language:   Unknown          In/Out Digits: 19177311003
+Stop Time:    19:25:52 EDT      Complete:           Completed        Subscriber:
+Duration:     00:14:57          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [ID'd in Session 523 by Target]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      97                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   19:26:04 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    19:26:39 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00275121 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      98                Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (347) 200-2200
+Start Time: 19:26:45 EDT        Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time: 19:27:26 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:41            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      99                Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   19:33:06 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    19:33:39 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:33          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      100               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   19:42:19 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    19:42:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:29          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      101               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   19:42:38 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    20:07:34 EDT      Complete:           Completed        Subscriber:
+Duration:     00:24:56          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      102               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   20:12:16 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    20:12:46 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:30          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00275222 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      103               Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 20:12:50 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 20:14:03 EDT         Complete:           Completed        Subscriber:
+Duration:   00:01:13            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      104               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   20:14:09 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    20:14:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:39          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      105               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   20:14:52 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    20:16:50 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:58          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      106               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN: (347) 816-2150
+Start Time:   20:16:59 EDT      Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time:    20:16:59 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:04 EDT                                                                                  USAO_00275323 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      107               Classification:     Unknown          Direction:    Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   20:16:59 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    20:16:59 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      108               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN: (347) 816-2150
+Start Time:   20:17:11 EDT      Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time:    20:17:11 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      109               Classification:     Unknown          Direction:    Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   20:17:11 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    20:17:11 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      110               Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            SMS              Associate DN: (347) 816-2150
+Start Time: 20:17:31 EDT        Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time: 20:17:31 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:00            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      111               Classification:     Unknown          Direction:    Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   20:17:31 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    20:17:31 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00275424 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      112               Classification:     Unknown          Direction:     Outgoing
+Date:       06/09/2017          Content:            SMS              Associate DN: (347) 816-2150
+Start Time: 20:18:05 EDT        Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time: 20:18:05 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:00            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      113               Classification:     Unknown          Direction:    Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   20:18:05 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    20:18:05 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      114               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN: (347) 816-2150
+Start Time:   20:18:23 EDT      Primary Language:   Unknown          In/Out Digits: 13478162150
+Stop Time:    20:18:23 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      115               Classification:     Unknown          Direction:    Outgoing
+Date:         06/09/2017        Content:            SMS              Associate DN:
+Start Time:   20:18:23 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    20:18:23 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      116               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   20:19:48 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    20:20:00 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:12          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00275525 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      117               Classification:     Unknown          Direction:     Incoming
+Date:       06/09/2017          Content:            Audio            Associate DN: (718) 442-9045
+Start Time: 20:22:24 EDT        Primary Language:   Unknown          In/Out Digits: 17184429045
+Stop Time: 20:26:51 EDT         Complete:           Completed        Subscriber:
+Duration:   00:04:27            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      118               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   20:28:12 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    20:30:36 EDT      Complete:           Completed        Subscriber:
+Duration:     00:02:24          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      119               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   20:52:53 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    20:52:57 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      120               Classification:     Unknown          Direction:     Incoming
+Date:       06/09/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 21:00:37 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 21:01:26 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:49            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      121               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   21:01:37 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    21:02:18 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:41          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00275626 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      122               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (718) 610-9394
+Start Time:   21:18:21 EDT      Primary Language:   Unknown          In/Out Digits: 17186109394
+Stop Time:    21:23:50 EDT      Complete:           Completed        Subscriber:
+Duration:     00:05:29          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM9394
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      123               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   21:45:25 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    21:46:01 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:36          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      124               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   21:46:14 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    21:46:50 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:36          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      125               Classification:     Unknown          Direction:     Unknown
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   22:24:11 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    22:24:46 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00275727 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      126               Classification:     Unknown          Direction:     Incoming
+Date:       06/09/2017          Content:            None             Associate DN: (646) 705-8473
+Start Time: 22:29:24 EDT        Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time: 22:29:26 EDT         Complete:           Not Completed    Subscriber:
+Duration:   00:00:02            Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      127               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 214-0116
+Start Time:   22:32:54 EDT      Primary Language:   Unknown          In/Out Digits: 19172140116
+Stop Time:    22:34:57 EDT      Complete:           Completed        Subscriber:
+Duration:     00:02:03          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM0116 [brother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      128               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   22:45:36 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    22:45:54 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:18          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      129               Classification:     Unknown          Direction:     Outgoing
+Date:         06/09/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   22:49:53 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    22:50:12 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:19          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      130               Classification:     Unknown          Direction:     Incoming
+Date:         06/09/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   22:56:21 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    22:57:02 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:41          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00275828 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      131               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (347) 200-2200
+Start Time: 00:24:27 EDT        Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time: 00:25:15 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:48            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      132               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 610-9394
+Start Time:   08:28:12 EDT      Primary Language:   Unknown          In/Out Digits: 17186109394
+Stop Time:    08:29:27 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:15          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM9394
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      133               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (866) 853-9426
+Start Time:   10:17:51 EDT      Primary Language:   Unknown          In/Out Digits: 18668539426
+Stop Time:    10:24:04 EDT      Complete:           Completed        Subscriber:
+Duration:     00:06:13          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      134               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   10:25:57 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    10:27:01 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:04          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00275929 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      135               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 497-2873
+Start Time: 10:38:06 EDT        Primary Language:   Unknown          In/Out Digits: 19174972873
+Stop Time: 10:38:36 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:30            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      136               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 497-2873
+Start Time:   10:38:44 EDT      Primary Language:   Unknown          In/Out Digits: 19174972873
+Stop Time:    10:39:12 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:28          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      137               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   10:50:28 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    10:51:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:38          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      138               Classification:     Unknown          Direction:     Unknown
+Date:       06/10/2017          Content:            Audio            Associate DN: (201) 755-4536
+Start Time: 11:44:44 EDT        Primary Language:   Unknown          In/Out Digits: 12017554536
+Stop Time: 11:45:14 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:30            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      139               Classification:     Unknown          Direction:     Unknown
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   11:45:05 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    11:45:16 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:11          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00276030 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      140               Classification:     Unknown          Direction:     Unknown
+Date:       06/10/2017          Content:            Audio            Associate DN: (347) 200-2200
+Start Time: 11:45:19 EDT        Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time: 11:45:52 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:33            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      141               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   12:43:56 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    12:50:34 EDT      Complete:           Completed        Subscriber:
+Duration:     00:06:38          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      142               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   13:27:04 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    13:27:45 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:41          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      143               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   13:52:21 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    13:52:56 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      144               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (212) 228-3301
+Start Time:   14:01:01 EDT      Primary Language:   Unknown          In/Out Digits: 12122283301
+Stop Time:    14:01:19 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:18          Monitor ID:                          Participants:   DELANCEY CAR SERVICE
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:05 EDT                                                                                  USAO_00276131 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      145               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (347) 277-9633
+Start Time: 14:14:53 EDT        Primary Language:   Unknown          In/Out Digits: 13472779633
+Stop Time: 14:17:56 EDT         Complete:           Completed        Subscriber:
+Duration:   00:03:03            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      146               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   14:18:07 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    14:20:45 EDT      Complete:           Completed        Subscriber:
+Duration:     00:02:38          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      147               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   14:59:44 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    15:00:19 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      148               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            None             Associate DN: (646) 705-8473
+Start Time:   15:03:58 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    15:04:04 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:06          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276232 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      149               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (718) 610-9394
+Start Time: 15:11:52 EDT        Primary Language:   Unknown          In/Out Digits: 17186109394
+Stop Time: 15:13:42 EDT         Complete:           Completed        Subscriber:
+Duration:   00:01:50            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM9394
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      150               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   15:13:51 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    15:17:45 EDT      Complete:           Completed        Subscriber:
+Duration:     00:03:54          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      151               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 512-3757
+Start Time:   15:18:09 EDT      Primary Language:   Unknown          In/Out Digits: 16465123757
+Stop Time:    15:18:18 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:09          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     JOHN [Formerly UM3757, ses. 1355 & 1358]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      152               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   15:26:37 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    15:30:23 EDT      Complete:           Completed        Subscriber:
+Duration:     00:03:46          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      153               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   15:38:45 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    15:39:09 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:24          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276333 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      154               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (347) 200-2200
+Start Time: 15:54:47 EDT        Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time: 15:54:59 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:12            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      155               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   16:02:37 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    16:02:52 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:15          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      156               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   16:07:47 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    16:07:51 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      157               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   16:08:02 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    16:08:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:04          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276434 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      158               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 435-2272
+Start Time: 16:15:15 EDT        Primary Language:   Unknown          In/Out Digits: 19174352272
+Stop Time: 16:15:38 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:23            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2272[ BARBER]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      159               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   16:43:05 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    16:43:11 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:06          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      160               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   16:50:34 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    16:52:21 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:47          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      161               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   16:56:22 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    16:58:33 EDT      Complete:           Completed        Subscriber:
+Duration:     00:02:11          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      162               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   16:58:41 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    16:59:36 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:55          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276535 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      163               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 16:59:43 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 17:00:18 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:35            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      164               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   17:06:53 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    17:07:31 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:38          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      165               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   17:10:55 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    17:11:09 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:14          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      166               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 200-2200
+Start Time:   17:12:04 EDT      Primary Language:   Unknown          In/Out Digits: 13472002200
+Stop Time:    17:12:25 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:21          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2200 (Father)
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276636 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      167               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (805) 637-7243
+Start Time: 17:12:34 EDT        Primary Language:   Unknown          In/Out Digits: 18056377243
+Stop Time: 17:13:20 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:46            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      168               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 968-5496
+Start Time:   17:13:50 EDT      Primary Language:   Unknown          In/Out Digits: 13479685496
+Stop Time:    17:14:27 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:37          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM5496
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      169               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 277-9633
+Start Time:   17:14:37 EDT      Primary Language:   Unknown          In/Out Digits: 13472779633
+Stop Time:    17:15:17 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:40          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      170               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 929-9144
+Start Time: 17:19:27 EDT        Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time: 17:23:36 EDT         Complete:           Completed        Subscriber:
+Duration:   00:04:09            Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      171               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   17:36:00 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    17:36:34 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276737 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      172               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 929-9144
+Start Time: 17:58:01 EDT        Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time: 17:59:16 EDT         Complete:           Completed        Subscriber:
+Duration:   00:01:15            Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      173               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 435-2272
+Start Time:   17:59:09 EDT      Primary Language:   Unknown          In/Out Digits: 19174352272
+Stop Time:    17:59:26 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:17          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM2272[ BARBER]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      174               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   17:59:32 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    18:05:17 EDT      Complete:           Completed        Subscriber:
+Duration:     00:05:45          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      175               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   18:06:04 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    18:06:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:44          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      176               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 705-8473
+Start Time:   18:10:34 EDT      Primary Language:   Unknown          In/Out Digits: 16467058473
+Stop Time:    18:13:01 EDT      Complete:           Completed        Subscriber:
+Duration:     00:02:27          Monitor ID:                          Participants:   DINO [Formerly UM8473/ id'ed in ses. 427]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276838 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      177               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (347) 543-6884
+Start Time: 18:31:08 EDT        Primary Language:   Unknown          In/Out Digits: 13475436884
+Stop Time: 18:31:46 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:38            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM6884 [weed supplier]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      178               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   18:40:21 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    18:40:27 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:06          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      179               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   18:40:42 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    18:40:47 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:05          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      180               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (347) 512-7569
+Start Time:   18:41:07 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    18:41:07 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      181               Classification:     Unknown          Direction:    Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   18:41:09 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    18:41:09 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00276939 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      182               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (347) 512-7569
+Start Time:   18:41:16 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    18:41:16 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      183               Classification:     Unknown          Direction:    Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   18:41:17 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    18:41:17 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      184               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (347) 512-7569
+Start Time:   18:42:11 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    18:42:11 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      185               Classification:     Unknown          Direction:    Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   18:42:13 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    18:42:13 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      186               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 277-9633
+Start Time:   18:43:49 EDT      Primary Language:   Unknown          In/Out Digits: 13472779633
+Stop Time:    18:44:24 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:06 EDT                                                                                  USAO_00277040 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      187               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            SMS              Associate DN: (347) 543-6884
+Start Time:   18:47:48 EDT      Primary Language:   Unknown          In/Out Digits: 13475436884
+Stop Time:    18:47:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM6884 [weed supplier]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      188               Classification:     Unknown          Direction:    Outgoing
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   18:47:48 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    18:47:48 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      189               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 543-6884
+Start Time:   19:05:04 EDT      Primary Language:   Unknown          In/Out Digits: 13475436884
+Stop Time:    19:05:28 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:24          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM6884 [weed supplier]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      190               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            None             Associate DN: (917) 929-9144
+Start Time:   19:06:44 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    19:06:45 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:01          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      191               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 442-9045
+Start Time:   19:08:06 EDT      Primary Language:   Unknown          In/Out Digits: 17184429045
+Stop Time:    19:08:34 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:28          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277141 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      192               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 929-9144
+Start Time: 19:28:32 EDT        Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time: 19:28:46 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:14            Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      193               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 962-1974
+Start Time:   19:38:48 EDT      Primary Language:   Unknown          In/Out Digits: 13479621974
+Stop Time:    19:39:42 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:54          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      194               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 720-4444
+Start Time:   19:39:57 EDT      Primary Language:   Unknown          In/Out Digits: 17187204444
+Stop Time:    19:40:33 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:36          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      195               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 543-6884
+Start Time:   19:41:46 EDT      Primary Language:   Unknown          In/Out Digits: 13475436884
+Stop Time:    19:46:11 EDT      Complete:           Completed        Subscriber:
+Duration:     00:04:25          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UM6884 [weed supplier]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277242 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      196               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (718) 442-9045
+Start Time: 19:46:18 EDT        Primary Language:   Unknown          In/Out Digits: 17184429045
+Stop Time: 19:46:45 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:27            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      197               Classification:     Unknown          Direction:     Unknown
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 720-4444
+Start Time:   19:46:51 EDT      Primary Language:   Unknown          In/Out Digits: 17187204444
+Stop Time:    19:47:57 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:06          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      198               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (917) 833-5502
+Start Time:   19:48:06 EDT      Primary Language:   Unknown          In/Out Digits: 19178335502
+Stop Time:    19:48:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      199               Classification:     Unknown          Direction:    Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   19:48:06 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    19:48:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      200               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (929) 229-6336
+Start Time:   19:56:54 EDT      Primary Language:   Unknown          In/Out Digits: 19292296336
+Stop Time:    19:56:54 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277343 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      201               Classification:     Unknown          Direction:    Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   19:56:54 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    19:56:54 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      202               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 720-4444
+Start Time:   19:56:55 EDT      Primary Language:   Unknown          In/Out Digits: 17187204444
+Stop Time:    19:57:07 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:12          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      203               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   19:57:27 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    19:58:02 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      204               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (646) 996-1900
+Start Time: 20:02:04 EDT        Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time: 20:02:39 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:35            Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      205               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   20:07:42 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    20:08:01 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:19          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277444 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      206               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   20:08:47 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    20:09:21 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      207               Classification:     SMS Unknown      Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (929) 229-6336
+Start Time:   20:16:12 EDT      Primary Language:   Unknown          In/Out Digits: 19292296336
+Stop Time:    20:16:12 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ SMS not provisioned
+
+Session:      208               Classification:     SMS Unknown      Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (929) 229-6336
+Start Time:   20:17:22 EDT      Primary Language:   Unknown          In/Out Digits: 19292296336
+Stop Time:    20:17:22 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ SMS not provisioned
+
+Session:      209               Classification:     SMS Unknown      Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (929) 229-6336
+Start Time:   20:18:31 EDT      Primary Language:   Unknown          In/Out Digits: 19292296336
+Stop Time:    20:18:31 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ SMS not provisioned
+
+
+
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277545 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      210               Classification:     SMS Unknown      Direction:     Incoming
+Date:       06/10/2017          Content:            SMS              Associate DN: (929) 229-6336
+Start Time: 20:19:40 EDT        Primary Language:   Unknown          In/Out Digits: 19292296336
+Stop Time: 20:19:40 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:00            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ SMS not provisioned
+
+Session:      211               Classification:     SMS Unknown      Direction:     Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN: (929) 229-6336
+Start Time:   20:24:39 EDT      Primary Language:   Unknown          In/Out Digits: 19292296336
+Stop Time:    20:24:39 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     NEWPORT CAR SERVICE
+
+
+ Synopsis
+
+ SMS not provisioned
+
+Session:      212               Classification:     SMS Unknown      Direction:    Incoming
+Date:         06/10/2017        Content:            SMS              Associate DN:
+Start Time:   20:24:40 EDT      Primary Language:   Unknown          In/Out Digits:
+Stop Time:    20:24:40 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:00          Monitor ID:                          Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ SMS not provisioned
+
+Session:      213               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 929-9144
+Start Time: 20:31:31 EDT        Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time: 20:34:55 EDT         Complete:           Completed        Subscriber:
+Duration:   00:03:24            Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      214               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   20:41:20 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    20:43:03 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:43          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277646 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Plant Closed/Call Not Monitored
+
+Session:      215               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   20:44:57 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    20:45:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:09          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      216               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   20:45:32 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    20:46:06 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      217               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   20:55:32 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    20:56:07 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:35          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+ SB:JL
+
+
+Session:      218               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            None             Associate DN: (347) 512-7569
+Start Time:   21:18:36 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    21:18:42 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:06          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ [Data Download]
+ SB:JL
+
+
+
+
+10/20/2017 14:41:07 EDT                                                                                  USAO_00277747 of 55
+                                                            Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin             Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      219               Classification:     Unknown           Direction:     Incoming
+Date:       06/10/2017          Content:            None              Associate DN: (347) 512-7569
+Start Time: 21:18:50 EDT        Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time: 21:18:53 EDT         Complete:           Not Completed     Subscriber:
+Duration:   00:00:03            Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ [Data Download]
+ SB:JL
+
+
+Session:      220               Classification:     Unknown           Direction:     Incoming
+Date:         06/10/2017        Content:            None              Associate DN: (347) 512-7569
+Start Time:   21:19:08 EDT      Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time:    21:19:11 EDT      Complete:           Not Completed     Subscriber:
+Duration:     00:00:03          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ [Data Download]
+ SB:JL
+
+
+Session:      221               Classification:     Unknown           Direction:    None
+Date:         06/10/2017        Content:            None              Associate DN:
+Start Time:   21:19:10 EDT      Primary Language:   Unknown           In/Out Digits:
+Stop Time:    21:19:15 EDT      Complete:           Not Applicable    Subscriber:
+Duration:     00:00:05          Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Data Download]
+
+Session:    222                 Classification:   Unknown             Direction:    None
+Date:       06/10/2017          Content:          None                Associate DN:
+Start Time: 21:19:23 EDT        Primary Language: Unknown             In/Out Digits:
+Stop Time: 21:19:28 EDT         Complete:           Not Applicable    Subscriber:
+Duration:  00:00:05             Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Data Download]
+
+Session:    223                 Classification:   Unknown             Direction:    None
+Date:       06/10/2017          Content:          None                Associate DN:
+Start Time: 21:19:41 EDT        Primary Language: Unknown             In/Out Digits:
+Stop Time: 21:19:46 EDT         Complete:           Not Applicable    Subscriber:
+Duration:  00:00:05             Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:07 EDT                                                                                   USAO_00277848 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ [Data Download]
+
+Session:      224               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (718) 442-0001
+Start Time: 21:22:05 EDT        Primary Language:   Unknown          In/Out Digits: 17184420001
+Stop Time: 21:22:29 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:24            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      225               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 227-6666
+Start Time:   21:23:16 EDT      Primary Language:   Unknown          In/Out Digits: 17182276666
+Stop Time:    21:23:23 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:07          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      226               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (646) 996-1900
+Start Time:   22:14:58 EDT      Primary Language:   Unknown          In/Out Digits: 16469961900
+Stop Time:    22:15:32 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:34          Monitor ID:                          Participants:   CUCC [Formerly UM1900, ses. 282, 771, 772, 773]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      227               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 227-6666
+Start Time:   22:17:03 EDT      Primary Language:   Unknown          In/Out Digits: 17182276666
+Stop Time:    22:17:43 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:40          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      228               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   22:18:47 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    22:19:20 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:33          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+
+
+10/20/2017 14:41:08 EDT                                                                                  USAO_00277949 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      229               Classification:     Unknown          Direction:     Outgoing
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 929-9144
+Start Time: 22:20:33 EDT        Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time: 22:30:15 EDT         Complete:           Completed        Subscriber:
+Duration:   00:09:42            Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      230               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 227-6666
+Start Time:   22:34:48 EDT      Primary Language:   Unknown          In/Out Digits: 17182276666
+Stop Time:    22:35:42 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:54          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      231               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 227-6666
+Start Time:   22:40:13 EDT      Primary Language:   Unknown          In/Out Digits: 17182276666
+Stop Time:    22:40:37 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:24          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      232               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   22:45:58 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    22:47:31 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:33          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+
+
+
+10/20/2017 14:41:08 EDT                                                                                  USAO_00278050 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      233               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (917) 929-9144
+Start Time: 22:47:52 EDT        Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time: 22:49:05 EDT         Complete:           Completed        Subscriber:
+Duration:   00:01:13            Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      234               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   23:02:59 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:04:42 EDT      Complete:           Completed        Subscriber:
+Duration:     00:01:43          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ [Duplicate session]
+
+Session:      235               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            None             Associate DN: (347) 512-7569
+Start Time:   23:11:16 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:11:22 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:06          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ [Data Download]
+
+Session:      236               Classification:     Unknown          Direction:     Outgoing
+Date:         06/10/2017        Content:            Audio            Associate DN: (917) 929-9144
+Start Time:   23:17:02 EDT      Primary Language:   Unknown          In/Out Digits: 19179299144
+Stop Time:    23:17:45 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:43          Monitor ID:                          Participants:   JACKIE [girlfriend/ formerly UF9144]
+                                                                                     JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      237               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            None             Associate DN: (347) 512-7569
+Start Time:   23:18:04 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:18:18 EDT      Complete:           Not Completed    Subscriber:
+Duration:     00:00:14          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+
+
+10/20/2017 14:41:08 EDT                                                                                  USAO_00278151 of 55
+                                                            Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin             Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      238               Classification:     Unknown           Direction:     Incoming
+Date:       06/10/2017          Content:            None              Associate DN: (347) 512-7569
+Start Time: 23:18:18 EDT        Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time: 23:18:23 EDT         Complete:           Not Completed     Subscriber:
+Duration:   00:00:05            Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      239               Classification:     Unknown           Direction:     Incoming
+Date:         06/10/2017        Content:            None              Associate DN: (347) 512-7569
+Start Time:   23:18:39 EDT      Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time:    23:18:45 EDT      Complete:           Not Completed     Subscriber:
+Duration:     00:00:06          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      240               Classification:     Unknown           Direction:     Incoming
+Date:         06/10/2017        Content:            None              Associate DN: (347) 512-7569
+Start Time:   23:18:51 EDT      Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time:    23:18:54 EDT      Complete:           Not Completed     Subscriber:
+Duration:     00:00:03          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      241               Classification:     Unknown           Direction:    None
+Date:         06/10/2017        Content:            None              Associate DN:
+Start Time:   23:19:13 EDT      Primary Language:   Unknown           In/Out Digits:
+Stop Time:    23:19:18 EDT      Complete:           Not Applicable    Subscriber:
+Duration:     00:00:05          Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+
+10/20/2017 14:41:08 EDT                                                                                   USAO_00278252 of 55
+                                                            Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin             Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      242               Classification:     Unknown           Direction:    None
+Date:         06/10/2017        Content:            None              Associate DN:
+Start Time:   23:19:25 EDT      Primary Language:   Unknown           In/Out Digits:
+Stop Time:    23:19:30 EDT      Complete:           Not Applicable    Subscriber:
+Duration:     00:00:05          Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      243               Classification:     Unknown           Direction:     Incoming
+Date:         06/10/2017        Content:            None              Associate DN: (347) 512-7569
+Start Time:   23:21:11 EDT      Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time:    23:21:17 EDT      Complete:           Not Completed     Subscriber:
+Duration:     00:00:06          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      244               Classification:     Unknown           Direction:     Incoming
+Date:         06/10/2017        Content:            None              Associate DN: (347) 512-7569
+Start Time:   23:21:23 EDT      Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time:    23:21:26 EDT      Complete:           Not Completed     Subscriber:
+Duration:     00:00:03          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      245               Classification:     Unknown           Direction:    None
+Date:         06/10/2017        Content:            None              Associate DN:
+Start Time:   23:21:56 EDT      Primary Language:   Unknown           In/Out Digits:
+Stop Time:    23:22:01 EDT      Complete:           Not Applicable    Subscriber:
+Duration:     00:00:05          Monitor ID:                           Participants: JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      246               Classification:     Unknown           Direction:     Incoming
+Date:         06/10/2017        Content:            Audio             Associate DN: (347) 512-7569
+Start Time:   23:22:43 EDT      Primary Language:   Unknown           In/Out Digits: 13475127569
+Stop Time:    23:24:40 EDT      Complete:           Completed         Subscriber:
+Duration:     00:01:57          Monitor ID:                           Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                      UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+10/20/2017 14:41:08 EDT                                                                                   USAO_00278353 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+Session:      247               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (347) 512-7569
+Start Time: 23:24:56 EDT        Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time: 23:25:17 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:21            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      248               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   23:25:31 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:25:36 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:05          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      249               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   23:25:39 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:25:44 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:05          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      250               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   23:25:47 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:25:52 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:05          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      251               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (347) 512-7569
+Start Time:   23:26:20 EDT      Primary Language:   Unknown          In/Out Digits: 13475127569
+Stop Time:    23:26:25 EDT      Complete:           Completed        Subscriber:
+Duration:     00:00:05          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+                                                                                     UF7569 [Mother]
+
+
+
+
+10/20/2017 14:41:08 EDT                                                                                  USAO_00278454 of 55
+                                                           Linesheet                                         User:       Mikhail Vinopol
+
+
+Case: BZ-17-0024             Target: CEJOVIC, Jasmin            Line: (347) 209-3683 T-Mobile VOLTE       File Number:
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      252               Classification:     Unknown          Direction:     Incoming
+Date:       06/10/2017          Content:            Audio            Associate DN: (718) 442-9045
+Start Time: 23:27:16 EDT        Primary Language:   Unknown          In/Out Digits: 17184429045
+Stop Time: 23:28:02 EDT         Complete:           Completed        Subscriber:
+Duration:   00:00:46            Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+Session:      253               Classification:     Unknown          Direction:     Incoming
+Date:         06/10/2017        Content:            Audio            Associate DN: (718) 772-1950
+Start Time:   23:28:11 EDT      Primary Language:   Unknown          In/Out Digits: 17187721950
+Stop Time:    23:31:31 EDT      Complete:           Completed        Subscriber:
+Duration:     00:03:20          Monitor ID:                          Participants:   JASMIN a/k/a MIN a/k/a MANNY [ID Ses#437, sms 1590, TT
+
+
+ Synopsis
+
+ Plant Closed/Call Not Monitored
+
+
+
+END
+
+
+
+
+10/20/2017 14:41:08 EDT                                                                                  USAO_00278555 of 55
+
