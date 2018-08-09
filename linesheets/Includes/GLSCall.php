@@ -25,10 +25,18 @@ class GLSPDFCall extends Call{
 	protected $startPage = '';
 	protected $IAPSystemID = '';
 	protected $location = '';
+	protected $header = array();
 
-	Function __construct($startPage) {
+	Function __construct($startPage=1) {
 		$this->startPage = $startPage;
 	}
+	public function getStartPage() {
+		return $this->startPage;
+	}
+	public function getHeader(){
+		return $this->header;
+	}
+
 	public function setLocation($location) {
 		$this->location = $location;
 	}
@@ -210,16 +218,25 @@ class GLSPDFCall extends Call{
 		$this->setDirection($direction);
 	//	echo "session $session | classification $classification | direction $direction <BR>";
 	}
-	//date start associate dn
+	//date content start associate dn
 	public function setSecondLine($line) {
 		$lineText = $line->getLineText();
 	//	echo $lineText . "<BR>";
 		$dateStart = strpos($lineText, "Date:"); //5
+		$contentStart = strpos($lineText, "Content:"); //8
 		$associateDNStart = strpos($lineText, "Associate DN:"); //13
 		if ($associateDNStart) {
 			// patern for Date
-			$date = trim(substr($lineText, $dateStart+5, $associateDNStart-$dateStart-18));
-			$this->setDate($date);
+			if ($contentStart) {
+				$content = trim(substr($lineText, $contentStart+8,$associateDNStart));
+				$this->setContent($content);
+				$date = trim(substr($lineText, $dateStart+5, $contentStart-$dateStart-8));
+				$this->setDate($date);
+			} else {
+				$date = trim(substr($lineText, $dateStart+5, $associateDNStart-$dateStart-18));
+				$this->setDate($date);
+	
+			}
 			//pattern for Associate DN
 			$associateDN = trim(substr($lineText, $associateDNStart+13,30));
 			$this->setAssociateDN($associateDN);
@@ -234,21 +251,28 @@ class GLSPDFCall extends Call{
 	// stop time duration monitored, inoutdigits
 	public function setThirdLine($line) {
 		// Start Time | Content | In/Out Digits
+		// Start Time | Primary Language | In/Out Digits
 		$lineText = $line->getLineText();
 		$startTimeStart = strpos($lineText, "Start Time:"); //11
 		$contentStart = strpos($lineText, "Content:"); //8
+		$primaryLanguageStart = strpos($lineText, 'Primary Language'); // 17
 		$inOutDigitsStart = strpos($lineText, "Out Digits:"); //11
 		$associateDNStart = strPos($lineText, "Associate DN:"); //13
-		//start time
-		$startTime = trim(substr($lineText, $startTimeStart+11,$contentStart-$startTimeStart-11));
+		$secondStart = max($contentStart,$primaryLanguageStart);
+		//start time  - if second is 
+		$startTime = trim(substr($lineText, $startTimeStart+11,$secondStart-$startTimeStart-11));
 		$this->setStartTime($startTime);
 		if ($inOutDigitsStart) {
-
+			if ($contentStart) {
 			//content
-			$content = trim(substr($lineText, $contentStart+8, $inOutDigitsStart-$contentStart-11));
-			$this->setContent($content);
+				$content = trim(substr($lineText, $contentStart+8, $inOutDigitsStart-$contentStart-11));
+				$this->setContent($content);
+			} else {  // the second one is primary language and the third is in/out digits
+				$primaryLanguage = trim(substr($lineText, $primaryLanguageStart+17, $inOutDigitsStart-$primaryLanguageStart-11));
+			}
 			$inOutDigits = trim(substr($lineText, $inOutDigitsStart+11, 20));
 			$this->setInOutDigits($inOutDigits);
+	
 		} elseif ($associateDNStart) {
 			//content
 			$content = trim(substr($lineText, $contentStart+8, $associateDNStart-$contentStart-11));
@@ -405,7 +429,13 @@ class GLSPDFCall extends Call{
 		} else {
 			return false;
 		}
+	
 	}
+	public function setHeader($header) {
+		$this->header = $header;
+	}
+
+
 
 	// changing this to account for the case where the line is Synopsis plus other stuff...
 	public function isSynopsis($line) {

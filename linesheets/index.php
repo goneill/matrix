@@ -14,7 +14,30 @@ set_time_limit(0);
 ini_set("memory_limit","2400M");
 echo "included the files<BR>";
 $inputDirectory =  "../input/linesheets/";
-
+$headerArray = array("Session:", "Classification:", "Direction:", "Date:", "Content:", "Associate DN:", "Start Time:", "Primary Language:", "In/Out Digits:", "Test:","Stop Time:", "Complete:", "Subscriber:", "Duration:", "Monitor ID:", "Participants:");
+$participantsArray = array("JASMIN a/k/a MIN a/k/a MANNY TT: 3683"=>"Min",
+"RAY [Formerly UM4482 / ses. 716]"=>"Ray",
+"KENNY [SesTT]"=>"Kenny",
+"BILLY ID'd in Session 291"=>"Billy",
+"JOHN [ID'd in Session 523 by Target]"=>"John",
+"CHOPPA (IDed in Session 4322) a/k/a UM9704"=>"Choppa",
+"KERRY [ses. 1581, Formerly UM5507]"=>"Kerry",
+"BUCC a/k/a BUCCI [Formerly UM4855, as per ses. 771, 772"=>"Bucci",
+", FRANKIE"=>"Frankie",
+"[Formerly UM7660] [TT] SDAMIAN"=>"Damian",
+"FRANKIE [SesNEW NUMBER, TT]"=>"Frankie",
+"ANT [id'ed SMS: 885]"=>"Ant",
+"JOE [id'ed in ses. 1466, Formerly UM0206]"=>"Joe",
+"UM0183 [FORMERLY UNKNOWN 0183] -"=>"UM0183",
+"STEVE [3176]  Formerly UM0346"=>"Steve",
+"MATT [Formerly UM0352, id'ed ses. 887, 2226]"=>"Matt",
+"JACKIE [girlfriend/ formerly UF9144]"=>"Jackie (gf)",
+"JASMIN a/k/a MIN a/k/a MANNY [ID Sessms 1590, TT"=>"Min",
+"STEVE [3176]  Formerly UM0346"=>"Steve",
+"# 2469 TT6189, MIKEY"=>"Mikey",
+"MITTY (FORMERLY: UM5339)"=>"Mitty",
+"[1798]  Formerly UM0346, STEVE"=>"Steve"
+);
 // global library files
 $dirHandle = opendir('../library'); 
 while($file = readdir($dirHandle)){

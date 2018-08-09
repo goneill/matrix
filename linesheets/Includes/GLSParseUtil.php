@@ -73,6 +73,15 @@ Class GLSParseUtil {
 		}
 
 	}
+	protected function setCurrPageNum($pageNum) {
+		$this->currPageNum = $pageNum;
+	}
+	protected function getCurrPageNum() {
+		return $this->currPageNum;
+	}
+	protected function setTargetPhone($targetPhone) {
+		$this->targetPhone = $targetPhone;
+	}
 	protected function getLinesheetPDFDir() { 
 		return $this->linesheetPDFDir;
 	}
@@ -95,17 +104,20 @@ Class GLSParseUtil {
 		$line = trim($this->line->getLineText());
 	}
 	protected function parseSecondLine() {
+		// date | content | Associate DN
+
 		$line = trim($this->line->getLineText());
 		$parts = preg_split("/[\s]+/", $line);
 		$datePattern = '^\d{1,2}\/\d{1,2}\/\d{2,4}\s+\d{2}:\d{2}:\d{2}^';//\s+[[AP]M]?^';//:d{2}:d{2}{+}^';//[ AM| PM]'
+			$durationPattern = '^\d{2}:\d{2}:\d{2}^';
 		// 		 7/3/2012 15:01:49 00:00:11 incoming call with 
 
 		preg_match($datePattern,$line, $matches);
 		$space = strpos($matches[0], ' ');
 		$this->currCall->setDate(substr($matches[0],0,$space));
-		$this->currCall->setTime(substr($matches[0],$space));
+		//$this->currCall->setTime(substr($matches[0],$space));
 			$line = str_replace($matches[0], '', $line);	
-		$durationPattern = '^\d{2}:\d{2}:\d{2}^';
+	
 
 		preg_match($durationPattern, $line, $durationMatches);
 		$this->currCall->setDuration($durationMatches[0]);
@@ -166,7 +178,7 @@ Class GLSParseUtil {
 			preg_match($currPageNumPattern, $lineText, $matches);
 			$ofLoc = strpos($newPage, 'of');
 			$currPageNum = substr($newPage, 0,$ofLoc);
-			$this->currPage = $currPageNum;
+			$this->currPageNum = $currPageNum;
 	//		echo "curr page num: $currPageNum <BR>";
 			return true;
 		} else {
@@ -187,12 +199,147 @@ Class GLSParseUtil {
 		}
 
 	}
+	public function getOccurrence($haystack, $needles) {
+		$occurrences = array();
+	//	print_r($needles);
+	//	echo "<BR>line: $haystack <BR>";
+       foreach ($needles as $str) {
+            $pos = strpos($haystack, $str);
+           // echo "pos: $pos: $haystack | $str<BR>";
+
+	        if ($pos !== FALSE) {  // make an array of the occurrences
+	   			$occurrences[$str] = $pos;
+	   		//	echo "it's a match: $str | $pos";
+	        }
+	    }
+   		asort($occurrences);
+
+        return $occurrences;
+	}
+	// check to see if this is a page header or footer - set page num if it is
+	public function pageHeaderFooter($line) {
+		$pageNumFoot = "/[0-9]+[\s]+of[\s]+[0-9]+/";
+		$dateFoot = "/[0-9]{2}\/[0-9]{2}\/[0-9]{4}[\s]+[0-9]{2}:[0-9]{2}:[0-9]{2}[\s]+[A-Z]{3}/";
+		if ((strpos($line, "Linesheet")!==FALSE &strpos($line, "User:")!==FALSE)){
+			return true;
+		} elseif($targLoc = strpos($line,"Target:")) {
+			if ($this->targetPhone==''){
+				$lineLoc = strpos($line, "Line:");
+				$fileNumLoc = strpos($line,"File Number");
+				$target = substr($line, $targLoc+7,$lineLoc-$targLoc-7);
+				$targetPhone= trim(substr($line,$lineLoc+5,$fileNumLoc-$lineLoc-5));
+				$this->setTargetPhone($targetPhone);
+
+			}
+			return true;
+		} elseif (preg_match($pageNumFoot, $line, $matches)){
+			$pageNum = substr($line, 0,strpos($line,"of"));
+//			echo "pageLine: $line $pageNum <BR>";
+			//echo "pageNum: $pageNum<BR>";
+			$this->setCurrPageNum($pageNum+1);
+			return true;
+		} elseif (preg_match($dateFoot,$line,$matches)) {
+			return true;
+		} else {
+		//	echo "line: $line<BR>";
+			return false;
+		}
+	}
+	
+	public function parseHeader($line,$header) {
+		$headerArray = $GLOBALS['headerArray'];
+		$occurrences = $this->getOccurrence($line, $headerArray);
+		if (!$occurrences) {
+				// this sets the line with no occurrences to the last element set... this probably isn't right for all cases
+				$endVal = end($header)." " .trim($line);
+				$endKey = key($header);
+				$header[$endKey] = $endVal;
+		}
+		foreach($occurrences as $occurrence=>$position) {
+			$keyLength = strlen($occurrence);
+			$nextStart = next($occurrences);
+			if($nextStart) {
+				$keyEnd = $nextStart - $position - $keyLength;
+				//	prev($occurrences);
+				$value = trim(substr($line, $position+$keyLength,$keyEnd));
+			} else {
+				$value = trim(substr($line, $position+$keyLength));
+			}
+	//		echo "$occurrence | $value <BR>";
+			$header[$occurrence]=$value;
+		}
+	//	echo "line: $line<BR>";
+		return $header;
+	}
+
+		// changing this to account for the case where the line is Synopsis plus other stuff...
+	public function isBody($lineText) {
+	
+		if ($lineText == 'Synopsis' || $lineText == "Content (SMS - Pager)") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+
+	public function parsePDFFile() {
+		$this->fileArray= file($this->file);
+		$fileLength = count($this->fileArray);
+		$stage = '';
+		$this->calls = array();
+		$this->currCall = array();
+		for ($i=0; $i <$fileLength; $i++) {
+//		for ($i=0; $i <800; $i++) {
+			$line = new GLSLine(trim($this->fileArray[$i]));
+			if ( strpos($line->getLineText(), "C.A.L.E.A. Surveillance Intercept Reportx") !== FALSE) {
+				parseCALEAFile();
+				break; //check this 
+			}
+			if (!(trim($line->getLineText())=='')) { 			// skip empty lines and proceed with parsing
+				$this->line = $line;
+				$lineText = $line->getLineText();
+				// they always start with session this means we have new call!
+				if ($this->pageHeaderFooter($lineText)) {
+					continue;
+				} elseif (substr(trim($lineText), 0,8)=="Session:") {
+			//		echo trim($lineText) . "<BR>";
+					// if this is not the first call in the file
+					if ($this->currCall) {  // if there is a call then add it into the calls array
+						$this->currCall->setHeader($header);
+						$this->calls[] = $this->currCall; 
+					}
+					$header = array();
+					$this->currCall = new GLSPDFCall($this->getCurrPageNum());
+					$this->parseHeader($lineText, $header);
+					$stage = 'header';
+				}
+				if ($stage == 'header') {
+					// if it is the body and isn't the header anymore
+					if ($this->isBody($lineText)) {
+						$stage = 'body'; 
+					} else {
+						$header = $this->parseHeader($lineText, $header);
+					}
+				} elseif ($stage == 'body') {
+					
+					$this->currCall->setSynopsisLine($line);
+
+				}
+			}
+		}
+
+	}
+	/* this is commented out so that we can try to build a better one with less clauses that will auto parse the file rather than just relying on hard coding the headers.  
 	public function parsePDFFile() {
 		$this->fileArray  = file($this->file);
 
 		$fileLength = count($this->fileArray);
+
 //		echo "file length is: $fileLength <BR>";
 		$lineIs = '';
+		$this->calls = array();
+		$this->currCall = array();
 		for ($i=0; $i <$fileLength; $i++) {
 //		for ($i=0; $i <200; $i++) {
 			$line = new GLSLine(trim($this->fileArray[$i]));
@@ -205,7 +352,9 @@ Class GLSParseUtil {
 		//		print_r($line);
 				$this->line = $line;
 				$lineText = $line->getLineText();
+				// they always start with session!
 				if (substr(trim($lineText), 0,8)=="Session:") {
+					// if this is not the first call in the file
 					if ($this->currCall) {
 						$this->calls[] = $this->currCall; 
 
@@ -291,6 +440,7 @@ Class GLSParseUtil {
 		}
 		$this->calls[] = $this->currCall; // put the remaining call in
 	}
+	*/
 	public function parseHTMLFile() {
 		$this->fileArray  = file($this->file);
 
@@ -467,9 +617,23 @@ Class GLSParseUtil {
 
 	}
 	protected function writeOutput() {
-		$outputLine = '"Session","Classification","Direction","Date","Associate DN","Start Time","Content","In Out Digits","Stop Time","Subscriber","Duration","Primary Languages","Participants","Complete","Monitor ID","Synopsis"'."\r\n";
-	//	echo $outputLine . "<BR>";
-		return $outputLine;
+		$outputLine='';
+		foreach ($GLOBALS['headerArray'] as $heading) {
+			$outputLine .= '"'.substr(trim($heading),0,-1).'",';
+		}
+
+		return substr($outputLine,0,-1).',"Body","PageNumber"'."\r\n";
+	}
+	public function replaceParticipants($input) {
+		$participants = $GLOBALS['participantsArray'];
+		//print_r($participants);
+		$input = preg_replace('/#([0-9]+,*\s*&*\s*#*)+/', '', $input); // get rid of all of the #1-9
+		$input = preg_replace('/TT:[0-9]+/','',$input); //get rid of the TT:[0-9]
+		foreach($participants as $key =>$value) {
+			$input = str_replace($key, $value, $input);
+		}
+
+		return $input;
 	}
 	public function outputCalls() {
 		$calls = $this->calls;
@@ -477,28 +641,30 @@ Class GLSParseUtil {
 		$outputLine = $this->writeOutput();
 		fwrite ($fileHandle,$outputLine);
 		foreach($calls as $call) {
- 			$textHyperLink = '","';
-			$convertedFileLink = '","';
-			$outputLine = 			'"'.
-			$call->getSession() . '","'
-				. $call->getClassification() . '","'
-				. $call->getDirection() . '","'
-				. $call->getDate() . '","'
-				. $call->getAssociateDN() . '","'
-				. $call->getStartTime() . '","'
-				. $call->getContent() . '","'
-				. $call->getInOutDigits() . '","'
-				. $call->getStopTime() . '","'
-				. $call->getSubscriber() . '","'
-				. $call->getTotalDuration() . '","'
-				. $call->getPrimaryLanguage() . '","'
-				. $call->getParticipants() . '","'
-				. $call->getComplete() . '","'
-				. $call->getMonitorId() . '","'
-				. str_replace('"', '""', $call->getSynopsis1()) . '"'
-				."\r\n";
 
-			fwrite ($fileHandle,$outputLine);
+			$textHyperLink='","';
+			$convertedFileLink='","';
+			$outputLine = 			'"';
+			// i worry if this is not set then it will error out
+			foreach ($GLOBALS['headerArray'] as $heading) {
+				$header = $call->getHeader(); 
+				if (isset($header[$heading])) {
+					$val=$header[$heading];
+				//	echo "$heading | $val <BR>";
+					if($heading=='Participants:'){
+						$val = $this->replaceParticipants($val);
+					}
+					$outputLine.= $val . '","';
+				} else {
+					$outputLine.=' ","';
+				}
+			}
+			$outputLine = $outputLine.  str_replace('"', "'",$call->getSynopsis1()) . '","'.$call->getStartPage().
+			'"'."\r\n";
+		//	echo $outputLine . "<BR>";
+			fwrite($fileHandle,$outputLine);
+		
+
 		}
 	}
 
@@ -518,7 +684,7 @@ Class GLSParseUtil {
 //	   		echo "filename: $file <BR>";
 
 			if (preg_match('/.pdf/',$file, $matches)) { // loop through the pdfs
-	//			$this->transformPDFToText($file); // make them into txt files
+				$this->transformPDFToText($file); // make them into txt files
 //				echo "file: $file <BR>";
 				$txtFileName = str_replace(".pdf", ".txt", $file);
 				$txtFile = $this->txtDir. $txtFileName;
@@ -526,10 +692,21 @@ Class GLSParseUtil {
 				$document = new Document();
 				$document->setTitle($txtFile);
 				$linesheet = new Linesheet();
+
 				$this->file = $txtFile;
 				$this->parsePDFFile();
+				$this->calls;
+				$firstCall = $this->calls[0];
+				$firstHeader = $firstCall->getHeader();
+				$firstDate = $firstHeader['Date:'];
+				$firstDate = str_replace("/", "", $firstDate); 
+				$lastCall = $this->calls[count($this->calls)-1];
+				$lastHeader = $lastCall->getHeader();
+				$lastDate = $lastHeader['Date:'];
+				$lastDate = str_replace("/", "", $lastDate); 
+				$this->linesheetDateRange = $firstDate."_".$lastDate;
 //				echo "linesheet Date " . $this->linesheetDate . "<BR>";
-				$this->outputFile = 'out/'.$this->targetPhone."_".$this->linesheetDateRange."_".$this->targetProvider.".csv";
+				$this->outputFile = 'out/'.$this->targetPhone."_".$this->linesheetDateRange.".csv";
 //				$this->outputFile = "out/".$file."_OUT.csv";
 				echo "files: $file | $txtFile | " . $this->outputFile . "<BR>";
 				
