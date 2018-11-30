@@ -1,4 +1,5 @@
 <?php 
+// NEED TO DO THIS BETTER!  The time zones are off for non daylight savigns!  I'm not sure how to fix! 
 foreach(glob('../library/*.php') as $file) {
      include_once $file;
 } 
@@ -6,7 +7,7 @@ foreach(glob('../library/*.php') as $file) {
 
 $phoneNumber = $_GET['number'];
 echo "Phone Num: $phoneNumber<BR>";
-$outFile = "../output/KW_".$phoneNumber."_out.kml";
+$outFile = "../output/OS_".$phoneNumber."_out.kml";
 
 try {
 	$outputFile = fopen($outFile, "w");
@@ -89,9 +90,9 @@ if ($result = $link->query($query)) {
 			}
 //			Have to change the date to be fiver hours later because GE reads in as universal and converts to eastern
 			$startDate = new datetime($row['StartDate']);
-			$startDate->modify('5 hours');
+			$startDate->modify('4 hours');
 			$endDate = new datetime($row['EndDate']);
-			$endDate->modify('5 hours'); ;
+			$endDate->modify('4 hours'); ;
 
 			if ($startDate == $endDate) {
 
@@ -104,7 +105,7 @@ if ($result = $link->query($query)) {
 			else { // there is a duration for the call/data usage
 				$begin = $startDate->format("Y-m-d") . 'T'.$startDate->format("H:i:s");
 				$endDate = new datetime($row['StartDate']);
-				$endDate->modify('5 hours'); ;
+				$endDate->modify('4 hours'); ;
 
 				$end = $endDate->format("Y-m-d") . 'T'.$endDate->format("H:i:s");
 				$timeString = "<TimeSpan>
