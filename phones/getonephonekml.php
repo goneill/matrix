@@ -96,15 +96,15 @@ if ($result = $link->query($query)) {
 
 			if ($startDateUTC == $endDateUTC) {
 
-				$timestamp = $startDateUTC->format("Y-m-d") . 'T'.$startDateUTC->format("H:i:s");
+				$timestamp = $startDateUTC->format("Y-m-d") . 'T'.$startDateUTC->format("H:i:s")."Z";
 				$timeString = 	"	<TimeStamp>
 			    	    <when>$timestamp</when>
 			    	  </TimeStamp>";
 
 			} 
 			else { // there is a duration for the call/data usage
-				$begin = $startDateUTC->format("Y-m-d") . 'T'.$startDateUTC->format("H:i:s");
-				$end = $endDateUTC->format("Y-m-d") . 'T'.$endDateUTC->format("H:i:s");
+				$begin = $startDateUTC->format("Y-m-d") . 'T'.$startDateUTC->format("H:i:s")."Z";
+				$end = $endDateUTC->format("Y-m-d") . 'T'.$endDateUTC->format("H:i:s")."Z";
 				$timeString = "<TimeSpan>
 					<begin>$begin</begin>
 					<end>$end</end>
