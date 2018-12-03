@@ -89,25 +89,22 @@ if ($result = $link->query($query)) {
 				$name = "SMS $from To $to $strStartDate";
 			}
 //			Have to change the date to be fiver hours later because GE reads in as universal and converts to eastern
-			$startDate = new datetime($row['StartDate']);
-			$startDate->modify('4 hours');
-			$endDate = new datetime($row['EndDate']);
-			$endDate->modify('4 hours'); ;
+			$startDateUTC = new datetime($row['StartDate']);
+			$startDateUTC->setTimezone(new DateTimeZone('UTC'));
+			$endDateUTC = new datetime($row['EndDate']);
+			$endDateUTC->setTimezone(new DateTimeZone('UTC'));
 
-			if ($startDate == $endDate) {
+			if ($startDateUTC == $endDateUTC) {
 
-				$timestamp = $startDate->format("Y-m-d") . 'T'.$startDate->format("H:i:s");
+				$timestamp = $startDateUTC->format("Y-m-d") . 'T'.$startDateUTC->format("H:i:s");
 				$timeString = 	"	<TimeStamp>
 			    	    <when>$timestamp</when>
 			    	  </TimeStamp>";
 
 			} 
 			else { // there is a duration for the call/data usage
-				$begin = $startDate->format("Y-m-d") . 'T'.$startDate->format("H:i:s");
-				$endDate = new datetime($row['StartDate']);
-				$endDate->modify('4 hours'); ;
-
-				$end = $endDate->format("Y-m-d") . 'T'.$endDate->format("H:i:s");
+				$begin = $startDateUTC->format("Y-m-d") . 'T'.$startDateUTC->format("H:i:s");
+				$end = $endDateUTC->format("Y-m-d") . 'T'.$endDateUTC->format("H:i:s");
 				$timeString = "<TimeSpan>
 					<begin>$begin</begin>
 					<end>$end</end>

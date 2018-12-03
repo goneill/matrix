@@ -101,6 +101,8 @@ function addRecords($filename) {
 	echo "source name = $source";
 	$i=0; 
 	$calls = array();
+	// all records come in in UTC
+	date_default_timezone_set('UTC');
 	// big concern we could have duplicates in here.  
 	if (($handle = fopen($filename, "r")) !== FALSE) {
 		echo $filename . "<BR>";
@@ -128,14 +130,11 @@ CALLING_NBR,CALLED_NBR,DIALED_DIGITS,MOBILE ROLE,START_DATE,END_DATE,DURATION (S
 	    	$call['FromPhoneID'] = getPhoneID(stripPhoneNumber($line[5]));
 	    	$call['DialedDigits'] = "'".stripPhoneNumber(trim($line[6]))."'";
 	    	$call['Direction'] = "'".trim($line[4])."'";
-			$startDateUTC = new datetime($line[0]. ' '.$line[1]);
-
-			$startDateEST = date_modify($startDateUTC, '-4 hours');
-			$call['StartDate'] = getSqlDate($startDateEST);
-			echo "call start date: " . $call['StartDate'] . "<BR>";
-			die();
+			$startDate = new datetime($line[0]. ' ' .$line[1]);
+			$startDate->setTimezone(new DateTimezone('America/New_York'));
+			$call['StartDate'] = getSqlDate($startDate);
 			if ($line[4]) {
-				$start = $startDateEST;
+				$start = $startDate;
 			
 				if ($line[2]) {
 					$call['EndDate'] = getSqlDate($start->add(new DateInterval ('PT'.$line[2].'S')));
@@ -145,10 +144,10 @@ CALLING_NBR,CALLED_NBR,DIALED_DIGITS,MOBILE ROLE,START_DATE,END_DATE,DURATION (S
 			} else { // if enddate is empty set it to start date
 				$call['EndDate'] = $call['StartDate'];
 			}
+
 			$call['Duration'] = "'". trim($line[2])."'";
 			$call['NetworkElement'] = "'".trim($line[17])."'";
 			$call['Repoll'] = "0";
-
 			$call['FirstCell'] = $cellSiteData['FirstCell'];
 			$call['LastCell'] = $cellSiteData['LastCell'];
 			$call['FirstLatitude'] = $cellSiteData['FirstLatitude'];
@@ -163,11 +162,10 @@ CALLING_NBR,CALLED_NBR,DIALED_DIGITS,MOBILE ROLE,START_DATE,END_DATE,DURATION (S
 			$call['ServiceProviderID'] = $serviceProviderID;
 			$call['CallType'] = "'".$line[3]."'";
 			$call['Created'] = 'Now()';
-			$call['Modified'] = 'NOW()';
-									
+			$call['Modified'] = 'NOW()';									
+
 		//	print_r($call);
 		//	die();
-
 
 			$calls[] = "(".implode(',',$call).")";
 			//print_r($call);
