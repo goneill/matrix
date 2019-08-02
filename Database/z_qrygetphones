@@ -1,0 +1,9 @@
+use matrix; 
+select Calls.Direction, Calls.StartDate, Calls.EndDate, Calls.Duration, Calls.FirstCell, Calls.LastCell, Calls.FirstLatitude, Calls.FirstLongitude, Calls.LastLatitude, Calls.LastLongitude, Calls.FirstCellDIrection, Calls.LastCellDIrection, FromPhones.PhoneNumber as FromPhoneNum, ToPhones.PhoneNumber AS ToPhoneNum from calls, Phones as FromPhones, Phones as ToPhones 
+
+where startdate > '2014-03-11' and 
+	endDate < '2014-03-11 03:00:00' AND 
+	Calls.FromPhoneID = FromPhones.PhoneID AND 
+	Calls.ToPhoneID = ToPhones.PhoneID
+
+order by startDate

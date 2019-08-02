@@ -1,0 +1,122 @@
+"Aminova, Ilana"	9/24/12	GEICO	" $12,859.23 "	" $6,007.59 "	 $-   	 $-   		 $-   	 $-   	 $-   	 $-   			
+"Aminova, Michelle"	9/24/12	GEICO	" $14,438.89 "	" $7,924.95 "	 $-   	 $-   								
+"Aminova, Osnat"	12/2/12	Allstate	" $38,034.24 "	" $16,902.14 "	 $-   	 $-   								
+"Asilaa, Frazier"	10/14/12	GEICO	 $591.20 	 $-   	 $-   	 $-   								
+"Baker, Reathella"	12/11/12	GEICO	" $13,532.69 "	" $2,904.01 "	 $-   	 $-   								
+"Bell, Sharon"	12/12/12	Ameriprise												
+"Bell, Sharon"	12/12/12	GEICO	" $43,373.26 "	" $29,723.04 "	 $-   	 $-   								
+"Bentford, Michael"	12/11/12	GEICO	" $6,114.95 "	" $2,904.01 "	 $-   	 $-   								
+"Blot, Rimonds"	12/30/12	GEICO	 $241.67 	 $-   	 $-   	 $-   								
+"Bobb, Sefora"	10/15/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Bobb, Sefora"	10/15/12	Not in ISO												
+"Bourne, Densroy"	10/7/12	Liberty Mutual	" $5,506.99 "	" $1,365.22 "	 $-   	 $-   								
+"Brathwaite, Randall"	10/19/12	MVAIC 	" $3,000.00 "	 $-   	 $-   	 $-   								
+"Brathwaite, Randall"	10/19/12	State Farm	" $1,064.32 "	 $806.13 	 $-   	 $-   								
+"Chapman, Shirley"	11/22/12	GEICO	 $612.04 	 $586.32 	 $-   	 $-   								
+"Chapman, Shirley"	11/22/12	State Farm	 $-   	 $-   	 $-   	 $-   								
+"Clarke, Keith"	10/12/12	American Transit	" $5,678.76 "	 $-   	 $-   	 $-   								
+"Coleman, Cheryl"	12/4/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Coleman, Cheryl"	12/4/12	GEICO	" $6,772.17 "	" $3,512.17 "	 $-   	 $-   								
+"Coleman, Cheryl"	12/4/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Coleman, Cheryl"	12/4/12	MVAIC	 $219.25 	 $-   	 $-   	 $-   								
+"Cover, Tristan"	12/1/12	GEICO	" $45,544.02 "	" $14,898.37 "	 $-   	 $-   								
+"Cover, Tristan"	12/1/12	Metropolitan	 $-   	 $-   	 $-   	" $6,000.00 "		 $-   	 $-   	 $-   	" $6,000.00 "			
+"Davis, Paul"	1/1/13	GEICO	" $12,616.96 "	" $8,070.06 "	 $-   	 $-   								
+"Deacon, Corey"	1/1/13	GEICO	 $-   	 $-   	 $-   	 $-   		" $210,200.64 "	" $95,604.01 "	 $-   	" $6,000.00 "	30%		
+"Decan, Corey"	1/1/13	Not in ISO												
+"Devine, William"	9/5/12	Nationwide												
+"Devine, William"	9/5/12	State Farm	 $-   	 $-   	 $-   	 $-   								
+"Edlyn, Rhamdeen"	12/30/12	Farmers	" $31,943.55 "	" $21,666.55 "	 $-   	 $-   								
+"Edlyn, Rhamdeen"	12/30/12	Farmers	" $77,784.51 "	" $35,241.93 "	 $-   	 $-   		" $109,728.06 "	" $56,908.48 "	 $-   	 $-   	52%		
+"Edlyn, Rhamdeen"	12/30/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Edlyn, Rhamdeen"	12/30/12	MVAIC	 $97.59 	 $-   	 $-   	 $-   								
+"Efuru, Crooks"	10/5/12	GEICO	 RBI 	" $11,500.00 "	 $-   	 $-   								
+"Efuru, Crooks"	10/5/12	MVAIC	" $3,300.00 "	 $-   	 $-   	 $-   								
+"Elvis, Hayles"	12/6/12	State Farm	 $-   	 $-   	 $-   	 $-   								
+"Elvis, Hayles"	12/6/12	Utica												
+"Elvis, Hayles"	12/6/12	XL Catlin												
+"Ennis, Charles"	12/24/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Figueroa, Jessica"	9/5/12	MVAIC	" $6,300.00 "	 $-   	 $-   	 $-   								
+"Figueroa, Jessica"	9/5/12	State Farm	 $-   	 $-   	 $-   	 $-   								
+"Francois, Kenwin"	12/22/12	State Farm	" $1,873.05 "	" $1,385.97 "	 $-   	 $-   								
+"Frantz, Charles"	11/20/12	Travelers	 $-   	 $-   	 $-   	 $-   								
+"Frantz, Charles"	11/20/12	Travelers	 $-   	 $-   	 $-   	 $-   								
+"Frantzy, Jules"	12/6/12	GEICO	" $25,382.00 "	" $1,506.50 "	 $-   	 $-   								
+"Galloway, Pauline"	12/27/12	GEICO	" $13,902.79 "	" $10,254.85 "	 $-   	 $-   								
+"Galloway, Shannel"	12/27/12	GEICO	" $16,659.38 "	" $1,224.14 "	 $-   	 $-   								
+"Galloway, Shannel"	12/27/12	Global Liberty												
+"Goudy, Michele"	11/9/12	GEICO	" $36,466.54 "	" $20,306.65 "	 $-   	 $-   								
+"Gray, Garfield"	11/11/12	American Transit	" $17,451.90 "	" $12,161.38 "	 $-   	 $-   								
+"Groneveldt, Natasha"	10/12/12	Hereford												
+"Groneveldt, Natasha"	10/12/12	MVAIC 	" $4,800.00 "	 $-   	 $-   	 $-   		" $75,377.82 "	" $33,692.17 "	 $-   	 $-   			
+"Herby, Formantin"	11/22/12	GEICO	" $32,915.24 "	" $15,648.69 "	 $-   	 $-   								
+"Herby, Formantin"	11/22/12	State Farm	 $-   	 $-   	 $-   	 $-   								
+"Isaac, Jennifer"	11/29/12	Countrywide	" $109,719.50 "	" $29,343.23 "	 $-   	 $-   								
+"Isaac, Jennifer"	11/29/12	GEICO	" $35,000.00 "	" $1,249.51 "	 $-   	 $-   								
+"Jahtiba, Burton"	12/10/12	Mercury General												
+"Jahtiba, Burton"	12/10/12	Not in ISO												
+"Jardine, Nigel"	9/6/12	Mapfre	 $-   	 $-   	 $-   	 $-   		 $-   	 $-   	 $-   	 $-   	99%		
+"Jardine, Nigel"	9/6/12	State Farm	 $450.77 	 $157.05 	 $-   	 $-   								
+"Jodhan, Bhrija"	12/22/12	State Farm	 $731.91 	" $1,281.94 "	 $-   	 $-   								
+"Jodhan, Ryan"	12/22/12	State Farm	" $1,630.31 "	" $1,173.26 "	 $-   	 $-   								
+"Joseph, Akilah"	10/22/12	Countrywide	" $23,974.75 "	" $7,792.35 "	 $-   	 $-   								
+"Khaimov, Robin"	9/13/12	Allstate	 $-   	 $-   	 $-   	" $1,400.00 "								
+"Khaimov, Robin"	9/13/12	Interboro												
+"Khaimova, Shifro"	9/13/12	Allstate	 $-   	 $-   	 $-   	" $2,000.00 "		" $23,974.75 "	" $7,792.35 "	 $-   	" $3,400.00 "	61%		
+"Khaimova, Shifro"	9/13/12	Interboro												
+"Leyderman, Mark"	11/19/12	Tower Group												
+"Leyderman, Mark"	11/19/12	Tower Group												
+"Manning, Dashard"	10/12/12	Not in ISO												
+"Martin, Oretta"	12/12/12	Ameriprise												
+"Martin, Oretta"	12/12/12	GEICO	" $27,828.69 "	" $2,532.77 "	 $-   	" $64,336.61 "	" $19,663.40 "							
+"Mary, Simms"	10/14/12	GEICO	" $2,160.00 "	 $-   	 $-   	 $-   								
+"Maslov, Oleksandr"	10/24/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Maslov, Oleksandr"	10/24/12	Liberty Mutual	" $33,418.96 "	" $2,354.54 "	 $-   	 $-   								
+"McBride, Larry"	10/6/12	GEICO	" $46,077.53 "	" $15,310.32 "	 $-   	 $-   								
+"McBride, Larry"	10/6/12	GEICO	" $10,000.00 "	 $-   	 $-   	 $-   								
+"McBride, Michelle"	10/6/12	GEICO	" $101,787.08 "	" $14,832.11 "	 $-   	 $-   								
+"McBride, Michelle"	10/6/12	GEICO	" $25,000.00 "	 $-   	 $-   	 $-   								
+"Miles, Ola (Darlene Mills)"	10/6/12	GEICO	" $172,128.57 "	" $42,616.48 "	 $-   	 $-   								
+"Miles, Ola (Darlene Mills)"	10/6/12	GEICO	" $15,000.00 "	 $-   	 $-   	 $-   								
+"Mohan, Bharat"	12/19/12	GEICO	" $180,205.43 "	" $36,111.72 "	 $-   	 $-   								
+"Nazaire, Kiara"	9/7/12	Not in ISO												
+"Nazaire, Kiara"	9/7/12	Not in ISO												
+"Neil, Christopher"		Not in ISO												
+"Pannell, Nikiya"	9/18/12	American Transit	" $17,947.88 "	" $5,322.00 "	 $-   	 $-   								
+"Pannell, Nikiya"	9/18/12	GEICO	" $3,660.00 "	 $-   	 $-   	 $-   								
+"Pegus, Elias"	12/1/12	GEICO	" $35,000.00 "	 $475.00 	 $-   	 $-   								
+"Pegus, Elias"	12/1/12	State Farm	" $3,111.13 "	" $1,087.55 "	 $-   	 $-   								
+"Philogene, Jean"	10/31/12	Mapfre	" $23,384.58 "	" $23,322.35 "	 $-   	 $-   								
+"Philogene, Jean"	10/31/12	USAA		" $3,084.83 "		" $9,500.00 "		 $-   	" $3,084.83 "	 $-   	" $9,500.00 "			
+"Richetts, Sandra"	12/22/12	Maya Assurance												
+"Richetts, Sandra"	12/22/12	Rep West												
+"Richetts, Sandra"	12/22/12	U-Haul International												
+"Sanders, Frank, Jr."	9/16/12	Ameriprise												
+"Sanders, Frank, Jr."	9/16/12	Countrywide	" $96,600.46 "	" $21,274.93 "		" $2,500.00 "		" $96,600.46 "	" $21,274.93 "	 $-   	" $2,500.00 "	26%		
+"Scudder, Bryonni"	10/14/12	GEICO	 $664.43 	 $-   	 $-   	 $-   								
+"Scudder, Bryonni"	10/14/12	Travelers	 $-   	 $-   	 $-   	 $-   								
+"Simpson, Dwayne"	9/4/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Simpson, Dwayne"	9/4/12	GEICO	" $21,975.47 "	" $15,638.91 "	 $-   	 $-   								
+"Smith, Cheryl"	1/1/13	Allstate	 $-   	" $6,001.33 "	 $-   	 $-   								
+"Smith, Cheryl"	1/1/13	State Farm	 $-   	 $-   	 $-   	 $-   		" $119,240.36 "	" $46,000.00 "	 $-   	" $12,000.00 "	67%		
+"Smith, Christina"	12/25/12	GEICO	" $36,716.83 "	" $21,306.63 "	 $-   	 $-   								
+"Steele-Hepburn, Marcia"	10/20/12	Geico	" $15,789.57 "	" $7,694.37 "	 $-   	 $-   								
+"Telesford, Neil"	12/22/12	Maya Assurance												
+"Telesford, Neil"	12/22/12	Rep West												
+"Thomas, Carlos"	12/9/12	Liberty Mutual						 $-   	 $-   	 $-   	 $-   	10%		
+"Thomas, Carlos"	12/10/12	Not in ISO												
+"Walker, Lonney (Lundy)"	9/18/12	American Transit	" $31,952.18 "	" $3,209.73 "	 $-   	 $-   		" $31,952.18 "	" $3,209.73 "	 $-   	 $-   	29%		
+"Washington, Davita"	11/20/12	GEICO	" $7,803.45 "	" $1,472.34 "	 $-   	 $-   								
+"White, Audrey"	12/12/12	Ameriprise	" $93,934.11 "	" $23,247.14 "		" $55,000.00 "		" $133,689.74 "	" $27,929.21 "	 $-   	" $55,000.00 "	25%		
+"White, Audrey"	12/12/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"William, Bellinger"	11/20/12	GEICO	 $554.95 	 $287.27 	 $-   	 $-   								
+"William, Bellinger"	11/20/12	RepWest												
+"Williams, Shaheem"	10/12/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Williams, Shaheem"	10/12/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Williams, Shaheem"	10/12/12	Hereford												
+"Williams, Shaheem"	10/12/12	National Indemnity												
+"Williamson, Shasha"	12/25/12	AUTOONE						 $-   	 $-   	 $-   	 $-   			
+"Williamson, Shasha"	12/25/12	GEICO	" $69,963.79 "	" $22,002.88 "	 $-   	 $-   								
+"Wilson, Anthony"	10/15/12	Fiduciary 												
+"Wilson, Anthony"	10/15/12	GEICO	 $-   	 $-   	 $-   	 $-   								
+"Wilson, Anthony"	10/15/12	Sewgwick Clms 												

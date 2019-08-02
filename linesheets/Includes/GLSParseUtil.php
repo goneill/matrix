@@ -51,7 +51,7 @@ Class GLSParseUtil {
 
 	public function findTargetName() {
 		$lineText = $this->line->getLineText();
-		$pattern = "/Participants:(\\s)+(.)*/";
+		$pattern = "/Line:(\\s)+(.)*/";
 		preg_match($pattern, $lineText, $matches);
 		if ($matches) {
 			$match = trim($matches[0]);
@@ -69,7 +69,9 @@ Class GLSParseUtil {
 		$lineText = $this->line->getLineText();
 		$strpos = strpos($lineText, 'Target');
 		if (! $strpos ===false) {
-			$this->targetPhone = substr(trim(substr($lineText, $strpos+8)), 0, 12); 
+			$target = substr(trim(substr($lineText, $strpos+8)), 0, 12); 
+			$this->targetPhone = $target;
+			echo "target: " . $target . "<BR>";
 		}
 
 	}
@@ -135,6 +137,7 @@ Class GLSParseUtil {
 		 $this->currCall->setAudio($shortAudio);
 		 $this->currCall->setLongAudio($longAudio);
 	}
+
 	public function isJunk($line) {
 		$lineText = trim($line->getLineText());
 //		echo "line text: " . substr($lineText, 0, 17) . "<BR>";
@@ -229,13 +232,14 @@ Class GLSParseUtil {
 				$target = substr($line, $targLoc+7,$lineLoc-$targLoc-7);
 				$targetPhone= trim(substr($line,$lineLoc+5,$fileNumLoc-$lineLoc-5));
 				$this->setTargetPhone($targetPhone);
+				echo "targetPhone: $targetPhone <BR>";
 
 			}
 			return true;
-		} elseif (preg_match($pageNumFoot, $line, $matches)){
-			$pageNum = substr($line, 0,strpos($line,"of"));
-//			echo "pageLine: $line $pageNum <BR>";
-			//echo "pageNum: $pageNum<BR>";
+		} elseif (preg_match($pageNumFoot, $line, $matches)) {
+			$pageNum = $matches[0];
+			$pageNum = trim(substr($matches[0], 0,strpos($matches[0],"of")));
+//			echo "pageLine: $line | page num: $pageNum <BR>";
 			$this->setCurrPageNum($pageNum+1);
 			return true;
 		} elseif (preg_match($dateFoot,$line,$matches)) {
@@ -256,6 +260,7 @@ Class GLSParseUtil {
 				$header[$endKey] = $endVal;
 		}
 		foreach($occurrences as $occurrence=>$position) {
+
 			$keyLength = strlen($occurrence);
 			$nextStart = next($occurrences);
 			if($nextStart) {
@@ -267,6 +272,9 @@ Class GLSParseUtil {
 			}
 	//		echo "$occurrence | $value <BR>";
 			$header[$occurrence]=$value;
+			if ($occurrence == "Total Duration") {
+				echo "value: $value <BR>";
+			}
 		}
 	//	echo "line: $line<BR>";
 		return $header;
@@ -299,6 +307,7 @@ Class GLSParseUtil {
 			if (!(trim($line->getLineText())=='')) { 			// skip empty lines and proceed with parsing
 				$this->line = $line;
 				$lineText = $line->getLineText();
+	//			echo $lineText . "<BR>";
 				// they always start with session this means we have new call!
 				if ($this->pageHeaderFooter($lineText)) {
 					continue;
@@ -330,117 +339,7 @@ Class GLSParseUtil {
 		}
 
 	}
-	/* this is commented out so that we can try to build a better one with less clauses that will auto parse the file rather than just relying on hard coding the headers.  
-	public function parsePDFFile() {
-		$this->fileArray  = file($this->file);
 
-		$fileLength = count($this->fileArray);
-
-//		echo "file length is: $fileLength <BR>";
-		$lineIs = '';
-		$this->calls = array();
-		$this->currCall = array();
-		for ($i=0; $i <$fileLength; $i++) {
-//		for ($i=0; $i <200; $i++) {
-			$line = new GLSLine(trim($this->fileArray[$i]));
-			if ( strpos($line->getLineText(), "C.A.L.E.A. Surveillance Intercept Reportx") !== FALSE) {
-				parseCALEAFile();
-				break; //check this 
-			}
-
-			if (!(trim($line->getLineText())=='')) {
-		//		print_r($line);
-				$this->line = $line;
-				$lineText = $line->getLineText();
-				// they always start with session!
-				if (substr(trim($lineText), 0,8)=="Session:") {
-					// if this is not the first call in the file
-					if ($this->currCall) {
-						$this->calls[] = $this->currCall; 
-
-			//			echo "<BR>";
-					}
-					$this->currCall = new GLSPDFCall($this->currPageNum);
-					$this->currCall->setFirstLine($line);
-					$lineIs='second';
-					continue;
-				} elseif ($this->isJunk($line)){
-					continue;
-				} elseif ($this->isNewPage($line)) {
-					continue;
-				} elseif ($lineIs == 'second') {
-					$this->currCall->setSecondLine($line);
-					$lineIs='third';
-					continue;
-				} elseif ($lineIs == 'third') {
-					$this->currCall->setThirdLine($line);
-					$lineIs='fourth';
-					continue;
-				}elseif ($lineIs == 'fourth') {
-					$this->currCall->setFourthLine($line);
-					$lineIs='fifth';
-					continue;
-				} elseif ($lineIs == 'fifth') {
-					$this->currCall->setFifthLine($line);
-					$lineIs='sixth';
-					continue;
-
-				} elseif($lineIs == 'sixth') {
-					$this->currCall->setSixthLine($line);
-					$lineIs='seventh';
-					continue;
-				} elseif ($lineIs== 'seventh') {
-					$this->currCall->setSeventhLine($line);
-					$lineIs='checkForSynopsis';
-					continue;
-				} elseif ($lineIs == 'checkForIAP') {
-					if ($this->currCall->isIAP($line)) {
-						$this->currCall->setFourthLine($line);
-						$lineIs='checkForSynopsis';
-					} else { //more participants so set them
-						$this->currCall->setParticipants($this->currCall->getParticipants() . "\n" . $line->getLineText());
-					}
-
-				} elseif ($lineIs == 'checkForSynopsis') {
-					if ($this->currCall->isSynopsis($line)) {
-						$lineIs='synopsis';
-				//		echo "comments: <BR>";
-						continue;
-					} else {
-						if (strtotime($line->getLineText()) || $line->getLineText() == 'END') {
-					//		print_r($this->currCall);
-						} else {
-						 	$this->currCall->setParticipants($this->currCall->getParticipants() . "\n" . $line->getLineText());
-						}	
-						continue;
-					}
-				}elseif ($lineIs =='synopsis') {
-					$this->currCall->setSynopsisLine($line);
-				} elseif ($usrLoc = (strpos($line->getLineText(), "User:")!== FALSE)) {
-					$this->user = trim (substr($line->getLineText(), $usrLoc+6));
-//					echo "user line: " . $this->user . "<BR>";
-				} elseif ($lineLoc = (strpos($line->getLineText(), "Line:")=== 0)) {
-					$this->targetPhone = trim (substr($line->getLineText(), $lineLoc+5, 15));
-//					echo "Phone number line:  line: " . $this->targetPhone . "<BR>";
-					$this->targetProvider = trim(substr($line->getLineText(), 20));
-//					echo "targetProvider =".$this->targetProvider . "<BR>";
-				} elseif ( strpos($line->getLineText(), "'Date")!== FALSE) {
-					$linesheetDate = substr($line->getLineText(), 6);
-					$linesheetDate = str_replace(":", "", str_replace("/", "", $linesheetDate)); 
- 					$this->linesheetDateRange = $linesheetDate;
-// 					echo "sheet date: " . $this->linesheetDate. "<BR>";
-					$this->user = trim (substr($line->getLineText(), $usrLoc+6));
-//					echo "user line: " . $this->user . "<BR>";
-				} else {
-
-					//echo "this is a regular line: " . $line->getLineText() . "<BR>";
-				//	die();
-				}
-			}
-		}
-		$this->calls[] = $this->currCall; // put the remaining call in
-	}
-	*/
 	public function parseHTMLFile() {
 		$this->fileArray  = file($this->file);
 
@@ -682,12 +581,14 @@ Class GLSParseUtil {
 		$pdfDir = opendir($this->dirHandle);
 	   	while(false != ($file = readdir($pdfDir))){
 //	   		echo "filename: $file <BR>";
+   		
 
-			if (preg_match('/.pdf/',$file, $matches)) { // loop through the pdfs
-				$this->transformPDFToText($file); // make them into txt files
-//				echo "file: $file <BR>";
+   			if (preg_match('/.pdf/',$file, $matches)) { // loop through the pdfs
+//				$this->transformPDFToText($file); // make them into txt files
+				echo "file: $file <BR>";
 				$txtFileName = str_replace(".pdf", ".txt", $file);
 				$txtFile = $this->txtDir. $txtFileName;
+				$this->setTargetPhone('');
 //				echo "txt File: " . $txtFile ."<BR>";
 				$document = new Document();
 				$document->setTitle($txtFile);
@@ -706,11 +607,12 @@ Class GLSParseUtil {
 				$lastDate = str_replace("/", "", $lastDate); 
 				$this->linesheetDateRange = $firstDate."_".$lastDate;
 //				echo "linesheet Date " . $this->linesheetDate . "<BR>";
-				$this->outputFile = 'out/'.$this->targetPhone."_".$this->linesheetDateRange.".csv";
+				$this->outputFile = 'out/'.$this->targetPhone ."_".$this->linesheetDateRange.".csv";
 //				$this->outputFile = "out/".$file."_OUT.csv";
 				echo "files: $file | $txtFile | " . $this->outputFile . "<BR>";
 				
 				$this->outputCalls();
+				die();
 			} // end if 
 
 	   	} // end while

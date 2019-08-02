@@ -1,0 +1,897 @@
+"Alphonso, Carissa"	480	10/17/13	12/4/12	200.68 	0.00 	 0003658 Treatment 								
+"Alphonso, Carissa"	480	10/17/13	12/4/12	204.41 	0.00 	Outcome Assessm 0003659 Consult 								
+"Alphonso, Carissa"	480	10/17/13	12/4/12	80.02 	56.01 	 0003683 Treatment 								
+"Alphonso, Carissa"	480	10/17/13	12/4/12	61.60 	43.12 	 0003687 Treatment 								
+"Alphonso, Carissa"	480	10/17/13	12/4/12	123.20 	86.24 	 0003688 Treatment 								
+ "Baker, Rethealla"	355	1/11/13	1/11/13	80.02 	72.92 	'PT'								
+"Baker, Rethealla"	355	1/11/13	2/1/13	67.60 	0.00 	'PT'								
+"Baker, Rethealla"	355	1/11/13	2/1/13	182.84 	166.63 	PT								
+"Baker, Rethealla"	355	1/11/13	2/1/13	174.40 	166.63 	PT								
+"Baker, Rethealla"	355	2/1/13	2/7/13	202.80 	184.80 	PT								
+"Baker, Rethealla"	355	2/19/13	2/19/13	135.20 	135.20 	PT								
+"Baker, Rethealla"	355	3/7/13	3/7/13	67.60 	67.60 	PT								
+"Bell, Sharon"	356	2/19/13	2/19/13	1916.46 	0.00 	DoctorYMecial								
+"Bell, Sharon"	356	2/19/13	2/19/13	312.12 	0.00 	Kaufman								
+"Bell, Sharon"	356	2/19/13	2/19/13	104.04 	83.23 	Kaufman								
+"Bell, Sharon"	356	1/11/13	2/1/13	270.40 	270.40 	PT								
+"Bell, Sharon"	356	1/11/13	2/1/13	67.60 	67.60 	PT								
+"Bell, Sharon"	356	1/11/13	2/1/13	80.02 	46.48 	PT								
+"Bell, Sharon"	356	2/1/13	2/7/13	270.40 	270.40 	PT								
+"Bell, Sharon"	356	2/1/13	2/7/13	67.60 	67.60 	PT								
+"Bell, Sharon"	356	2/1/13	2/7/13	135.20 	135.20 	PT								
+"Bell, Sharon"	356	2/1/13	2/7/13	444.44 	376.87 	PT								
+"Bell, Sharon"	356	2/1/13	2/7/13	67.60 	67.60 	PT								
+"Bell, Sharon"	356	2/19/13	2/19/13	202.80 	202.80 	PT								
+"Bell, Sharon"	356	2/19/13	2/19/13	202.80 	202.80 	PT								
+"Bell, Sharon"	356	3/7/13	3/7/13	270.40 	270.40 	PT								
+"Bell, Sharon"	356	3/7/13	3/7/13	202.80 	202.80 	PT								
+"Bell, Sharon"	356	3/7/13	4/9/13	444.44 	376.93 	PT								
+"Bell, Sharon"	356	4/4/13	4/5/13	202.80 	202.80 	PT								
+"Bell, Sharon"	356	4/4/13	4/5/13	67.60 	67.60 	PT								
+"Bell, Sharon"	356	4/25/13	4/25/13	135.20 	135.20 	PT								
+"Bell, Sharon"	356	5/21/13	5/21/13	270.40 	270.40 	PT								
+"Bell, Sharon"	356	6/20/13	6/25/13	135.20 	135.20 	PT								
+"Bentford, Michael"	358	1/11/13	2/1/13	135.20 	123.20 	Treatment								
+"Bentford, Michael"	358	1/11/13	2/1/13	80.02 	0.00 	PT-Evaluation Consu lt								
+"Bentford, Michael"	358	1/11/13	2/1/13	182.84 	327.45 	Range of Motion								
+"Bentford, Michael"	358	1/11/13	2/1/13	174.40 	174.40 									
+"Bentford, Michael"	358	2/1/13	2/7/13	67.60 	67.60 	Treatment								
+"Bentford, Michael"	358	2/1/13	2/7/13	67.60 	61.60 	Treatment								
+"Bentford, Michael"	358	2/19/13		104.04 	104.04 	Chiropractor								
+"Bourne, Densroy"	362	12/3/12	12/4/12	135.20 	0.00 	PT								
+"Bourne, Densroy"	362	12/3/12	12/4/12	135.20 	121.75 	PT								
+"Bourne, Densroy"	362	12/3/12	12/4/12	80.02 	32.01 	PT 								
+"Bourne, Densroy"	362	12/4/01	12/4/12	1916.46 	0.00 	DoctorYMecial								
+"Bourne, Densroy"	362	12/4/12	12/4/12	1490.58 	0.00 	DoctorYMecial								
+"Bourne, Densroy"	362	2/19/13	2/19/13	67.60 	0.00 	PT								
+"Brathwait, Randall"	364	12/3/12	12/4/12	402.95 	0.00 	Range of Motion - 0003898 Consult 								
+"Brathwait, Randall"	364	12/3/12	12/4/12	202.80 	0.00 	0003919 Treatmen t 								
+"Brathwait, Randall"	364	12/3/12	12/4/12	270.40 	0.00 	0003920 Treatment 								
+"Brathwait, Randall"	364	1/11/13	2/1/13	473.20 	0.00 	0004023 Treatmen t 								
+"Brathwait, Randall"	364	1/11/13	2/1/13	338.00 	0.00 	0004024 Treatmen t 								
+"Brathwait, Randall"	364	1/11/13	2/1/13	270.04 	0.00 	Range of Motion - 0004119 Consult 								
+"Brathwait, Randall"	364	2/1/13	2/7/13	67.60 	0.00 	0004144 Treatment 								
+"Brathwait, Randall"	364	2/1/13	2/7/13	338.00 	0.00 	0004145 Treatment 								
+"Brathwait, Randall"	364	2/1/13	2/7/13	249.96 	0.00 	Physical Capacity 0004322 Consu lt 								
+"Brathwait, Randall"	364	2/19/13	2/19/13	270.04 	0.00 	Range of Motion 0004378 Consult 								
+"Brathwait, Randall"	364	2/19/13	2/19/13	135.20 	0.00 	0004421 Treatment 								
+"Brathwait, Randall"	364	2/19/13	2/19/13	202.80 	0.00 	0004422 Treatment 								
+"Brathwait, Randall"	364	2/19/01	2/19/13	67.60 	0.00 	3 0004538 Treatment 								
+"Brathwait, Randall"	364	2/19/13	2/19/13	67.60 	0.00 	0004539 Treatment 								
+"Brathwait, Randall"	364	2/19/13	2/19/13	208.08 	208.08 	Chiropractor - James 0004589 Consu lt 								
+"Brathwait, Randall"	364	2/19/13	2/19/13	104.04 	104.04 	Chiropractor - James 0004635 Consult 								
+"Brathwait, Randall"	364	3/7/13	3/7/13	67.60 	0.00 	0004668 Treatment 								
+"Brathwait, Randall"	364	3/7/13	3/7/13	338.00 	0.00 	0004669 Treatment 								
+"Brathwait, Randall"	364	4/4/13	4/5/13	67.60 	0.00 	0004933 Treatment 								
+"Brathwait, Randall"	364	4/4/13	4/5/13	135.20 	0.00 	0004934 Treatment 								
+"Coleman, Cheryl"	368	1/11/13	2/1/13	67.60 	61.60 	0004029 Treatment 								
+"Coleman, Cheryl"	368	1/11/13	2/1/13	202.80 	184.80 	0004030 Treatment 								
+"Coleman, Cheryl"	368	1/11/13	2/1/13	80.02 	42.35 	PT-Evaluation - N 0004031 Consu lt 								
+"Coleman, Cheryl"	368	2/1/13	2/7/13	67.60 	61.60 	0004146 Treatment 								
+"Coleman, Cheryl"	368	2/19/13	2/19/13	67.60 	61.60 	0004433 Treatment 								
+"Coleman, Cheryl"	368	3/7/13	4/9/13	357.24 	288.31 	Range of Motion 0004881 Consult 								
+"Devine, William"	377	10/17/12	12/4/12	200.68 	0.00 	0003654 Treatme nt 								
+"Devine, William"	377	10/17/12	12/4/12	204.41 	0.00 	Outcome Assessm 0003655 Consult 								
+"Devine, William"	377	10/17/12	12/4/12	80.02 	80.02 	0003686 Treatment 								
+"Devine, William"	377	10/17/12	12/4/12	61.60 	67.60 	0003701 Treatment 								
+"Devine, William"	377	10/17/12	12/4/12	246.40 	270.44 	0003702 Treatment 								
+"Devine, William"	377	11/14/12	12/4/12	184.80 	55.00 	0003819 Treatmen t 								
+"Devine, William"	377	11/14/12	12/4/12	61.60 	40.00 	0003820 Treatment 								
+"Devine, William"	377	11/14/12	12/4/12	184.80 	55.00 	0003821 Treatment 								
+"Devine, William"	377	12/4/12	12/4/12	1490.58 	0.00 	Neuro Threshold l 0003973 Consult 								
+"Devine, William"	377	12/4/12	12/4/12	1916.46 	0.00 	Neuro Threshold l 0003974 Consult 								
+"Devine, William"	377	12/4/12	12/4/12	184.80 	177.73 	0004007 Treatment 								
+"Devine, William"	377	1/11/13	2/1/13	184.80 	202.83 	0004035 Treatme nt 								
+"Devine, William"	377	1/11/13	2/1/13	123.20 	135.22 	0004036 Treatment 								
+"Devine, William"	377	2/1/13	2/7/13	357.24 	250.00 	Range of Motion 0004303 Consult 								
+"Devine, William"	377	2/19/13	2/19/13	123.20 	135.22 	0004446 Treatme nt 								
+"Devine, William"	377	2/19/13	2/19/13	34.68 	34.68 	Chiropractor-Jan 0004593 Consult 								
+"Devine, William"	377	3/7/01	3/7/13	61.60 	67.60 	3 0004680 Treatmen t 								
+"Devine, William"	377	3/7/13	3/7/13	357.24 	187.50 	Range of Motion 0004866 Consult 								
+"Dinkins, Isiah"	486	2/19/13		67.60 	61.60 	0004441 Treatment 								
+"Dinkins, Isiah"	486	2/19/13		80.02 	72.92 	PT-Evaluation - IV 0004442 Consult 								
+"Dinkins, Isiah"	486	2/19/13		103.11 	103.11 	Chiropractor - Jan 0004571 Consult 								
+"Edlyn, Rhamdeen"	487	2/1/13	2/7/13	67.60 	61.60 	0004156 Treatment 								
+"Edlyn, Rhamdeen"	487	2/1/13	2/7/13	270.40 	246.40 	0004157 Treatment 								
+"Edlyn, Rhamdeen"	487	2/1/13	2/7/13	67.60 	61.60 	0004232 Treatment 								
+"Edlyn, Rhamdeen"	487	2/1/13	2/7/13	202.80 	154.23 	0004233 Treatment 								
+"Edlyn, Rhamdeen"	487	2/1/13	2/7/13	80.02 	72.92 	PT-Evaluation - M 0004234 Consult 								
+"Edlyn, Rhamdeen"	487	2/1/13	2/7/13	402.95 	39.70 	Range of Motion - 0004284 Consult 								
+"Edlyn, Rhamdeen"	487	2/19/13	2/19/13	135.20 	123.20 	0004506 Treatment 								
+"Edlyn, Rhamdeen"	487	2/19/13	2/19/13	202.80 	184.80 	0004507 Treatment 								
+"Edlyn, Rhamdeen"	487	2/19/13	2/19/13	42.51 	38.73 	0004544 Treatment 								
+"Edlyn, Rhamdeen"	487	2/19/13	2/19/13	135.20 	123.20 	0004545 Treatment 								
+"Edlyn, Rhamdeen"	487	2/19/13	2/19/13	381.48 	0.00 	Chiropractor - Jan 0004644 Consu lt 								
+"Edlyn, Rhamdeen"	487	3/7/13	3/7/13	338.00 	308.00 	0004681 Treatment 								
+"Edlyn, Rhamdeen"	487	3/7/13	3/7/13	202.80 	184.80 	0004682 Treatment 								
+"Edlyn, Rhamdeen"	487	4/4/13	4/5/13	405.60 	369.60 	0005049 Treatment 								
+"Edlyn, Rhamdeen"	487	4/4/13	4/5/13	338.00 	308.00 	0005050 Treatment 								
+"Edlyn, Rhamdeen"	487	4/25/13	4/25/13	338.00 	285.13 	0005403 Treatment 								
+"Edlyn, Rhamdeen"	487	4/25/13	4/25/13	338.00 	308.00 	0005404 Treatmen t 								
+"Edlyn, Rhamdeen"	487	4/25/13	4/25/13	357.24 	119.19 	Range of Motion 0005488 Consult 								
+"Edlyn, Rhamdeen"	487	5/21/13	5/21/13	67.60 	61.60 	0005840 Treatment 								
+"Edlyn, Rhamdeen"	487	5/21/13	5/21/13	540.80 	486.58 	0005841 Treatment 								
+"Edlyn, Rhamdeen"	487	6/20/13	6/25/13	202.80 	184.80 	0006321 Treatment 								
+"Edlyn, Rhamdeen"	487	6/20/13	6/25/13	676.00 	554.40 	0006322 Treatment 								
+"Edlyn, Rhamdeen"	487	7/16/13	7/16/13	67.60 	61.60 	0006697 Treatmen t 								
+"Edlyn, Rhamdeen"	487	7/16/13	7/16/13	67.60 	61.60 	0006698 Treatmen t 								
+"Crooks, Efuru"	383	12/3/12	12/4/13	270.04 	234.32 	Range of Motion 0003894 Consult 								
+"Crooks, Efuru"	383	12/3/12	12/4/13	80.02 	72.92 	PT-Evaluation - IV 0003926 Consu lt 								
+"Crooks, Efuru"	383	12/3/12	12/4/13	405.60 	369.60 	0003936 Treatment 								
+"Crooks, Efuru"	383	12/3/12	12/4/13	338.00 	308.00 	0003937 Treatment 								
+"Crooks, Efuru"	383	12/4/12	12/4/13	1490.58 	0.00 	Neuro Threshold I 0003996 Consult 								
+"Crooks, Efuru"	383	12/4/12	12/4/13	1916.46 	0.00 	Neuro Threshold\ 0003997 Consult 								
+"Crooks, Efuru"	383	1/11/13	2/1/13	473.20 	431.20 	0004037 Treatment 								
+"Crooks, Efuru"	383	1/11/13	2/1/13	608.40 	554.40 	0004038 Treatment 								
+"Crooks, Efuru"	383	1/11/13	2/1/13	270.04 	232.69 	Range of Motion 0004121 Consu lt 								
+"Crooks, Efuru"	383	2/1/13	2/7/13	473.20 	473.20 	0004158 Treatment 								
+"Crooks, Efuru"	383	2/19/13	2/19/13	34.68 	0.00 	Chiropractor - Jan 0004592 Consult 								
+"Crooks, Efuru"	383	2/19/13	2/19/13	104.04 	104.04 	Chiropractor - Jan 0004617 Consult 								
+"Crooks, Efuru"	383	2/19/13	2/19/13	34.68 	0.00 	Chiropractor- Jan 0004646 Consult 								
+"Crooks, Efuru"	383	3/7/13	3/7/13	135.20 	61.60 	0004683 Treatment 								
+"Crooks, Efuru"	383	3/7/13	3/7/13	338.00 	202.80 	0004684 Treatment 								
+"Crooks, Efuru"	383	3/7/13	4/9/13	249.96 	0.00 	Physical Capacit y 0004863 Consult 								
+"Crooks, Efuru"	383	4/4/13	4/5/13	135.20 	163.68 	0004968 Treatmen t 								
+"Crooks, Efuru"	383	4/4/13	4/5/13	135.20 	0.00 	0004969 Treatment 								
+"Crooks, Efuru"	383	4/25/13	4/25/13	135.20 	165.30 	0005333 Treatment 								
+"Crooks, Efuru"	383	4/25/13	4/25/13	67.60 	80.80 	0005334 Treatment 								
+"Crooks, Efuru"	383	5/21/13	5/21/13	67.60 	81.71 	0005744 Trea tment 								
+"Crooks, Efuru"	383	5/21/13	5/21/13	67.60 	80.60 	0005753 Treatment 								
+"Crooks, Efuru"	383	6/20/13	6/25/13	67.60 	76.55 	0006180 Treatment 								
+"Felix, Vicky"	490	2/1/13	2/7/13	67.60 	0.00 	0004164 Treatment 								
+"Felix, Vicky"	490	2/1/13	2/7/13	270.40 	0.00 	0004165 Treatment 								
+"Felix, Vicky"	490	2/1/13	2/7/13	80.02 	0.00 	PT-Evaluation -M 0004166 Consult 								
+"Felix, Vicky"	490	2/1/13	2/7/13	444.44 	0.00 	Range of Motion - 0004297 Consult 								
+"Felix, Vicky"	490	2/1/13	2/7/13	135.20 	0.00 	0004356 Treatment 								
+"Felix, Vicky"	490	2/19/13	2/19/13	67.60 	0.00 	0004449 Treatment 								
+"Felix, Vicky"	490	2/19/13	2/19/13	135.20 	0.00 	0004450 Treatment 								
+"Felix, Vicky"	490	2/19/13	2/19/13	345.87 	0.00 	Chiropractor - Jam 0004570 Consult 								
+"Felix, Vicky"	490	3/7/13	3/7/13	135.20 	0.00 	0004687 Treatment 								
+"Felix, Vicky"	490	3/7/13	3/7/13	67.60 	0.00 	0004688 Treatment 								
+"Felix, Vicky"	490	3/7/13	4/9/13	444.44 	0.00 	Range of Motion - 0004874 Consult 								
+"Felix, Vicky"	490	4/4/13	4/5/13	202.80 	0.00 	0004970 Treatment 								
+"Felix, Vicky"	490	4/4/13	4/5/13	270.40 	0.00 	0004971 Treatment 								
+"Felix, Vicky"	490	4/25/13	4/25/13	202.80 	0.00 	0005337 Treatment 								
+"Felix, Vicky"	490	5/21/13	5/21/13	202.80 	0.00 	0005754 Treatment 								
+"Figueroa, Jessica"	491	10/17/12	12/4/13	200.68 	0.00 	0003665Treatment								
+"Figueroa, Jessica"	491	10/17/12	12/4/13	204.41 	0.00 	"OutcomeAssessm,0003666Consult"								
+"Figueroa, Jessica"	491	10/17/12	12/4/13	80.02 	80.02 	0003677Treatment								
+"Figueroa, Jessica"	491	10/17/12	12/4/13	308.00 	338.05 	0003704Treatment								
+"Figueroa, Jessica"	491	10/17/12	12/4/13	184.80 	202.80 	0003705Treatment								
+"Figueroa, Jessica"	491	11/14/12	12/4/13	184.80 	0.00 	0003822Treatment								
+"Figueroa, Jessica"	491	11/14/12	12/4/13	123.20 	1315.22 	0003823Treatment								
+"Figueroa, Jessica"	491	12/3/12	12/4/13	123.20 	135.22 	0003938Treatment								
+"Figueroa, Jessica"	491	12/4/12	12/4/13	1916.46 	0.00 	NeuroThresholdl0003984Consult								
+"Figueroa, Jessica"	491	12/4/12	12/4/13	1490.58 	0.00 	NeuroThresh.oldL0003988Consult								
+"Figueroa, Jessica"	491	1/11/13	2/1/13	61.60 	67.61 	0004041Treatment								
+"Figueroa, Jessica"	491	1/11/13	2/1/13	123.20 	135.22 	0004042Treatment								
+"Figueroa, Jessica"	491	2/1/13	2/7/13	61.60 	67.60 	0004159Treatment								
+"Figueroa, Jessica"	491	2/1/13	2/7/13	61.60 	67.60 	0004160Treatment								
+"Figueroa, Jessica"	491	2/1/13	2/7/13	249.96 	67.60 	PhysicalCapacity0004319Consult								
+"Figueroa, Jessica"	491	2/19/13	2/19/13	123.20 	135.20 	0004453Treatment								
+"Figueroa, Jessica"	491	2/19/13	2/19/13	61.60 	67.60 	0004546Treatment								
+"Figueroa, Jessica"	491	2/19/13	2/19/13	61.60 	41.66 	0004547Treatment								
+"Figueroa, Jessica"	491	2/19/13	2/19/13	104.04 	104.04 	Chiropractor-Jarr0004632Consult								
+"Francois, Kenwin"	492	2/1/13	2/7/13	67.60 	57.46 	0004167Treatment								
+"Francois, Kenwin"	492	2/1/13	2/7/13	135.20 	114.92 	0004168Treatment								
+"Francois, Kenwin"	492	2/1/13	2/7/13	80.02 	68.01 	PT-Evaluation-M0004169Consult								
+"Francois, Kenwin"	492	2/1/13	2/7/13	67.60 	629.01 	0004170Treatment								
+"Francois, Kenwin"	492	2/1/13	2/7/13	270.40 	229.84 	0004171Treatment								
+"Francois, Kenwin"	492	2/1/13	2/7/13	249.96 	212.46 	PhysicalCapacity0004326Consult								
+"Francois, Kenwin"	492	2/19/13	2/19/13	202.80 	172.38 	0004456Treatment								
+"Francois, Kenwin"	492	2/19/13	2/19/13	270.40 	229.84 	0004457Treatment								
+"Francois, Kenwin"	492	2/19/13	2/19/13	173.40 	173.40 	Chiropractor-Jam0004631Consult								
+"Francois, Kenwin"	492	3/7/13	3/7/13	135.20 	135.20 	0004689Treatment								
+"Francois, Kenwin"	492	3/7/13	3/7/13	270.40 	270.40 	0004690Treatment								
+"Francois, Kenwin"	492	3/7/13	3/7/13	67.60 	67.60 	0004691Treatment								
+"Francois, Kenwin"	492	3/7/13	4/9/13	270.04 	229.84 	RangeofMotion-0004875Consult								
+"Francois, Kenwin"	492	4/4/13	4/5/13	135.20 	114.92 	0004973Treatment								
+"Francois, Kenwin"	492	4/4/13	4/5/13	338.00 	287.30 	0004974Treatment								
+"Francois, Kenwin"	492	4/25/13	4/25/13	202.80 	172.38 	0005338Treatment								
+"Francois, Kenwin"	492	4/25/13	4/25/13	270.40 	229.84 	0005339Treatment								
+"Francois, Kenwin"	492	4/25/13	4/25/13	67.60 	57.46 	0005536Treatment								
+"Francois, Kenwin"	492	5/21/13	5/21/13	67.60 	57.46 	0005755Treatment								
+"Francois, Kenwin"	492	5/21/13	5/21/13	405.60 	338.24 	0005756Treatment								
+"Francois, Kenwin"	492	6/20/13	6/25/13	202.80 	0.00 	0006222Treatment								
+"Francois, Kenwin"	492	6/25/13	6/25/13	249.96 	200.00 	PhysicalCapacity0006544Consult								
+"Frantz, Charles"	494	1/11/13	2/1/13	202.80 	150.00 	0004043Treatment								
+"Frantz, Charles"	494	1/11/13	2/1/13	80.02 	62.12 	PT-Evaluation-IV0004044Consult								
+"Frantzy, Jules"	495	1/11/13	2/1/13	270.40 	0.00 	0004045Treatment								
+"Frantzy, Jules"	495	1/11/13	2/1/13	80.02 	0.00 	PT-Evaluation-M0004046Consult								
+"Frantzy, Jules"	495	2/1/13	2/7/13	67.60 	0.00 	0004172Treatment								
+"Frantzy, Jules"	495	2/1/13	2/7/13	135.20 	0.00 	0004173Treatment								
+"Frantzy, Jules"	495	2/18/13	2/19/13	270.04 	0.00 	RangeofMotion-0004365Consult								
+"Frantzy, Jules"	495	2/19/13	2/19/13	135.20 	0.00 	0004454Treatment								
+"Frantzy, Jules"	495	2/19/13	2/19/13	202.80 	0.00 	0004455Treatment								
+"Frantzy, Jules"	495	2/19/13	2/19/13	69.36 	0.00 	Chiropractor-Jam0004595Consult								
+"Frantzy, Jules"	495	3/7/13	3/7/13	67.60 	0.00 	0004692Treatment								
+"Frantzy, Jules"	495	3/7/13	3/7/13	202.80 	0.00 	0004693Treatment								
+"Frantzy, Jules"	495	3/7/13	3/7/13	67.60 	0.00 	0004779Treatment								
+"Frantzy, Jules"	495	4/4/13	4/5/13	67.60 	0.00 	0004977Treatment								
+"Frantzy, Jules"	495	4/25/13	4/25/13	67.60 	0.00 	0005537Treatment								
+"Frantzy, Jules"	495	5/21/13	5/21/13	67.60 	0.00 	0005758Treatment								
+"Frantzy, Jules"	495	5/21/13	5/21/13	67.60 	0.00 	0005759Treatment								
+"Frantzy, Jules"	495	6/20/13	6/25/13	67.60 	0.00 	0006220Treatment								
+"Galloway, Pauline"	395	2/1/13	2/7/18	202.80 	202.80 	0004261Treatment								
+"Galloway, Pauline"	395	2/1/13	2/7/18	80.02 	42.35 	"PT-Evaluation-h,0004262Consult"								
+"Galloway, Pauline"	395	2/1/13	2/7/18	338.00 	308.00 	0004263Treatment								
+"Galloway, Pauline"	395	2/1/13	2/7/18	67.60 	67.60 	0004264Treatment								
+"Galloway, Pauline"	395	2/1/13	2/7/18	357.24 	408.63 	RangeofMotion0004301Consult								
+"Galloway, Pauline"	395	2/1/13	2/7/18	249.96 	249.96 	PhysicalCapacity0004315Consult								
+"Galloway, Pauline"	395	2/1/13	2/7/18	67.60 	67.60 	0004359Treatment								
+"Galloway, Pauline"	395	2/19/13	2/19/13	202.80 	184.80 	0004458Treatment								
+"Galloway, Pauline"	395	2/19/13	2/19/13	104.04 	69.36 	Chiropractor-Jan0004578Consult								
+"Galloway, Pauline"	395	2/19/13	2/19/13	208.08 	208.08 	Chiropractor-Jan0004641Consult								
+"Galloway, Pauline"	395	3/7/13	3/7/13	67.60 	67.60 	0004701Treatment								
+"Galloway, Pauline"	395	3/7/13	3/7/13	202.80 	202.80 	0004702Treatment								
+"Galloway, Pauline"	395	3/7/13	4/9/13	249.96 	249.96 	PhysicalCapacity0004858Consult								
+"Galloway, Pauline"	395	4/4/13	4/5/13	67.60 	67.60 	0004981Treatment								
+"Galloway, Pauline"	395	4/4/13	4/5/13	135.20 	135.20 	0004982Treatment								
+"Galloway, Shannel"	396	2/1/13	2/7/13	202.80 	184.80 	0004248Treatment								
+"Galloway, Shannel"	396	2/1/13	2/7/13	80.02 	72.92 	PT-Evaluation-tv0004249Consult								
+"Galloway, Shannel"	396	2/1/13	2/7/13	270.40 	246.40 	0004250Treatment								
+"Galloway, Shannel"	396	2/1/13	2/7/13	67.60 	61.60 	0004251Treatment								
+"Galloway, Shannel"	396	2/1/13	2/7/13	357.24 	408.10 	RangeofMotion0004300Consult								
+"Galloway, Shannel"	396	2/1/13	2/7/13	249.96 	249.96 	PhysicalCapacity0004316Consult								
+"Galloway, Shannel"	396	2/1/13	2/7/13	67.60 	61.60 	0004360Treatment								
+"Galloway, Shannel"	396	2/19/13	2/19/13	1490.58 	0.00 	NeuroThresholdI0004400Consult								
+"Galloway, Shannel"	396	2/19/13	2/19/13	1916.46 	0.00 	NeuroThresholdl0004401Consult								
+"Galloway, Shannel"	396	2/19/13	2/19/13	135.20 	123.20 	0004459Treatment								
+"Galloway, Shannel"	396	2/19/13	2/19/13	270.40 	246.40 	0004460Treatment								
+"Galloway, Shannel"	396	2/19/13	2/19/13	104.04 	104.04 	Chiropractor-Jan0004583Consult								
+"Galloway, Shannel"	396	2/19/13	2/19/13	173.40 	173.40 	Chiropractor-Jan0004642Consult								
+"Galloway, Shannel"	396	3/7/13	3/7/13	270.40 	246.40 	0004700Treatment								
+"Galloway, Shannel"	396	4/4/13	4/5/13	67.60 	61.60 	0004983Treatment								
+"Galloway, Shannel"	396	4/4/13	4/5/13	202.80 	202.80 	0004984Treatment								
+"Goudy, Michele"	398	12/3/12	12/4/12	200.68 	200.68 	0003923Treatment								
+"Goudy, Michele"	398	12/3/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003924Consult								
+"Groneveldt, Natasha"	400	11/14/12	12/4/12	200.68 	200.68 	0003797Treatment								
+"Groneveldt, Natasha"	400	11/14/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003798Consult								
+"Groneveldt, Natasha"	400	12/3/12	12/4/12	402.95 	201.48 	RangeofMotion0003907Consult								
+"Groneveldt, Natasha"	400	12/3/12	12/4/12	80.02 	42.35 	PT-Evaluation-A0003935Consult								
+"Groneveldt, Natasha"	400	12/3/12	12/4/12	67.60 	61.60 	0003941Treatment								
+"Groneveldt, Natasha"	400	12/3/12	12/4/12	270.40 	246.40 	0003942Treatment								
+"Groneveldt, Natasha"	400	12/3/12	12/4/12	270.40 	246.40 	0003943Treatment								
+"Groneveldt, Natasha"	400	12/4/12	12/4/12	1916.46 	0.00 	NeuroThresholdl0003999Consult								
+"Groneveldt, Natasha"	400	12/4/12	12/4/12	1490.58 	0.00 	NeuroThresholdl0004000Consult								
+"Groneveldt, Natasha"	400	1/11/13	2/1/13	135.20 	67.60 	0004047Treatment								
+"Groneveldt, Natasha"	400	1/11/13	2/1/13	67.60 	34.79 	0004048Treatment								
+"Hamp, Stanley"	497	2/1/13	2/7/13	67.60 	61.60 	0004124Treatment								
+"Hamp, Stanley"	497	2/1/13	2/7/13	202.80 	184.80 	0004125Treatment								
+"Hamp, Stanley"	497	2/1/13	2/7/13	80.02 	42.35 	PT-Evaluation-N'0004126Consult								
+"Hamp, Stanley"	497	2/1/13	2/7/13	249.96 	249.96 	PhysicalCapacity0004320Consult								
+"Hamp, Stanley"	497	2/19/13	2/19/13	338.00 	308.00 	0004464Treatment								
+"Hamp, Stanley"	497	2/19/13	2/19/13	380.55 	380.55 	Chiropractor-Jarr0004567Consult								
+"Hamp, Stanley"	497	3/7/13	3/7/13	67.60 	61.60 	0004705Treatment								
+"Hamp, Stanley"	497	3/7/13	3/7/13	202.80 	184.80 	0004706Treatment								
+"Hamp, Stanley"	497	3/7/13	3/7/13	67.60 	61.60 	0004777Treatment								
+"Hamp, Stanley"	497	3/7/13	3/7/13	135.20 	123.20 	0004778Treatment								
+"Hamp, Stanley"	497	3/7/13	4/9/13	249.96 	249.96 	PhysicalCapacity0004859Consult								
+"Hamp, Stanley"	497	3/7/13	4/9/13	444.44 	83.31 	RangeofMotion0004872Consult								
+"Hamp, Stanley"	497	4/4/13	4/5/13	135.20 	0.00 	0004989Treatment								
+"Hamp, Stanley"	497	4/4/13	4/5/13	270.40 	0.00 	0004990Treatment								
+"Hamp, Stanley"	497	4/25/13	4/25/13	135.20 	0.00 	0005346Treatment								
+"Hamp, Stanley"	497	4/25/13	4/25/13	270.40 	0.00 	0005347Treatment								
+"Hamp, Stanley"	497	4/25/13	4/25/13	249.96 	0.00 	PhysicalCapacity0005516Consult								
+"Hamp, Stanley"	497	5/21/13	5/21/13	135.20 	0.00 	0005769Treatment								
+"Hamp, Stanley"	497	5/21/13	5/21/13	202.80 	0.00 	0005770Treatment								
+"Hamp, Stanley"	497	6/20/13	6/25/13	202.80 	0.00 	0006240Treatment								
+"Hamp, Stanley"	497	6/20/13	6/25/13	405.60 	0.00 	0006241Treatment								
+"Hamp, Stanley"	497	6/25/13	6/25/13	444.44 	0.00 	RangeofMotion0006511Consult								
+"Hamp, Stanley"	497	7/16/13	7/16/13	67.60 	0.00 	0006758Treatment								
+"Hamp, Stanley"	497	8/7/13	8/19/13	67.60 	0.00 	0007101Treatment								
+"Jahtiba, Burton"	498	1/11/13		540.80 	0.00 	0004065Treatment								
+"Jahtiba, Burton"	498	1/11/13		80.02 	0.00 	PT-Evaluation-Iv0004066Consult								
+"Jahtiba, Burton"	498	1/11/13		135.20 	0.00 	0004067Treatment								
+"Jahtiba, Burton"	498	1/11/13		182.84 	0.00 	RangeofMotion0004107Consult								
+"Jahtiba, Burton"	498	1/11/13		87.20 	0.00 	RangeofMotion0004108Consult								
+"Jahtiba, Burton"	498	2/1/13		67.60 	0.00 	0004194Treatment								
+"Jahtiba, Burton"	498	2/1/13		405.60 	0.00 	0004195Treatment								
+"Jahtiba, Burton"	498	2/1/13		67.60 	0.00 	0004199Treatment								
+"Jahtiba, Burton"	498	2/1/13		249.96 	0.00 	PhysicalCapacity0004314Consult								
+"Jahtiba, Burton"	498	2/19/13		270.04 	0.00 	RangeofMotion0004377Consult								
+"Jahtiba, Burton"	498	2/19/13		473.20 	0.00 	0004427Treatment								
+"Jahtiba, Burton"	498	2/19/13		135.20 	0.00 	0004535Treatment								
+"Jahtiba, Burton"	498	2/19/13		67.60 	0.00 	0004536Treatment								
+"Jahtiba, Burton"	498	2/19/13		312.12 	0.00 	Chiropractor-Jan0004590Consult								
+"Jahtiba, Burton"	498	2/19/13		104.04 	0.00 	Chiropractor-Jan0004633Consult								
+"Jahtiba, Burton"	498	3/7/13		270.40 	0.00 	0004764Treatment								
+"Jahtiba, Burton"	498	3/7/13		67.60 	0.00 	0004765Treatment								
+"Jahtiba, Burton"	498	4/4/13		202.80 	0.00 	0004935Treatment								
+"Jahtiba, Burton"	498	4/4/13		473.20 	0.00 	0004936Treatment								
+"Jahtiba, Burton"	498	4/9/13		249.96 	0.00 	PhysicalCapacity0005248Consult								
+"Jahtiba, Burton"	498	4/25/13		270.40 	0.00 	0005296Treatment								
+"Jahtiba, Burton"	498	5/21/13		67.60 	0.00 	0005729Treatment								
+"Jahtiba, Burton"	498	5/21/13		135.20 	0.00 	0005849Treatment								
+"Jahtiba, Burton"	498	6/20/13		67.60 	0.00 	0006171Treatment								
+"Jahtiba, Burton"	498	6/20/13		270.40 	0.00 	0006172Treatment								
+"Jahtiba, Burton"	498	7/16/13		67.60 	0.00 	0006762Treatment								
+"Jahtiba, Burton"	498	7/16/13		67.60 	0.00 	0006763Treatment								
+"Jahtiba, Burton"	498	8/7/13		135.20 	0.00 	0007149Treatment								
+"Jahtiba, Burton"	498	8/7/13		67.60 	0.00 	0007150Treatment								
+"Jahtiba, Burton"	498	8/22/13		202.80 	0.00 	0007477Treatment								
+"Jahtiba, Burton"	498	9/3/13		67.60 	0.00 	0007819Treatment								
+"James, Kevin"	499	2/19/13	2/19/13	67.60 	61.60 	0004469Treatment								
+"James, Kevin"	499	2/19/13	2/19/13	80.02 	80.02 	PT-Evaluation-tv0004470Consult								
+"James, Kevin"	499	2/19/13	2/19/13	103.11 	103.11 	Chiropractor-Jan0004566Consult								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	135.20 	0.00 	0004181Treatment								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	405.60 	0.00 	0004182Treatment								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	67.60 	0.00 	0004252Treatment								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	202.80 	0.00 	0004253Treatment								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	80.02 	0.00 	PT-Evaluation-IV0004254Consult								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	357.24 	0.00 	RangeofMotion0004287Consult								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	249.96 	0.00 	PhysicalCapacity0004323Consult								
+"Jodhan, Bhrija"	410	2/1/13	2/7/13	249.96 	0.00 	PhysicalCapacity0004329Consult								
+"Jodhan, Bhrija"	410	2/18/13	2/19/13	357.24 	0.00 	RangeofMotion0004367Consult								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	1916.46 	1935.63 	NeuroThresholdl0004404Consult								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	1490.58 	1506.48 	NeuroThresholdI0004405Consult								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	202.80 	0.00 	0004471Treatment								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	270.40 	0.00 	0004472Treatment								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	67.60 	0.00 	0004554Treatment								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	135.20 	0.00 	0004555Treatment								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	312.12 	0.00 	Chiropractor-Jan0004579Consult								
+"Jodhan, Bhrija"	410	2/19/13	2/19/13	104.04 	104.04 	Chiropractor-Jan0004619Consult								
+"Jodhan, Bhrija"	410	3/7/13	3/7/13	202.80 	0.00 	0004716Treatment								
+"Jodhan, Bhrija"	410	3/7/13	3/7/13	338.00 	0.00 	0004717Treatment								
+"Jodhan, Bhrija"	410	3/7/13	4/9/13	249.96 	0.00 	PhysicalCapacity0004857Consult								
+"Jodhan, Bhrija"	410	4/4/13	4/5/13	405.60 	0.00 	0004997Treatment								
+"Jodhan, Bhrija"	410	4/4/13	4/5/13	540.80 	0.00 	0004998Treatment								
+"Jodhan, Bhrija"	410	4/4/13	4/5/13	357.24 	0.00 	RangeofMotion0005068Consult								
+"Jodhan, Bhrija"	410	4/25/13	4/25/13	135.20 	0.00 	0005355Treatment								
+"Jodhan, Bhrija"	410	4/25/13	4/25/13	202.80 	0.00 	0005356Treatment								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	135.20 	0.00 	0004185Treatment								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	405.60 	0.00 	0004186Treatment								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	67.60 	0.00 	0004196Treatment								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	67.60 	0.00 	0004255Treatment								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	202.80 	0.00 	0004256Treatment								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	80.02 	0.00 	PT-Evaluation-M0004257Consult								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	270.04 	0.00 	RangeofMotion-0004286Consult								
+"Jodhan, Ryan"	411	2/1/13	2/7/13	249.96 	0.00 	PhysicalCapacity0004330Consult								
+"Jodhan, Ryan"	411	2/18/13	2/19/13	270.04 	0.00 	RangeofMotion-0004366Consult								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	1490.58 	1505.49 	NeuroThresholdL0004410Consult								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	1916.46 	1936.91 	NeuroThresholdL0004411Consult								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	202.80 	0.00 	0004475Treatment								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	270.40 	0.00 	0004476Treatment								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	67.60 	0.00 	0004552Treatment								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	135.20 	123.20 	0004553Treatment								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	346.80 	0.00 	Chiropractor-Jam0004598Consult								
+"Jodhan, Ryan"	411	2/19/13	2/19/13	138.72 	138.72 	Chiropractor-Jam0004628Consult								
+"Jodhan, Ryan"	411	3/7/13	3/7/13	270.40 	0.00 	0004713Treatment								
+"Jodhan, Ryan"	411	3/7/13	3/7/13	202.80 	0.00 	0004714Treatment								
+"Jodhan, Ryan"	411	3/7/13	3/7/13	135.20 	0.00 	0004715Treatment								
+"Jodhan, Ryan"	411	3/7/13	4/9/13	249.96 	0.00 	PhysicalCapacity0004856Consult								
+"Jodhan, Ryan"	411	4/4/13	4/5/13	405.60 	0.00 	0004999Treatment								
+"Jodhan, Ryan"	411	4/4/13	4/5/13	540.80 	0.00 	0005000Treatment								
+"Jodhan, Ryan"	411	4/4/13	4/5/13	270.04 	0.00 	RangeofMotion-0005073Consult								
+"Jodhan, Ryan"	411	4/25/13	4/25/13	135.20 	0.00 	0005353Treatment								
+"Jodhan, Ryan"	411	4/25/13	4/25/13	202.80 	0.00 	0005354Treatment								
+"Joseph, Akilah"	412	1/11/13	2/1/13	338.00 	267.62 	0004061Treatment								
+"Joseph, Akilah"	412	1/11/13	2/1/13	135.20 	107.04 	0004062Treatment								
+"Joseph, Akilah"	412	2/1/13	2/7/13	135.20 	107.04 	0004192Treatment								
+"Joseph, Akilah"	412	2/1/13	2/7/13	338.00 	267.62 	0004193Treatment								
+"Joseph, Akilah"	412	2/1/13	2/7/13	270.04 	213.81 	RangeofMotion0004302Consult								
+"Joseph, Akilah"	412	2/19/13	2/19/13	67.60 	53.52 	0004473Treatment								
+"Joseph, Akilah"	412	2/19/13	2/19/13	202.80 	160.57 	0004474Treatment								
+"Joseph, Akilah"	412	2/19/13	2/19/13	208.08 	0.00 	Chiropractor-Jan0004599Consult								
+"Joseph, Akilah"	412	2/19/13	2/19/13	104.04 	0.00 	Chiropractor-Jarr0004629Consult								
+"Joseph, Akilah"	412	3/7/13	3/7/13	67.60 	53.59 	0004718Treatment								
+"Joseph, Akilah"	412	3/7/13	3/7/13	202.80 	160.57 	0004719Treatment								
+"Joseph, Akilah"	412	3/7/13	3/7/13	67.60 	53.52 	0004774Treatment								
+"Joseph, Akilah"	412	3/7/13	3/7/13	135.20 	0.00 	0004775Treatment								
+"Joseph, Akilah"	412	3/7/13	4/9/13	249.96 	0.00 	PhysicalCapacity0004860Consult								
+"Joseph, Akilah"	412	3/7/13	4/9/13	270.04 	213.81 	RangeofMotion0004870Consult								
+"Joseph, Akilah"	412	4/4/13	4/5/13	67.60 	53.52 	0005002Treatment								
+"Joseph, Akilah"	412	4/4/13	4/5/13	135.20 	107.04 	0005003Treatment								
+"Joseph, Akilah"	412	4/25/13	4/25/13	67.60 	53.52 	0005348Treatment								
+"Khaimov, Robin"	414	11/14/12	12/4/12	200.68 	200.68 	0003656Treatment								
+"Khaimov, Robin"	414	11/14/12	12/4/12	204.41 	204.41 	OutcomeAssessm<0003792Consult								
+"Khaimov, Robin"	414	11/14/12	12/4/12	270.40 	270.40 	0003845Treatment								
+"Khaimov, Robin"	414	11/14/12	12/4/12	202.80 	202.80 	0003846Treatment								
+"Khaimov, Robin"	414	11/14/12	12/4/12	135.20 	135.20 	0003847Treatment								
+"Khaimov, Robin"	414	12/3/12	12/4/12	402.95 	221.62 	RangeofMotion-0003897Consult								
+"Khaimov, Robin"	414	12/3/12	12/4/12	80.02 	40.01 	PT-Evaluation-M0003934Consult								
+"Khaimov, Robin"	414	12/3/12	12/4/12	338.00 	308.00 	0003952Treatment								
+"Khaimov, Robin"	414	12/3/12	12/4/12	67.60 	61.60 	0003953Treatment								
+"Khaimov, Robin"	414	12/4/12	12/4/12	1916.46 	0.00 	NeuroThresholdl0004001Consult								
+"Khaimov, Robin"	414	12/4/12	12/4/12	1490.58 	0.00 	NeuroThresholdL0004002Consult								
+"Khaimov, Robin"	414	1/11/13	2/1/13	202.80 	338.00 	0004068Treatment								
+"Khaimov, Robin"	414	1/11/13	2/1/13	135.20 	0.00 	0004069Treatment								
+"Khaimov, Robin"	414	2/1/13	2/7/13	67.60 	61.60 	0004197Treatment								
+"Khaimov, Robin"	414	2/1/13	2/7/13	67.60 	61.60 	0004198Treatment								
+"Khaimov, Robin"	414	2/1/13	2/7/13	270.04 	148.52 	RangeofMotion0004296Consult								
+"Khaimov, Robin"	414	2/19/13	2/19/13	69.36 	69.36 	Chiropractor-Jan0004600Consult								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	200.68 	200.68 	0003793Treatment								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003794Consult								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	135.20 	0.00 	0003840Treatment								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	67.60 	0.00 	0003841Treatment								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	135.20 	0.00 	0003842Treatment								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	135.20 	0.00 	0003843Treatment								
+"Khaimov, Shifro"	416	11/14/12	12/4/12	135.20 	0.00 	0003844Treatment								
+"Khaimov, Shifro"	416	12/3/12	12/4/12	402.95 	402.95 	RangeofMotion0003903Consult								
+"Khaimov, Shifro"	416	12/3/12	12/4/12	80.02 	72.92 	PT-Evaluation¥N0003933Consult								
+"Khaimov, Shifro"	416	12/3/12	12/4/12	270.40 	246.40 	0003950Treatment								
+"Khaimov, Shifro"	416	12/3/12	12/4/12	67.60 	61.60 	0003951Treatment								
+"Khaimov, Shifro"	416	1/11/13	2/1/13	202.80 	202.80 	0004070Treatment								
+"Khaimov, Shifro"	416	2/1/13	2/7/13	270.04 	148.52 	RangeofMotion0004295Consult								
+"Leacock Jr., Tyrone"	500	2/1/13	2/7/13	67.60 	34.06 	0004152Treatment								
+"Leacock Jr., Tyrone"	500	2/1/13	2/7/13	80.02 	80.02 	PT-Evaluation-tv0004153Consult								
+"Leacock Jr., Tyrone"	500	2/1/13	2/7/13	357.24 	313.64 	RangeofMotion0004306Consult								
+"Leacock Jr., Tyrone"	500	2/1/13	2/7/13	135.20 	135.20 	0004338Treatment								
+"Leacock Jr., Tyrone"	500	2/19/13	2/19/13	1490.58 	1490.58 	NeuroThresholdI0004382Consult								
+"Leacock Jr., Tyrone"	500	2/19/13	2/19/13	1916.46 	1916.46 	NeuroThresholdl0004383Consult								
+"Leacock Jr., Tyrone"	500	2/19/13	2/19/13	135.20 	135.20 	0004479Treatment								
+"Leacock Jr., Tyrone"	500	2/19/13	2/19/13	338.00 	338.00 	0004480Treatment								
+"Leacock Jr., Tyrone"	500	2/19/13	2/19/13	276.51 	251.43 	Chiropractor-Jan0004565Consult								
+"Leacock Jr., Tyrone"	500	3/7/13	3/7/13	135.20 	123.20 	0004720Treatment								
+"Leacock Jr., Tyrone"	500	3/7/13	3/7/13	202.80 	184.80 	0004721Treatment								
+"Leacock Jr., Tyrone"	500	3/7/13	4/9/13	357.24 	313.64 	RangeofMotion0004868Consult								
+"Leacock Jr., Tyrone"	500	4/4/13	4/5/13	405.60 	405.60 	0005007Treatment								
+"Leacock Jr., Tyrone"	500	4/4/13	4/5/13	270.40 	270.40 	0005008Treatment								
+"Leacock Jr., Tyrone"	500	4/4/13	4/5/13	357.24 	313.64 	RangeofMotion0005076Consult								
+"Leacock Jr., Tyrone"	500	4/25/13	4/25/13	67.60 	67.60 	0005361Treatment								
+"Leacock Jr., Tyrone"	500	4/25/13	4/25/13	270.40 	270.40 	0005362Treatment								
+"Leacock Jr., Tyrone"	500	4/25/13	4/30/13	249.96 	203.97 	PhysicalCapacity0005543Consult								
+"Leacock Jr., Tyrone"	500	5/21/13	5/21/13	67.60 	0.00 	0005784Treatment								
+"Leacock Jr., Tyrone"	500	5/21/13	5/21/13	202.80 	202.80 	0005785Treatment								
+"Leacock Jr., Tyrone"	500	6/20/13	6/25/13	202.80 	184.80 	0006168Treatment								
+"Lewis, Daniel"	501	2/1/13	2/7/13	200.68 	0.00 	0004332Treatment								
+"Lewis, Daniel"	501	2/1/13	2/7/13	204.41 	0.00 	OutcomeAssessmi0004333Consult								
+"Lewis, Daniel"	501	2/1/13	2/7/13	270.40 	270.40 	0004336Treatment								
+"Lewis, Daniel"	501	2/1/13	2/7/13	202.80 	184.80 	0004357Treatment								
+"Lewis, Daniel"	501	2/19/13	2/19/13	135.20 	135.20 	0004483Treatment								
+"Lewis, Daniel"	501	2/19/13	2/19/13	270.40 	270.40 	Q004484Treatment								
+"Lewis, Daniel"	501	2/19/13	2/19/13	345.87 	0.00 	Chiropractor-Jan0004563Consult								
+"Lewis, Daniel"	501	3/7/13	3/7/13	202.80 	202.80 	0004724Treatment								
+"Lewis, Daniel"	501	3/7/13	3/7/13	135.20 	135.20 	0004725Treatment								
+"Lewis, Daniel"	501	4/4/13	4/5/13	608.40 	123.20 	0005010Treatment								
+"Lewis, Daniel"	501	4/4/13	4/5/13	270.40 	61.60 	0005011Treatment								
+"Lewis, Daniel"	501	4/4/13	4/5/13	313.64 	0.00 	RangeofMotion0005070Consult								
+"Lewis, Daniel"	501	4/25/13	4/25/13	338.00 	0.00 	0005365Treatment								
+"Lewis, Daniel"	501	4/25/13	4/25/13	202.80 	0.00 	0005366Treatment								
+"Lewis, Daniel"	501	4/25/13	4/25/13	270.04 	0.00 	RangeofMotion0005493Consult								
+"Lewis, Daniel"	501	5/21/13	5/21/13	67.60 	0.00 	0005786Treatment								
+"Lewis, Daniel"	501	5/21/13	5/21/13	473.20 	0.00 	0005787Treatment								
+"Lewis, Daniel"	501	6/20/13	6/25/13	338.00 	0.00 	0006273Treatment								
+"Lewis, Daniel"	501	6/20/13	6/25/13	135.20 	0.00 	0006274Treatment								
+"Lewis, Daniel"	501	7/16/13	7/16/13	67.60 	0.00 	0006767Treatment								
+"Lewis, Daniel"	501	8/7/13	8/19/13	270.40 	0.00 	0007249Treatment								
+"Lewis, Daniel"	501	8/7/13	8/19/13	270.40 	0.00 	0007250Treatment								
+"Lewis, Daniel"	501	8/22/13	9/3/13	135.20 	0.00 	0007492Treatment								
+"Lewis, Daniel"	501	8/22/13	9/3/13	202.80 	0.00 	0007493Treatment								
+"Lewis, Daniel"	501	9/3/13	9/24/13	67.60 	0.00 	0007823Treatment								
+"Lewis, Daniel"	501	9/3/13	9/24/13	67.60 	0.00 	0007824Treatment								
+"Lewis, Daniel"	501	9/25/13	9/25/13	67.60 	0.00 	0008206Treatment								
+"Lewis, Daniel"	501	9/25/13	9/25/13	135.20 	0.00 	0008207Treatment								
+"Lewis, Kendell"	502	10/17/12	12/4/12	200.68 	0.00 	0003660Treatment								
+"Lewis, Kendell"	502	10/17/12	12/4/12	204.41 	0.00 	OutcomeAssessm0003661Consult								
+"Lewis, Kendell"	502	10/17/12	12/4/12	80.02 	25.00 	0003678Treatment								
+"Lewis, Kendell"	502	10/17/12	12/4/12	123.20 	0.00 	0003725Treatment								
+"Lewis, Kendell"	502	10/17/12	12/4/12	123.20 	0.00 	0003726Treatment								
+"Leyderman, Mark"	503	4/4/13		202.80 	0.00 	0005012Treatment								
+"Leyderman, Mark"	503	4/4/13		135.20 	0.00 	0005013Treatment								
+"Leyderman, Mark"	503	4/4/13		80.02 	0.00 	PT-Evaluation-A0005014Consult								
+"Leyderman, Mark"	503	4/9/13		249.96 	0.00 	PhysicalCapacity0005250Consult								
+"Leyderman, Mark"	503	4/25/13		270.40 	0.00 	0005363Treatment								
+"Leyderman, Mark"	503	4/25/13		135.20 	0.00 	0005364Treatment								
+"Leyderman, Mark"	503	4/25/13		270.04 	0.00 	RangeofMotion0005479Consult								
+"Leyderman, Mark"	503	5/21/13		67.60 	0.00 	0005794Treatment								
+"Leyderman, Mark"	503	5/21/13		135.20 	0.00 	0005795Treatment								
+"Mann, Shonda"	504	2/1/13	2/7/13	135.20 	135.22 	0004206Treatment								
+"Mann, Shonda"	504	2/1/13	2/7/13	270.40 	270.44 	0004207Treatment								
+"Mann, Shonda"	504	2/1/13	2/7/13	80.02 	80.02 	PT-Evaluation-M0004208Consult								
+"Mann, Shonda"	504	2/1/13	2/7/13	357.24 	357.24 	RangeofMotion-0004292Consult								
+"Mann, Shonda"	504	2/1/13	2/7/13	249.96 	249.96 	PhysicalCapacity0004312Consult								
+"Mann, Shonda"	504	2/1/13	2/7/13	67.60 	67.61 	0004340Treatment								
+"Mann, Shonda"	504	2/1/13	2/7/13	67.60 	67.61 	0004341Treatment								
+"Mann, Shonda"	504	2/19/13	2/19/13	1916.46 	0.00 	NeuroThresholdl0004386Consult								
+"Mann, Shonda"	504	2/19/13	2/19/13	1490.58 	0.00 	NeuroThresholdL0004387Consult								
+"Mann, Shonda"	504	2/19/13	2/19/13	135.20 	135.22 	0004485Treatment								
+"Mann, Shonda"	504	2/19/13	2/19/13	135.20 	94.64 	0004486Treatment								
+"Mann, Shonda"	504	2/19/13	2/19/13	311.19 	544.58 	Chiropractor-Jam0004568Consult								
+"Mann, Shonda"	504	3/7/13	3/7/13	135.20 	113.92 	0004726Treatment								
+"Mann, Shonda"	504	3/7/13	3/7/13	202.80 	170.88 	0004727Treatment								
+"Mann, Shonda"	504	3/7/13	4/9/13	357.24 	357.24 	RangeofMotion0004885Consult								
+"Mann, Shonda"	504	4/4/13	4/5/13	135.20 	135.22 	0005017Treatment								
+"Mann, Shonda"	504	4/4/13	4/5/13	270.40 	189.28 	0005018Treatment								
+"Mann, Shonda"	504	4/4/13	4/5/13	357.24 	357.24 	RangeofMotion0005074Consult								
+"Mann, Shonda"	504	4/25/13	4/25/13	135.20 	0.00 	0005372Treatment								
+"Mann, Shonda"	504	5/21/13	5/21/13	67.60 	48.67 	0005796Treatment								
+"Mann, Shonda"	504	6/20/13	6/25/13	135.20 	135.22 	0006285Treatment								
+"Mann, Shonda"	504	6/20/13	6/25/13	743.60 	743.71 	0006286Treatment								
+"Mann, Shonda"	504	7/16/13	7/16/13	249.96 	249.96 	PhysicalCapacity0006680Consult								
+"Mann, Shonda"	504	7/16/13	7/16/13	67.60 	67.60 	0006783Treatment								
+"Mann, Shonda"	504	7/16/13	7/16/13	202.80 	202.80 	0006784Treatment								
+"Mann, Shonda"	504	8/6/13	8/19/13	202.80 	202.80 	0007075Treatment								
+"Mann, Shonda"	504	8/22/13	9/3/13	67.60 	67.60 	0007520Treatment								
+"Mann, Shonda"	504	8/22/13	9/3/13	67.60 	0.00 	0007521Treatment								
+"Mann, Shonda"	504	9/3/13	9/24/13	67.60 	0.00 	0007828Treatment								
+"Mann, Shonda"	504	9/25/13	9/25/13	135.20 	101.40 	0008211Treatment								
+"Mann, Shonda"	504	10/22/13	10/23/13	67.60 	50.70 	0008430Treatment								
+"Mann, Shonda"	504	11/20/13	11/25/13	104.04 	104.04 	Chiropractor-Jarr0008816Consult								
+"Mann, Shonda"	504	11/25/13	11/25/13	202.80 	277.20 	0009125Treatment								
+"Manning, Dashard"	505	11/14/12	12/4/12	200.68 	0.00 	0003799Treatment								
+"Manning, Dashard"	505	11/14/12	12/4/12	204.41 	0.00 	OutcomeAssessm0003804Consult								
+"Manning, Dashard"	505	11/14/12	12/4/12	135.20 	0.00 	0003848Treatment								
+"Manning, Dashard"	505	11/14/12	12/4/12	270.40 	0.00 	0003849Treatment								
+"Manning, Dashard"	505	12/3/12	12/4/12	67.60 	0.00 	0003956Treatment								
+"Manning, Dashard"	505	12/4/12	12/4/12	1916.46 	0.00 	NeuroThreshold(0003985Consult								
+"Manning, Dashard"	505	12/4/12	12/4/12	1490.58 	0.00 	NeuroThresholdI0003992Consult								
+"Maslov, Oleksandr"	424	12/3/12	12/4/12	67.60 	61.60 	0003954Treatment								
+"Maslov, Oleksandr"	424	12/3/12	12/4/12	67.60 	61.60 	0003955Treatment								
+"McBride, Larry"	425	11/14/12	12/4/12	200.68 	200.68 	0003809Treatment								
+"McBride, Larry"	425	11/14/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003810Consult								
+"McBride, Larry"	425	11/14/12	12/4/12	135.20 	123.20 	0003853Treatment								
+"McBride, Larry"	425	11/14/12	12/4/12	270.40 	200.00 	0003854Treatment								
+"McBride, Larry"	425	11/14/12	12/4/12	67.60 	61.60 	0003855Treatment								
+"McBride, Larry"	425	12/3/12	12/4/12	80.02 	72.92 	PT-Evaluation-.tv0003932Consult								
+"McBride, Larry"	425	12/3/12	12/4/12	135.20 	123.20 	0003958Treatment								
+"McBride, Larry"	425	12/3/12	12/4/12	270.40 	246.40 	0003959Treatment								
+"McBride, Larry"	425	12/4/12	12/4/12	1916.46 	0.00 	NeuroThresholdl0003990Consult								
+"McBride, Larry"	425	12/4/12	12/4/12	1490.58 	0.00 	NeuroThresholdl0004008Consult								
+"McBride, Larry"	425	1/11/13	2/1/13	676.00 	616.00 	0004075Treatment								
+"McBride, Larry"	425	1/11/13	2/1/13	135.20 	123.20 	0004076Treatment								
+"McBride, Larry"	425	2/1/13	2/7/13	67.60 	67.60 	0004200Treatment								
+"McBride, Larry"	425	2/1/13	2/7/13	202.80 	184.80 	0004201Treatment								
+"McBride, Larry"	425	2/1/13	2/7/13	135.20 	61.60 	0004343Treatment								
+"McBride, Larry"	425	2/18/13	2/19/13	357.24 	0.00 	RangeofMotion0004370Consult								
+"McBride, Larry"	425	2/19/13	2/19/13	135.20 	0.00 	0004496Treatment								
+"McBride, Larry"	425	2/19/13	2/19/13	67.60 	0.00 	0004497Treatment								
+"McBride, Larry"	425	2/19/13	2/19/13	69.36 	34.68 	Chiropractor-Jan0004603Consult								
+"McBride, Larry"	425	2/19/13	2/19/13	104.04 	69.36 	Chiropractor-Jarr0004627Consult								
+"McBride, Larry"	425	3/7/13	3/7/13	67.60 	0.00 	0004728Treatment								
+"McBride, Larry"	425	3/7/13	3/7/13	135.20 	0.00 	0004729Treatment								
+"McBride, Michelle"	427	11/14/12	12/4/12	200.68 	200.68 	0003802Treatment								
+"McBride, Michelle"	427	11/14/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003803Consult								
+"McBride, Michelle"	427	11/14/12	12/4/12	67.60 	61.60 	0003856Treatment								
+"McBride, Michelle"	427	11/14/12	12/4/12	135.20 	123.20 	0003857Treatment								
+"McBride, Michelle"	427	11/14/12	12/4/12	270.40 	246.40 	0003858Treatment								
+"McBride, Michelle"	427	12/3/12	12/4/12	135.20 	123.20 	0003960Treatment								
+"McBride, Michelle"	427	12/3/12	12/4/12	202.80 	123.20 	0003961Treatment								
+"McBride, Michelle"	427	12/4/12	12/4/12	1490.58 	0.00 	NeuroThresholdI0003975Consult								
+"McBride, Michelle"	427	12/4/12	12/4/12	1916.46 	0.00 	NeuroThresholdl0003991Consult								
+"McBride, Michelle"	427	1/11/13	2/1/13	473.20 	431.20 	0004073Treatment								
+"McBride, Michelle"	427	1/11/13	2/1/13	135.20 	123.20 	0004074Treatment								
+"McBride, Michelle"	427	2/1/13	2/7/13	67.60 	61.60 	0004202Treatment								
+"McBride, Michelle"	427	2/1/13	2/7/13	135.20 	123.20 	0004203Treatment								
+"McBride, Michelle"	427	2/1/13	2/7/13	135.20 	135.20 	0004342Treatment								
+"McBride, Michelle"	427	2/18/13	2/19/13	357.24 	91.43 	RangeofMotion0004369Consult								
+"McBride, Michelle"	427	2/19/13	2/19/13	173.40 	138.72 	Chiropractor-Jarr0004602Consult								
+"McBride, Michelle"	427	3/7/13	3/7/13	67.60 	67.60 	0004730Treatment								
+"McBride, Michelle"	427	4/4/13	4/5/13	67.60 	61.60 	0005019Treatment								
+"McBride, Michelle"	427	4/4/13	4/5/13	473.20 	473.20 	0005020Treatment								
+"McBride, Michelle"	427	4/25/13	4/25/13	67.60 	61.60 	0005373Treatment								
+"McBride, Michelle"	427	4/25/13	4/25/13	135.20 	123.20 	0005374Treatment								
+"Miles, Ola"	429	11/14/12	12/4/12	200.68 	200.68 	0003800Treatment								
+"Miles, Ola"	429	11/14/12	12/4/12	204.41 	204.41 	OutcomeAssessmi0003801Consult								
+"Miles, Ola"	429	11/14/12	12/4/12	202.80 	202.80 	0003859Treatment								
+"Miles, Ola"	429	11/14/12	12/4/12	202.80 	184.80 	0003860Treatment								
+"Miles, Ola"	429	11/14/12	12/4/12	135.20 	123.20 	0003861Treatment								
+"Miles, Ola"	429	12/3/12	12/4/12	135.20 	123.20 	0003962Treatment								
+"Miles, Ola"	429	12/3/12	12/4/12	202.80 	184.80 	0003963Treatment								
+"Miles, Ola"	429	1/11/13	2/1/13	676.00 	616.00 	0004071Treatment								
+"Miles, Ola"	429	1/11/13	2/1/13	135.20 	123.20 	0004072Treatment								
+"Miles, Ola"	429	2/1/13	2/7/13	135.20 	123.20 	0004204Treatment								
+"Miles, Ola"	429	2/1/13	2/7/13	67.60 	67.60 	0004205Treatment								
+"Miles, Ola"	429	2/1/13	2/7/13	67.60 	67.60 	0004339Treatment								
+"Miles, Ola"	429	2/18/13	2/19/13	357.24 	91.43 	RangeofMotion0004371Consult								
+"Miles, Ola"	429	2/19/13	2/19/13	202.80 	202.80 	0004487Treatment								
+"Miles, Ola"	429	2/19/13	2/19/13	67.60 	67.60 	0004488Treatment								
+"Miles, Ola"	429	2/19/13	2/19/13	34.68 	34.68 	Chiropractor-Jan0004604Consult								
+"Miles, Ola"	429	2/19/13	2/19/13	104.04 	104.04 	Chiropractor-Jan0004626Consult								
+"Miles, Ola"	429	3/7/13	3/7/13	202.80 	184.80 	0004731Treatment								
+"Miles, Ola"	429	4/4/13	4/5/13	135.20 	135.20 	0005015Treatment								
+"Miles, Ola"	429	4/4/13	4/5/13	473.20 	473.20 	0005016Treatment								
+"Miles, Ola"	429	4/25/13	4/25/13	270.40 	270.40 	0005369Treatment								
+"Miles, Ola"	429	5/21/13	5/21/13	202.80 	184.80 	0005804Treatment								
+"Miles, Ola"	429	5/21/13	5/21/13	357.24 	83.31 	RangeofMotion0006032Consult								
+"Miles, Ola"	429	6/20/13	6/25/13	270.40 	270.40 	0006288Treatment								
+"Mohan, Bharat"	431	2/1/13	2/7/13	135.20 	135.20 	0004209Treatment								
+"Mohan, Bharat"	431	2/1/13	2/7/13	473.20 	431.20 	0004210Treatment								
+"Mohan, Bharat"	431	2/1/13	2/7/13	67.60 	61.60 	0004258Treatment								
+"Mohan, Bharat"	431	2/1/13	2/7/13	202.80 	202.80 	0004259Treatment								
+"Mohan, Bharat"	431	2/1/13	2/7/13	80.02 	80.02 	PT-Evaluation-M0004260Consult								
+"Mohan, Bharat"	431	2/1/13	2/7/13	353.02 	420.16 	RangeofMotion-0004289Consult								
+"Mohan, Bharat"	431	2/1/13	2/7/13	249.96 	249.96 	PhysicalCapacity0004313Consult								
+"Mohan, Bharat"	431	2/1/13	2/7/13	135.20 	123.20 	0004344Treatment								
+"Mohan, Bharat"	431	2/1/13	2/7/13	135.20 	123.20 	0004345Treatment								
+"Mohan, Bharat"	431	2/19/13	2/19/13	353.02 	348.80 	RangeofMotion-0004376Consult								
+"Mohan, Bharat"	431	2/19/13	2/19/13	405.60 	405.60 	0004489Treatment								
+"Mohan, Bharat"	431	2/19/13	2/19/13	270.40 	246.45 	0004490Treatment								
+"Mohan, Bharat"	431	2/19/13	2/19/13	450.84 	450.84 	Chiropractor-Jam0004601Consult								
+"Mohan, Bharat"	431	2/19/13	2/19/13	104.04 	69.36 	Chiropractor-Jam0004630Consult								
+"Mohan, Bharat"	431	3/7/13	3/7/13	405.60 	405.60 	0004736Treatment								
+"Mohan, Bharat"	431	3/7/13	3/7/13	338.00 	308.00 	0004737Treatment								
+"Mohan, Bharat"	431	4/4/13	4/5/13	811.20 	811.20 	0005021Treatment								
+"Mohan, Bharat"	431	4/4/13	4/5/13	405.60 	369.60 	0005022Treatment								
+"Mohan, Bharat"	431	4/9/13	4/9/13	249.96 	249.96 	PhysicalCapacity0005245Consult								
+"Mohan, Bharat"	431	4/25/13	4/25/13	270.40 	246.40 	0005377Treatment								
+"Mohan, Bharat"	431	4/25/13	4/25/13	540.80 	492.80 	0005378Treatment								
+"Mohan, Bharat"	431	5/21/13	5/21/13	67.60 	61.60 	0005809Treatment								
+"Mohan, Bharat"	431	5/21/13	5/21/13	540.80 	492.80 	0005810Treatment								
+"Mohan, Bharat"	431	6/20/13	6/25/13	135.20 	135.20 	0006281Treatment								
+"Mohan, Bharat"	431	6/20/13	6/25/13	676.00 	676.00 	0006282Treatment								
+"Mohan, Bharat"	431	6/25/13	6/25/13	249.96 	0.00 	PhysicalCapacity0006527Consult								
+"Mohan, Bharat"	431	7/16/13	7/16/13	67.60 	0.00 	0006778Treatment								
+"Mohan, Bharat"	431	7/16/13	7/16/13	67.60 	75.36 	0006779Treatment								
+"Mohan, Bharat"	431	7/16/13	7/16/13	270.40 	303.73 	0006780Treatment								
+"Mohan, Bharat"	431	8/6/13	8/19/13	338.00 	361.39 	0007078Treatment								
+"Mohan, Bharat"	431	8/22/13	9/3/13	338.00 	0.00 	0007504Treatment								
+"Mohan, Bharat"	431	9/3/13	9/24/13	135.20 	0.00 	0007752Treatment								
+"Mohan, Bharat"	431	9/3/13	9/24/13	67.60 	0.00 	0007753Treatment								
+"Mohan, Bharat"	431	9/25/13	9/25/13	202.80 	221.76 	0008210Treatment								
+"Mohan, Bharat"	431	1/24/14	1/27/14	135.20 	0.00 	0009753Treatment								
+"Mohan, Bharat"	431	2/18/14	2/18/14	173.40 	0.00 	Chiropractor-Jan0009958Consult								
+"Mohan, Bharat"	431	2/20/14	3/22/14	135.20 	0.00 	0010104Treatment								
+"Morris, Teneequa"	506	2/19/13		68.43 	50.00 	Chiropractor-Jarr0004560Consult								
+"Pannell, Nikiya"	435	10/17/12		200.68 	0.00 	0003650Treatment								
+"Pannell, Nikiya"	435	10/17/12		204.41 	0.00 	"OutcomeAssessm,0003651Consult"								
+"Pannell, Nikiya"	435	10/17/12		80.02 	72.92 	0003682Treatment								
+"Pannell, Nikiya"	435	10/17/12		104.11 	100.33 	0003733Treatment								
+"Pannell, Nikiya"	435	10/17/12		189.13 	177.79 	0003734Treatment								
+"Pannell, Nikiya"	435	11/14/12		123.20 	123.20 	0003863Treatment								
+"Pannell, Nikiya"	435	11/14/12		123.20 	123.20 	0003864Treatment								
+"Pannell, Nikiya"	435	11/14/12		61.60 	61.60 	0003865Treatment								
+"Pannell, Nikiya"	435	12/3/12		184.80 	0.00 	0003964Treatment								
+"Pannell, Nikiya"	435	12/4/12		1916.46 	0.00 	NeuroThreshold10003976Consult								
+"Pannell, Nikiya"	435	12/4/12		1490.58 	0.00 	NeuroThresholdI0003998Consult								
+"Pannell, Nikiya"	435	1/11/13		431.20 	0.00 	0004077Treatment								
+"Pannell, Nikiya"	435	1/11/13		246.40 	0.00 	0004078Treatment								
+"Pannell, Nikiya"	435	1/11/13		182.84 	0.00 	RangeofMotion0004101Consult								
+"Pannell, Nikiya"	435	1/11/13		174.40 	0.00 	RangeofMotion0004102Consult								
+"Pannell, Nikiya"	435	2/1/13		61.60 	0.00 	0004213Treatment								
+"Pannell, Nikiya"	435	2/1/13		61.60 	0.00 	0004214Treatment								
+"Pegus, Elias"	438	1/11/13	2/1/13	338.00 	0.00 	0004039Treatment								
+"Pegus, Elias"	438	1/11/13	2/1/13	878.80 	0.00 	0004040Treatment								
+"Pegus, Elias"	438	1/11/13	2/1/13	80.02 	0.00 	PT-Evaluation-N0004111Consult								
+"Pegus, Elias"	438	1/11/13	2/1/13	182.84 	0.00 	RangeofMotion0004112Consult								
+"Pegus, Elias"	438	1/11/13	2/1/13	174.40 	0.00 	RangeofMotion0004113Consult								
+"Pegus, Elias"	438	2/1/13	2/7/13	67.60 	0.00 	0004174Treatment								
+"Pegus, Elias"	438	2/1/13	2/7/13	135.20 	0.00 	0004183Treatment								
+"Pegus, Elias"	438	2/1/13	2/7/13	338.00 	0.00 	0004184Treatment								
+"Pegus, Elias"	438	2/1/13	2/7/13	249.96 	0.00 	PhysicalCapacity0004318Consult								
+"Pegus, Elias"	438	2/19/13	2/19/13	202.80 	0.00 	0004500Treatment								
+"Pegus, Elias"	438	2/19/13	2/19/13	135.20 	0.00 	0004501Treatment								
+"Pegus, Elias"	438	2/19/13	2/19/13	450.84 	416.16 	Chiropractor-Jarr0004611Consult								
+"Pegus, Elias"	438	2/19/13	2/19/13	104.04 	104.04 	Chiropractor-Jan0004625Consult								
+"Pegus, Elias"	438	3/7/13	3/7/13	270.40 	0.00 	0004738Treatment								
+"Pegus, Elias"	438	3/7/13	3/7/13	405.60 	0.00 	0004739Treatment								
+"Pegus, Elias"	438	3/7/13	3/7/13	135.20 	0.00 	0004772Treatment								
+"Pegus, Elias"	438	3/7/13	3/7/13	135.20 	0.00 	0004773Treatment								
+"Pegus, Elias"	438	3/7/13	4/9/13	249.96 	0.00 	PhysicalCapacity0004850Consult								
+"Pegus, Elias"	438	3/7/13	4/9/13	357.24 	0.00 	RangeofMotion0004873Consult								
+"Pegus, Elias"	438	4/4/13	4/5/13	473.20 	0.00 	0005040Treatment								
+"Pegus, Elias"	438	4/4/13	4/5/13	608.40 	0.00 	0005041Treatment								
+"Pegus, Elias"	438	4/25/13	4/25/13	338.00 	0.00 	0005399Treatment								
+"Pegus, Elias"	438	4/25/13	4/25/13	270.40 	0.00 	0005400Treatment								
+"Pegus, Elias"	438	4/25/13	4/25/13	357.24 	0.00 	RangeofMotion0005483Consult								
+"Pegus, Elias"	438	4/25/13	4/25/13	249.96 	0.00 	PhysicalCapacity0005514Consult								
+"Pegus, Elias"	438	5/21/13	5/21/13	67.60 	0.00 	0005824Treatment								
+"Pegus, Elias"	438	5/21/13	5/21/13	608.40 	0.00 	0005825Treatment								
+"Pegus, Elias"	438	7/16/13	7/16/13	67.60 	0.00 	0006798Treatment								
+"Pegus, Elias"	438	7/16/13	7/16/13	270.40 	0.00 	0006799Treatment								
+"Pegus, Elias"	438	7/16/13	7/16/13	202.80 	0.00 	0006800Treatment								
+"Pegus, Elias"	438	8/6/13	8/19/13	202.80 	0.00 	0007069Treatment								
+"Pegus, Elias"	438	8/6/13	8/19/13	270.40 	0.00 	0007070Treatment								
+"Pegus, Elias"	438	8/22/13	9/3/13	202.80 	0.00 	0007535Treatment								
+"Pegus, Elias"	438	8/22/13	9/3/13	338.00 	0.00 	0007536Treatment								
+"Pegus, Elias"	438	9/3/13	9/24/13	135.20 	0.00 	0007721Treatment								
+"Pegus, Elias"	438	9/3/13	9/24/13	135.20 	0.00 	0007722Treatment								
+"Pegus, Elias"	438	9/25/13	9/25/13	135.20 	0.00 	0008181Treatment								
+"Pegus, Elias"	438	9/25/13	9/25/13	405.60 	0.00 	0008182Treatment								
+"Pegus, Elias"	438	10/22/13	10/23/13	135.20 	0.00 	0008461Treatment								
+"Pegus, Elias"	438	10/22/13	10/23/13	676.00 	0.00 	0008462Treatment								
+"Pegus, Elias"	438	11/20/13	11/25/13	381.48 	0.00 	Chiropractor-Jarr0008747Consult								
+"Pegus, Elias"	438	11/25/13	11/25/13	473.20 	0.00 	0009077Treatment								
+"Pegus, Elias"	438	12/24/13	12/26/13	67.60 	0.00 	0009285Treatment								
+"Pegus, Elias"	438	12/26/13	12/26/13	312.12 	0.00 	Chiropractor-Sm0009385Consult								
+"Pinder, Simon"	511	4/4/13	4/5/13	135.20 	113.92 	0005034Treatment								
+"Pinder, Simon"	511	4/4/13	4/5/13	202.80 	170.88 	0005035Treatment								
+"Pinder, Simon"	511	4/4/13	4/5/13	80.02 	80.02 	PT-Evaluation-M0005036Consult								
+"Pinder, Simon"	511	4/25/13	4/25/13	202.80 	202.83 	0005391Treatment								
+"Pinder, Simon"	511	4/25/13	4/25/13	202.80 	202.83 	0005392Treatment								
+"Pinder, Simon"	511	5/21/13	5/21/13	405.60 	405.66 	0005834Treatment								
+"Pinder, Simon"	511	5/21/13	5/21/13	357.24 	287.02 	RangeofMotion0006020Consult								
+"Pinder, Simon"	511	6/20/13	6/25/13	67.60 	0.00 	0006308Treatment								
+"Pinder, Simon"	511	6/20/13	6/25/13	202.80 	0.00 	0006309Treatment								
+"Scudder, Bryonni"	446	12/3/12	12/4/12	200.68 	200.68 	0003921Treatment								
+"Scudder, Bryonni"	446	12/3/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003922Consult								
+"Simpson, Dwayne"	448	10/17/12		200.68 	200.68 	0003669Treatment								
+"Simpson, Dwayne"	448	10/17/12		204.41 	204.41 	OutcomeAssessm0003670Consult								
+"Simpson, Dwayne"	448	10/17/12		80.02 	42.35 	0003685Treatment								
+"Simpson, Dwayne"	448	10/17/12		431.20 	862.40 	0003741Treatment								
+"Simpson, Dwayne"	448	10/17/12		492.80 	498.71 	0003742Treatment								
+"Simpson, Dwayne"	448	11/14/12		184.80 	184.80 	0003872Treatment								
+"Simpson, Dwayne"	448	11/14/12		61.60 	61.60 	0003873Treatment								
+"Simpson, Dwayne"	448	11/14/12		246.40 	246.40 	0003874Treatment								
+"Simpson, Dwayne"	448	12/3/12		246.40 	246.40 	0003969Treatment								
+"Simpson, Dwayne"	448	12/3/12		123.20 	123.20 	0003970Treatment-								
+"Simpson, Dwayne"	448	12/4/12		1916.46 	0.00 	NeuroThresholdI0003982Consult1f								
+"Simpson, Dwayne"	448	12/4/12		1490.58 	0.00 	NeuroThresholdI0003983Consultj								
+"Simpson, Dwayne"	448	1/11/13		246.40 	253.46 	0004083Treatment								
+"Simpson, Dwayne"	448	1/11/13		184.80 	191.33 	0004084Treatment								
+"Smith, Christina"	452	2/1/13	2/7/13	67.60 	61.60 	0004215Treatment								
+"Smith, Christina"	452	2/1/13	2/7/13	338.00 	308.00 	0004216Treatment								
+"Smith, Christina"	452	2/1/13	2/7/13	91.42 	83.31 	RangeofMotion0004278Consult								
+"Smith, Christina"	452	2/1/13	2/7/13	174.40 	166.63 	RangeofMotion0004279Consult								
+"Smith, Christina"	452	2/1/13	2/7/13	249.96 	249.96 	PhysicalCapacity0004321Consult								
+"Smith, Christina"	452	2/18/13	2/19/13	265.82 	83.31 	RangeofMotion0004374Consult								
+"Smith, Christina"	452	2/19/13	2/19/13	270.40 	246.40 	0004513Treatment								
+"Smith, Christina"	452	2/19/13	2/19/13	270.40 	246.40 	0004514Treatment								
+"Smith, Christina"	452	2/19/13	2/19/13	277.44 	277.44 	Chiropractor-Jan0004607Consult								
+"Smith, Christina"	452	2/19/13	2/19/13	104.04 	69.36 	Chiropractor-Jan0004623Consult								
+"Smith, Christina"	452	3/7/13	3/7/13	177.71 	161.93 	0004747Treatment								
+"Smith, Christina"	452	3/7/13	3/7/13	338.00 	338.00 	0004748Treatment								
+"Smith, Christina"	452	3/7/13	3/7/13	135.20 	135.20 	0004770Treatment								
+"Smith, Christina"	452	3/7/13	3/7/13	135.20 	123.20 	0004771Treatment								
+"Smith, Christina"	452	3/7/13	4/9/13	249.96 	249.96 	PhysicalCapacity0004855Consult								
+"Smith, Christina"	452	4/4/13	4/5/13	357.24 	83.31 	RangeofMotion0005069Consult								
+"Smith, Christina"	452	4/5/13	4/5/13	270.40 	246.40 	0005099Treatment								
+"Smith, Christina"	452	4/5/13	4/5/13	202.80 	184.80 	0005100Treatment								
+"Smith, Christina"	452	4/25/13	4/25/13	202.80 	184.80 	0005412Treatment								
+"Smith, Christina"	452	4/25/13	4/25/13	473.20 	473.20 	0005413Treatment								
+"Smith, Christina"	452	5/21/13	5/21/13	135.20 	123.20 	0005859Treatment								
+"Smith, Christina"	452	5/21/13	5/21/13	405.60 	369.60 	0005860Treatment								
+"Smith, Christina"	452	6/20/13	6/25/13	202.80 	0.00 	0006323Treatment								
+"Smith, Christina"	452	6/20/13	6/25/13	338.00 	0.00 	0006324Treatment								
+"Smith, Christina"	452	7/16/13	7/16/13	67.60 	0.00 	0006816Treatment								
+"Smith, Christina"	452	7/16/13	7/16/13	67.60 	0.00 	0006817Treatment								
+"Smith, Christina"	452	8/6/13	8/19/13	123.63 	0.00 	0007055Treatment								
+"Smith, Christina"	452	9/24/13	9/25/13	135.20 	0.00 	0008135Treatment								
+"Smith, Christina"	452	9/24/13	9/25/13	67.60 	0.00 	0008136Treatment								
+"Steele-Hepburn, Marcia"	453	12/3/12	12/4/12	80.02 	72.92 	PT-Evaluation-N0003927Consult								
+"Steele-Hepburn, Marcia"	453	12/3/12	12/4/12	202.80 	184.80 	0003967Treatment								
+"Steele-Hepburn, Marcia"	453	12/3/12	12/4/12	202.80 	184.80 	0003968Treatment								
+"Steele-Hepburn, Marcia"	453	12/4/12	12/4/12	1916.46 	0.00 	NeuroThresholdl0003993Consult								
+"Steele-Hepburn, Marcia"	453	12/4/12	12/4/12	1490.58 	0.00 	NeuroThresholdl0003995Consult								
+"Steele-Hepburn, Marcia"	453	1/11/13	2/1/13	270.40 	246.40 	0004085Treatment								
+"Steele-Hepburn, Marcia"	453	1/11/13	2/1/13	473.20 	431.20 	0004086Treatment								
+"Steele-Hepburn, Marcia"	453	2/1/13	2/7/13	67.60 	61.60 	0004221Treatment								
+"Steele-Hepburn, Marcia"	453	2/1/13	2/7/13	67.60 	61.60 	0004222Treatment								
+"Steele-Hepburn, Marcia"	453	2/19/13	2/19/13	173.40 	173.40 	Chiropractor-Jarr0004612Consult								
+"Walker, Lonney"	520	10/17/12	12/4/12	200.68 	0.00 	0003652Treatment								
+"Walker, Lonney"	520	10/17/12	12/4/12	204.41 	0.00 	OutcomeAssessm0003653Consult								
+"Walker, Lonney"	520	10/17/12	12/4/12	80.02 	72.92 	0003679Treatment								
+"Walker, Lonney"	520	10/17/12	12/4/12	431.20 	431.20 	0003743Treatment								
+"Walker, Lonney"	520	10/17/12	12/4/12	369.60 	369.60 	0003744Treatment								
+"Walker, Lonney"	520	11/14/12	12/4/12	61.60 	0.00 	0003875Treatment								
+"Walker, Lonney"	520	11/14/12	12/4/12	246.40 	0.00 	0003881Treatment								
+"Walker, Lonney"	520	11/14/12	12/4/12	184.80 	0.00 	0003882Treatment								
+"Walker, Lonney"	520	12/3/12	12/4/12	535.86 	0.00 	RangeofMotion0003895Consult								
+"Walker, Lonney"	520	12/3/12	12/4/12	308.00 	0.00 	0003971Treatment								
+"Walker, Lonney"	520	12/3/12	12/4/12	184.80 	0.00 	0003972Treatment								
+"Walker, Lonney"	520	12/4/12	12/4/12	1490.58 	0.00 	NeuroThreshold10003977Consult								
+"Walker, Lonney"	520	1/11/13	2/1/13	123.20 	0.00 	0004093Treatment								
+"Walker, Lonney"	520	1/11/13	2/1/13	246.40 	0.00 	0004094Treatment								
+"Washington, Davita"	459	12/3/12	12/4/12	80.02 	72.92 	PT-Evaluation-IV0003931Consult								
+"Washington, Davita"	459	1/11/13	2/1/13	405.60 	369.60 	0004091Treatment								
+"Washington, Davita"	459	1/11/13	2/1/13	67.60 	61.60 	0004092Treatment								
+"Williamson, Shasha"	469	2/1/13	2/7/13	135.20 	135.20 	0004226Treatment								
+"Williamson, Shasha"	469	2/1/13	2/7/13	473.20 	431.20 	0004227Treatment								
+"Williamson, Shasha"	469	2/1/13	2/7/13	135.20 	123.20 	0004271Treatment								
+"Williamson, Shasha"	469	2/1/13	2/7/13	202.80 	202.80 	0004272Treatment								
+"Williamson, Shasha"	469	2/1/13	2/7/13	182.84 	182.84 	RangeofMotion0004282Consult								
+"Williamson, Shasha"	469	2/1/13	2/7/13	261.60 	261.60 	RangeofMotion0004283Consult								
+"Williamson, Shasha"	469	2/1/13	2/7/13	249.96 	249.96 	PhysicalCapacity0004325Consult								
+"Williamson, Shasha"	469	2/19/13	2/19/13	444.44 	91.43 	RangeofMotion0004379Consult								
+"Williamson, Shasha"	469	2/19/13	2/19/13	67.60 	61.60 	0004520Treatment								
+"Williamson, Shasha"	469	2/19/13	2/19/13	67.60 	61.60 	0004521Treatment								
+"Williamson, Shasha"	469	2/19/13	2/19/13	202.80 	184.80 	0004525Treatment								
+"Williamson, Shasha"	469	2/19/13	2/19/13	270.40 	270.40 	0004526Treatment								
+"Williamson, Shasha"	469	2/19/13	2/19/13	346.80 	104.04 	Chiropractor-Jan0004615Consult								
+"Williamson, Shasha"	469	2/19/13	2/19/13	104.04 	104.04 	Chiropractor-Jan0004620Consult								
+"Williamson, Shasha"	469	3/7/13	3/7/13	270.40 	246.40 	0004757Treatment								
+"Williamson, Shasha"	469	3/7/13	3/7/13	202.80 	0.00 	0004758Treatment								
+"Williamson, Shasha"	469	3/7/13	3/7/13	67.60 	61.60 	0004768Treatment								
+"Williamson, Shasha"	469	3/7/13	3/7/13	67.60 	61.60 	0004769Treatment								
+"Williamson, Shasha"	469	4/5/13	4/9/13	338.00 	308.00 	0005125Treatment								
+"Williamson, Shasha"	469	4/5/13	4/9/13	405.60 	405.60 	0005126Treatment								
+"Williamson, Shasha"	469	4/25/13	4/25/13	270.40 	270.40 	0005433Treatment								
+"Williamson, Shasha"	469	4/25/13	4/25/13	270.40 	246.40 	0005434Treatment								
+"Williamson, Shasha"	469	4/25/13	4/25/13	488.04 	83.31 	RangeofMotion0005495Consult								
+"Williamson, Shasha"	469	5/21/13	5/21/13	676.00 	67.60 	0005876Treatment								
+"Williamson, Shasha"	469	6/24/13	6/25/13	67.60 	0.00 	0006373Treatment								
+"Williamson, Shasha"	469	6/24/13	6/25/13	473.20 	0.00 	0006374Treatment								
+"Williamson, Shasha"	469	7/16/13	7/16/13	202.80 	0.00 	0006848Treatment								
+"Williamson, Shasha"	469	7/16/13	7/16/13	270.40 	0.00 	0006849Treatment								
+"Williamson, Shasha"	469	8/6/13	8/19/13	67.60 	0.00 	0007028Treatment								
+"Williamson, Shasha"	469	8/6/13	8/19/13	135.20 	0.00 	0007029Treatment								
+"Williamson, Shasha"	469	8/22/13	9/3/13	135.20 	0.00 	0007581Treatment								
+"Williamson, Shasha"	469	8/22/13	9/3/13	67.60 	0.00 	0007582Treatment								
+"Williamson, Shasha"	469	10/22/13	10/23/13	135.20 	0.00 	0008519Treatment								
+"Wilson, Anthony"	522	12/3/12	12/4/12	200.68 	200.68 	0003892Treatment								
+"Wilson, Anthony"	522	12/3/12	12/4/12	204.41 	204.41 	OutcomeAssessm0003893Consult								
+"Wilson, Anthony"	522	12/4/12	12/4/12	135.20 	135.20 	0004005Treatment								
+"Wilson, Anthony"	522	12/4/12	12/4/12	270.40 	270.40 	0004006Treatment								
+"Wilson, Anthony"	522	1/11/13	2/1/13	135.20 	135.20 	0004097Treatment								
+"Wilson, Anthony"	522	1/11/13	2/1/13	135.20 	135.20 	0004098Treatment								
+"Wilson, Anthony"	522	2/1/13	2/7/13	67.60 	67.60 	0004350Treatment								
+"Wilson, Anthony"	522	2/19/13	2/19/13	67.60 	50.70 	0004522Treatment								
+"Wilson, Anthony"	522	2/19/13	2/19/13	104.04 	72.83 	Chiropractor-Jarr0004616Consult								
+"Wilson, Anthony"	522	3/7/13	4/9/13	444.44 	333.33 	RangeofMotion0004884Consult								
+"Wilson, Anthony"	522	4/5/13	4/9/13	67.60 	50.70 	0005127Treatment								
+"Aminova, Ilana"	351	11/14/12		200.68 	200.68 	0003796Treatment								
+"Aminova, Ilana"	351	11/14/12		67.60 	61.60 	0003811Treatment								
+"Aminova, Ilana"	351	11/14/12		202.80 	184.80 	0003812Treatment								
+"Aminova, Ilana"	351	11/14/12		67.60 	61.60 	0003813Treatment								
+"Aminova, Ilana"	351	12/3/12		135.20 	123.20 	0003911Treatment								
+"Aminova, Ilana"	351	12/3/12		67.60 	61.60 	0003912Treatment								
+"Aminova, Ilana"	351	12/3/12		135.20 	61.60 	0003913Treatment								
+"Aminova, Ilana"	351	1/11/13		538.30 	490.50 	0004012Treatment								
+"Aminova, Ilana"	351	1/11/13		174.76 	159.24 	0004013Treatment								
+"Aminova, Ilana"	351	1/11/13		182.84 	182.84 	RangeofMotion-0004118Consult								
+"Aminova, Ilana"	351	8/24/52		67.60 	67.60 	0004131Treatment								
+"Aminova, Ilana"	351	2/1/13		270.40 	246.40 	0004132Treatment								
+"Aminova, Ilana"	351	2/1/13		202.80 	202.80 	0004352Treatment								
+"Aminova, Ilana"	351	2/18/13		357.24 	83.31 	RangeofMotion-0004372Consult								
+"Aminova, Ilana"	351	2/19/13		405.60 	123.20 	0004417Treatment								
+"Aminova, Ilana"	351	2/19/13		135.20 	123.20 	0004418Treatment								
+"Aminova, Ilana"	351	2/19/13		173.40 	138.72 	Chiropractor-Jam0004584Consult								
+"Aminova, Ilana"	351	2/19/13		138.72 	138.72 	Chiropractor-Jam0004638Consult								
+"Aminova, Ilana"	351	3/7/13		338.00 	0.00 	0004657Treatment								
+"Aminova, Ilana"	351	3/7/13		270.40 	0.00 	0004658Treatment								
+"Aminova, Ilana"	351	4/4/13		608.40 	0.00 	0004911Treatment								
+"Aminova, Ilana"	351	4/4/13		338.00 	0.00 	0004912Treatment								
+"Aminova, Ilana"	351	4/25/13		338.00 	0.00 	0005282Treatment								
+"Aminova, Ilana"	351	4/25/13		270.40 	0.00 	0005283Treatment								
+"Aminova, Ilana"	351	4/25/13		357.24 	0.00 	RangeofMotion-0005487Consult								
+"Aminova, Ilana"	351	5/21/13		270.40 	0.00 	0005712Treatment								
+"Aminova, Ilana"	351	6/20/13		202.80 	0.00 	0006142Treatment								
+"Aminova, Michelle"	352	11/14/12		200.68 	200.68 	0003795Treatment								
+"Aminova, Michelle"	352	11/14/12		67.60 	61.60 	0003814Treatment								
+"Aminova, Michelle"	352	11/14/12		67.60 	61.60 	0003815Treatment								
+"Aminova, Michelle"	352	11/14/12		202.80 	184.80 	0003816Treatment								
+"Aminova, Michelle"	352	12/3/12		67.60 	61.60 	0003914Treatment								
+"Aminova, Michelle"	352	12/3/12		135.20 	123.20 	0003939Treatment								
+"Aminova, Michelle"	352	12/3/12		67.60 	61.60 	0003940Treatment								
+"Aminova, Michelle"	352	1/11/13		540.80 	492.80 	0004014Treatment								
+"Aminova, Michelle"	352	1/11/13		135.20 	123.20 	0004015Treatment								
+"Aminova, Michelle"	352	2/1/13		67.60 	61.60 	0004129Treatment								
+"Aminova, Michelle"	352	8/24/52		270.40 	246.40 	0004130Treatment								
+"Aminova, Michelle"	352	2/1/13		135.20 	123.20 	0004353Treatment								
+"Aminova, Michelle"	352	2/19/13		405.60 	123.20 	0004415Treatment								
+"Aminova, Michelle"	352	2/19/13		135.20 	123.20 	0004416Treatment								
+"Aminova, Michelle"	352	2/19/13		138.72 	138.72 	Chiropractor-Jarr0004585Consult								
+"Aminova, Michelle"	352	2/19/13		104.04 	104.04 	Chiropractor-Jarr0004639Consult								
+"Aminova, Michelle"	352	3/7/13		338.00 	0.00 	0004655Treatment								
+"Aminova, Michelle"	352	3/7/13		270.40 	0.00 	0004656Treatment								
+"Aminova, Michelle"	352	4/4/13		743.60 	0.00 	0004913Treatment								
+"Aminova, Michelle"	352	4/4/13		338.00 	0.00 	0004914Treatment								
+"Aminova, Michelle"	352	4/25/13		338.00 	0.00 	0005286Treatment								
+"Aminova, Michelle"	352	4/25/13		270.40 	0.00 	0005287Treatment								
+"Aminova, Michelle"	352	5/21/13		270.40 	0.00 	0005713Treatment								
+"Aminova, Michelle"	352	6/20/13		202.80 	0.00 	0006143Treatment								
+"Aminova, Osnat"	353	1/11/13		405.60 	369.60 	0004009Treatment								
+"Aminova, Osnat"	353	1/11/13		80.02 	72.92 	PT-Evaluation-M0004010Consult								
+"Aminova, Osnat"	353	1/11/13		608.40 	554.40 	0004011Treatment								
+"Aminova, Osnat"	353	1/11/13		182.84 	182.84 	RangeofMotion0004116Consult								
+"Aminova, Osnat"	353	1/11/13		305.20 	0.00 	RangeofMotion0004117Consult								
+"Aminova, Osnat"	353	2/1/13		67.60 	61.60 	0004127Treatment								
+"Aminova, Osnat"	353	8/24/52		338.00 	308.00 	0004128Treatment								
+"Aminova, Osnat"	353	8/24/52		202.80 	184.80 	0004354Treatment								
+"Aminova, Osnat"	353	2/19/13		488.04 	313.64 	RangeofMotion0004375Consult								
+"Aminova, Osnat"	353	2/19/13		405.60 	369.60 	0004413Treatment								
+"Aminova, Osnat"	353	2/19/13		135.20 	123.20 	0004414Treatment								
+"Aminova, Osnat"	353	2/19/13		138.72 	138.72 	Chiropractor-Jan0004586Consult								
+"Aminova, Osnat"	353	2/19/13		138.72 	0.00 	Chiropractor-Jan0004637Consult								
+"Aminova, Osnat"	353	3/7/13		270.40 	246.40 	0004659Treatment								
+"Aminova, Osnat"	353	3/7/13		338.00 	308.00 	0004660Treatment								
+"Aminova, Osnat"	353	3/7/13		249.96 	249.96 	PhysicalCapacity0004849Consult								
+"Aminova, Osnat"	353	4/4/13		743.60 	743.60 	0004915Treatment								
+"Aminova, Osnat"	353	4/4/13		338.00 	338.00 	0004916Treatment								
+"Aminova, Osnat"	353	4/9/13		249.96 	0.00 	PhysicalCapacity0005243Consult								
+"Aminova, Osnat"	353	4/25/13		338.00 	0.00 	0005284Treatment								
+"Aminova, Osnat"	353	4/25/13		270.40 	0.00 	0005285Treatment								
+"Aminova, Osnat"	353	4/25/13		488.04 	0.00 	RangeofMotion0005497Consult								
+"Aminova, Osnat"	353	5/21/13		405.60 	0.00 	0005711Treatment								
+"Aminova, Osnat"	353	6/20/13		135.20 	0.00 	0006144Treatment								
+"Aminova, Osnat"	353	6/20/13		67.60 	0.00 	0006145Treatment								
+"Aminova, Osnat"	353	6/20/13		270.40 	0.00 	0006146Treatment								
+"Aminova, Osnat"	353	6/25/13		249.96 	0.00 	PhysicalCapacity0006546Consult								
+"Aminova, Osnat"	353	7/12/13		202.80 	0.00 	0006553Treatment								
+"Aminova, Osnat"	353	8/6/13		202.80 	0.00 	0006986Treatment								
+"Aminova, Osnat"	353	8/22/13		135.20 	134.53 	0007390Treatment								
+"Aminova, Osnat"	353	10/22/13		67.60 	67.60 	0008265Treatment								
+"Aminova, Osnat"	353	10/22/13		67.60 	0.00 	0008266Treatment								
+"Aminova, Osnat"	353	11/20/13		34.68 	0.00 	Chiropractor-Jarr0008825Consult								
+"Aminova, Osnat"	353	11/21/13		531.64 	0.00 	RangeofMotion0008948Consult								
+"Aminova, Osnat"	353	11/21/13		135.20 	0.00 	0008977Treatment								

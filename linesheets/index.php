@@ -14,7 +14,7 @@ set_time_limit(0);
 ini_set("memory_limit","2400M");
 echo "included the files<BR>";
 $inputDirectory =  "../input/linesheets/";
-$headerArray = array("Session:", "Classification:", "Direction:", "Date:", "Content:", "Associate DN:", "Start Time:", "Primary Language:", "In/Out Digits:", "Test:","Stop Time:", "Complete:", "Subscriber:", "Duration:", "Monitor ID:", "Participants:");
+$headerArray = array("Session:", "Total Duration:", "Direction:", "Date:", "Content:", "Associate DN:", "Start Time:", "Language:", "In/Out Digits:", "Test:","Stop Time:", "Complete:", "Subscriber:", "Monitor ID:", "Participants:","Classification:");
 $participantsArray = array("JASMIN a/k/a MIN a/k/a MANNY TT: 3683"=>"Min",
 "RAY [Formerly UM4482 / ses. 716]"=>"Ray",
 "KENNY [SesTT]"=>"Kenny",

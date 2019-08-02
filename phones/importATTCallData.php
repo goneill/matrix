@@ -9,7 +9,7 @@ foreach(glob('../library/*.php') as $file) {
 
 
 $inDirectory = "../input/attPhoneRecords/";
-$caseID = 1;
+$caseID = 4;
 $serviceProviderID = getServiceProviderID("AT&T"); 
 
 function checkUsage($text) {
@@ -66,15 +66,21 @@ function getDirection($toPhoneNum) {
 function getCellSiteData($origData){
 
 	$origData = trim($origData);
+	echo $origData. "<BR>";
 	if ($origData == null or $origData=='' or $origData=='[]') {
 		$cell['Latitude'] = 0;
 		$cell['Longitude'] = 0;
 		$cell['Azimuth'] = 0;
 	} else {
 		$cellArray = explode(":", str_replace(array('[',']'), "", $origData)); 	
+		print_r($cellArray);
 		$cell['Latitude'] = $cellArray[2]+0;
 		$cell['Longitude'] = $cellArray[1]+0;
-		$cell['Azimuth'] = $cellArray[3]+0;
+		if ($cellArray[3]) {
+			$cell['Azimuth'] = $cellArray[3]+0;
+		} else {
+			$cell['Azimuth'] = 0;
+		} 
 	}
 	return $cell;
 }
