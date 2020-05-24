@@ -10,6 +10,15 @@ foreach(glob('../library/*.php') as $file) {
 set_time_limit(0);
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+$judges= array();
+// get the judges into an array so we can keep them relational style in the db
+$judgesQuery = "SELECT judges.Judge_ID, Judges.JudgeName from judges";
+if ($judgesRes = mysqli_query($link,$judgesQuery)) {
+	while($row = mysqli_fetch_assoc($judgesRes)) {
+		$judges[$row['JudgeName']] = $row['Judge_ID'];
+	}
+} 	
+
 
 $outname = 'dck-act-full-out.csv';
 $htmlname = 'dck-act-full.html';
@@ -61,7 +70,7 @@ function getEntered($val) {
 }
 function getFiled($val) {
 	$filed = strpos($val, "Filed:");
-	return trim(substr($val, $filed + 6,11));
+	return trim(substr($val, $filed + 6,10));
 }
 function getCategory($val) {
 	$event = strpos($val, "Event:");
@@ -79,9 +88,13 @@ function getEvent($val) {
 function getDocument($val) {
 	$document = strpos($val, "Document:");
 	if ($document>0 ){
-	return trim(substr($val, $document + 9));
+		$doctext = trim(substr($val, $document + 9));
+		$doctext = trim(html_entity_decode($doctext));	
+		$doctext = substr($doctext, 0, -4);
+
+		return $doctext;
 	} else {
-		return "";
+		return "0";
 	} 
 }
 function getDocType($val) {
@@ -105,59 +118,125 @@ function getFlags($val) {
 	$caseFlags = strpos($val, "Case Flags:");
 	return trim(substr($val, $caseFlags+11));
 }
+
+$insertOrders = "INSERT INTO Orders (CaseNumber, CaseCaption, CaseStatus, Entered, Filed, Category, Event, Document, Type, Office, Judge_ID, CaseFlags, OrderText) VALUES ";
+
+
+function getJudgeID($presider) {
+	GLOBAL $judges;
+	Global $link;
+	if (isset($judges[$presider])){
+		return $judges[$presider];
+	} else {
+		$qry = "INSERT INTO JUDGES (JudgeName) VALUES ('$presider')";
+echo $qry . "<BR>";
+		mysqli_query($link, $qry);
+		$id =  mysqli_insert_id($link);
+		$judges[$presider] = $id;
+		return $id;
+	}
+
+}
 foreach ($rows as $row) {
-	// for each row we wat to add to the array of orders - 
-	// if the rowspan = 2 then we have a new $order
+	// for each row we want to add to the array of orders 
+
 	$cols = $row->getElementsByTagName('td');
-	//echo $row->nodeValue . "<BR>";
+	
+	// this is to make sure we don't get the weird tables at the end.
 	if($cols[1] && $cols[2]) {
 // 		echo $cols[0]->nodeValue. " | " . $cols[1]->nodeValue. "<BR>";
  		$order['CaseNum'] = getCaseNum($cols[0]->nodeValue);
  		$order['CaseCaption'] = getCaseCaption($cols[0]->nodeValue);
-// 		$order['CaseStatus'] = getCaseStatus($cols[0]->nodeValue);
-// 		$order['Entered'] = getEntered($cols[1]->nodeValue);
+ 		$order['CaseStatus'] = getCaseStatus($cols[0]->nodeValue);
+ 		$order['Entered'] = getEntered($cols[1]->nodeValue);
 		$order['Filed'] = getFiled($cols[1]->nodeValue);
  		$order['Category'] = getCategory($cols[2]->nodeValue);
  		$order['Event'] = getEvent($cols[2]->nodeValue);
- 		$order['Document'] = getDocument($cols[2]->nodeValue);
-// 		$order['Type'] = getDocType($cols[3]->nodeValue);
-// 		$order['Office'] = getOffice($cols[4]->nodeValue);
+ 		$order['Document'] = TRIM(getDocument($cols[2]->nodeValue));
+ 		$order['Type'] = getDocType($cols[3]->nodeValue);
+ 		$order['Office'] = getOffice($cols[4]->nodeValue);
+		$order['Flags'] = getFlags($cols[4]->nodeValue);
  		try {
  			$order['Presider'] = getPresider($cols[4]->nodeValue);
  		} catch(exception $e) {
  				echo "Caught exception", $e->getMessage(), "<br>";
 
  		}
-// 		$order['Flags'] = getFlags($cols[4]->nodeValue);
  		
  //		echo $order['CaseNum']. "|" . $order['CaseCaption']."|". $order['CaseStatus']. "|" . $order['Entered']."<BR>";
  //		echo $cols[1]->nodeValue. "|". $cols[2]->nodeValue. "|". $cols[3]->nodeValue. "|". $cols[4]->nodeValue."|<BR>";
 
+ 	// this gets rid of the tables at the end. 
  	} elseif ($cols[0]) {
  		if ($cols[0]->nodeValue == "Case number") {
  //			echo $row->nodeValue . "<BR>";
  			break;
- 		}
- 		$order['OrderText']  = str_replace(";", "-", $cols[0]->nodeValue);
+ 		} // there is no 3rd column so its order text - add that to the order and then 
+// 		echo "Document:|".$order['Document']."|<BR>";
+ 		$order['OrderText']  = mysqli_escape_string($link, $cols[0]->nodeValue);
  		$orders[] = $order;
- 	} else {
+ 		$insertOrders.="('".$order['CaseNum']."', '".
+ 			mysqli_escape_string($link,$order['CaseCaption'])."', '" .
+ 			//mysqli_escape_string($link,$order['CaseStatus'])."', ".
+ 			getSqlDate(new datetime($order['Entered'])).",".
+ 			//getSqlDate(new datetime($order['Filed'])).",'".
+ 			$order['Category']."','".
+ 			$order['Event']."',"
+ 			.trim($order['Document']).",'".
+ 			$order['Type']."','".
+ 			//$order['Office']."',".
+ 			//getJudgeID($order['Presider'], $judges).",'".
+ 			$order['Presider']."',".
+// 			$order['Flags']."',".
+ 			'"'.$order['OrderText'].'"),';
+// 			die();
+
+ 	} else { // this means there is only one cell with a colspan of 4 - ie 
  		$orders[] = $order;
+ 		$insertOrders.="('".$order['CaseNum']."', '".
+ 			mysqli_escape_string($link,$order['CaseCaption'])."', '" .
+ 			mysqli_escape_string($link,$order['CaseStatus'])."', ".
+ 			getSqlDate(new datetime($order['Entered'])).",".
+ 			getSqlDate(new datetime($order['Filed'])).",'".
+ 			$order['Category']."','".
+ 			$order['Event']."',".
+ 			trim($order['Document']).",'".
+ 			$order['Type']."','".
+ 			$order['Office']."',".
+ 			getJudgeID($order['Presider'], $judges).",'".
+ 			$order['Flags']."',".
+ 			'"'.$order['OrderText'].'"),';
+//
  	}
 }
+
 //print_r($orders);
 //        $order['caseNum'] = $cols[0];
 //print_r($orders);
 //fwrite($outputFile, '"Case Number";"Caption";"Filed";"Category";"Event";"Document";"Presider";"Text"'."\r\n");
-foreach ($orders as $order) {
+/*foreach ($orders as $order) {
 	//print_r($order);
 	$ln = '"'.implode('";"', $order). '"'."\r\n";
 	//	print_r($order);
 	//	echo $ln. "<BR>";
 	fwrite($outputFile, $ln);
-}
+	// need to create a sql statement here to put these in the db...
 
+
+} */
+$insertOrders = substr($insertOrders, 0, -1);
+echo $insertOrders . "<BR>";
+
+//	mysqli_query($link, $insertOrders);
+$link->query($insertOrders);
+//echo "<BR> GAH DO NOT KNOW WHAT WENT WRONG<BR>";
+echo mysqli_errno($link) . ": " . mysqli_error($link) . "<BR>";
+
+$setCompassionate = "UPDATE ORDERS SET CompassionateRelease =1 WHERE OrderText LIKE '%Compassionate%' or OrderText LIKE '%COVID-19%' OR OrderText LIKE '%3582%';";
+mysqli_query($link, $setCompassionate);
+$setSentencing= "UPDATE ORDERS SEt Sentencing =1 WHERE Event LIKE 'JUDGMENT%';";
+mysqli_query($link, $setSentencing);
 //print_r($order);
-die();
 //	fwrite($outputFile,tdrows($cells)."\n");
 
 
